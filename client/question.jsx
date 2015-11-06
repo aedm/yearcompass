@@ -3,37 +3,30 @@ PlainTextQuestion = React.createClass({
   mixins: [ReactMeteorData],
 
   getInitialState() {
-    return {};
+    return { value: "" };
   },
 
-  // Loads items from the Tasks collection and puts them on this.data.tasks
   getMeteorData() {
     let document = Answers.findOne({ question: this.props.question });
     if (!document) return {};
-    return {
-      value: document.answer,
-      id: document._id
+
+    /// Little hack to enable state updates inside getMeteorData() while avoiding infinite loops
+    if (this.state.value != document.answer) {
+      setTimeout(() => { this.setState({value: this.data.value}); }, 0);
     }
+    return { value: document.answer };
   },
 
   onChange() {
-    let answerDom = ReactDOM.findDOMNode(this.refs.answer);
-    // TODO: Meteor.call()
-    if (this.data.id) {
-      Answers.update({ _id: this.data.id }, { $set: { answer: answerDom.value } });
-    } else {
-      Answers.insert({
-        question: this.props.question,
-        answer: answerDom.value
-      });
-    }
+    let answer = ReactDOM.findDOMNode(this.refs.answer).value;
+    this.setState({value: answer});
+    Meteor.call("answerText", this.props.question, answer);
   },
 
   render() {
-    // TODO: value should come from this.state, not this.data
     return (
       <div className="container">
-        <input type="text" ref="answer" onChange={this.onChange} value={this.data.value} />
+        <input type="text" ref="answer" onChange={this.onChange} value={this.state.value} />
       </div>
     );
   }

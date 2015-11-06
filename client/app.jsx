@@ -4,10 +4,6 @@ Meteor.startup(function () {
 });
 
 App = React.createClass({
-  getInitialState() {
-    return {}
-  },
-
   render() {
     return (
       <div className="container">
