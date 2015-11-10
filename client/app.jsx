@@ -3,11 +3,22 @@ Meteor.startup(function () {
   ReactDOM.render(<App />, document.getElementById("questions"));
 });
 
+Meteor.subscribe("answers");
+
 App = React.createClass({
+  mixins: [ReactMeteorData],
+
   getInitialState() {
     return {
       language: Object.keys(translations)[0]
     }
+  },
+
+  getMeteorData() {
+    return {
+      username: Meteor.user() == undefined ? null : Meteor.user().username,
+      userId: Meteor.userId()
+    };
   },
 
   text(token) {
@@ -19,17 +30,11 @@ App = React.createClass({
     this.setState({language: lang});
   },
 
-  render() {
+  renderBooklet() {
     return (
-      <div className="container">
-        <p>Languages:
-          { Object.keys(translations).map((t) =>
-            <a href="#" key={t} onMouseDown={this.selectLanguage.bind(this, t)}>{t} </a> )}
-        </p>
-
+      <div className="booklet">
         {/* The past year */}
         <h2>{ this.text("T0014") }</h2>
-
 
         {/* Going through your calendar */}
         <h3>{ this.text("T0015") }</h3>
@@ -78,7 +83,22 @@ App = React.createClass({
         <PlainTextQuestion question="past-sixsenteces-service" />
         { this.text("T0037") }
         <PlainTextQuestion question="past-sixsenteces-completed" />
+      </div>
+    );
+  },
 
+  render() {
+    return (
+      <div className="container">
+        <p>Languages:
+          { Object.keys(translations).map((t) =>
+            <a href="#" key={t} onMouseDown={this.selectLanguage.bind(this, t)}>{t} </a> )}
+        </p>
+
+        <LoginWrapper />
+        <p>Meteor.userId: { this.data.userId } </p>
+
+        { this.data.username != null ? this.renderBooklet() : null }
       </div>
     );
   }
