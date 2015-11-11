@@ -16,7 +16,6 @@ App = React.createClass({
 
   getMeteorData() {
     return {
-      username: Meteor.user() == undefined ? null : Meteor.user().username,
       userId: Meteor.userId()
     };
   },
@@ -98,7 +97,7 @@ App = React.createClass({
         <LoginWrapper />
         <p>Meteor.userId: { this.data.userId } </p>
 
-        { this.data.username != null ? this.renderBooklet() : null }
+        { this.data.userId != null ? this.renderBooklet() : null }
       </div>
     );
   }
