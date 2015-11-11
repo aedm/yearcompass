@@ -26,7 +26,7 @@ PlainTextQuestion = React.createClass({
   render() {
     return (
       <div className="container">
-        <input type="text" ref="answer" onChange={this.onChange} value={this.state.value} />
+        <textarea type="text" ref="answer" onChange={this.onChange} value={this.state.value} />
       </div>
     );
   }
