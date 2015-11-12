@@ -1,7 +1,6 @@
 # YearCompass-online specifikáció
 
 ## Tartalomjegyzék
-<!-- TOC depth:6 withLinks:0 updateOnSave:1 orderedList:0 -->
 
 - YearCompass-online specifikáció
 	- Tartalomjegyzék
@@ -31,16 +30,14 @@
 	- Rendszerrel kapcsolatos állítások
 	- Jegyzet
 		- !v1
-<!-- /TOC -->
 
 
 ## Összefoglaló
-A YearCompass-online (YC-online) lehetővé teszi, hogy a YearCompass évrendező füzet online módon is kitölthetővé váljon, így szélesebb réteghez eljuttatva a tudatos évrendezés fontosságát.
+A YearCompass-online (YC-online) lehetővé teszi, hogy a YearCompass évrendező füzet online módon is kitölthetővé váljon, így szélesebb réteghez eljuttatva a tudatos évrendezés lehetőségét.
 
 ## Szereplők listája
 - látogató (nem regisztrált felhasználó)
 - bejelentkezett felhasználó
-(- rendszeradminisztrátor)
 
 ## Oldalak listája
 - kezdőoldal
@@ -68,7 +65,7 @@ A YearCompass-online (YC-online) lehetővé teszi, hogy a YearCompass évrendez�
 - **sikeres művelet**: Sikeres azonosítás esetén a rendszer megerősítő üzenetet jelenít meg, és a látogatót automatikusan átirányítja az üdvözlőoldalra.
 
 ##### A látogató nyelvet választ
-- **leírás**: A látogató a nyelvválasztó segítségével választhat az elérhető nyelvek közül. Az oldal nyelve alapesetben angol.
+- **leírás**: A látogató a nyelvválasztó segítségével választhat az elérhető nyelvek közül. Az oldal nyelve alapesetben angol. Az URL alapján a rendszer automatikusan kiválasztja a megfelelő nyelvet (pl.: /hu vagy ?lang=hu)
 - **hibakezelés**: Ha nem sikerül a nyelvválasztás, az oldal az alapértelmezett angol változatot jeleníti meg.
 - **sikeres művelet**: Sikeres nyelvválasztás esetén az oldalon lévő fordítható elemek a kiválasztott nyelven jelennek meg. A nyelvválasztó mutatja az aktuálisan kiválasztott nyelvet.
 
@@ -113,7 +110,7 @@ Megegyezik az 'A látogató nyelvet választ' történettel.
 Megegyezik az 'A bejelentkezett felhasználó kijelentkezik (kezdőoldal)' történettel.
 
 ##### A bejelentkezett felhasználó megkezdi a kitöltést
-Megegyezik az 'A bejelentkezett felhasználó megkezdi a kitöltést (kezdőoldal)' történettel, azzal a különbséggel, hogy sikeres művelet esetén a rendszer a felhasználót a 'lezárandó év' oldalra irányítja át.
+A rendszer a bejelentkezett felhasználót átirányítja a lezárandó év oldalra.
 
 #### Lezárandó év oldal
 **Elemek**
@@ -122,7 +119,7 @@ Megegyezik az 'A bejelentkezett felhasználó megkezdi a kitöltést (kezdőolda
 - tartalmi elemek
     + a bejelentkezett felhasználó azonosítója (profilkép + név)
     + mentési visszajelzés (sikeres mentés esetén megerősítő visszajelzéssel)
-    + kérdések
+    + az összes, ehhez a szekcióhoz tartozó kérdés
 - adatbeviteli elemek
     + minden kérdéshez adatbeviteli mező (tartalmazza a korábban elmentett válaszokat)
 
@@ -158,7 +155,15 @@ Elemei és történetei megegyeznek a 'Lezárandó év oldal' történeteivel é
     + a 'megosztás gomb(ok)' részt
 
 ##### A bejelentkezett felhasználó megosztja a YC-online elérhetőségét
-- **leírás**: A bejelentkezett felhasználó a megosztás gombok egyikére kattint. Böngészőjében új ablakban megnyílik az adott szolgáltató felülete, amelynek segítségével megoszthatja a YC-online elérhetőségét. Az előre kitölthető elemeket (url, főcím, rövid leírás, ikonkép) a rendszer automatikusan kitölti számára.
+- **leírás**: A bejelentkezett felhasználó a megosztás gombok egyikére kattint. Böngészőjében új ablakban megnyílik az adott szolgáltató felülete, amelynek segítségével megoszthatja a YC-online elérhetőségét. Az előre kitölthető elemeket (url, főcím, rövid leírás, ikonkép) a rendszer automatikusan kitölti számára. A használt szolgáltatások:
+  - facebook
+  - twitter
+  - instagram
+  - google plus
+  - linkedin
+  - pinterest
+  - reddit
+  - whatsapp
 - **hibakezelés**: -
 - **sikeres művelet**: -
 
@@ -167,7 +172,6 @@ Elemei és történetei megegyeznek a 'Lezárandó év oldal' történeteivel é
 - a rendszer a fordításokat különálló nyelvi file-okból tölti be
 
 ## Jegyzet
-- URL-ből tudjuk, hogy melyik nyelvre akar érkezni
 
 ### !v1
 - login with facebook, de bejelentkezés nélkül is kitöltheti, csak szól neki, hogy így jövőre nem tudod megnézni, és nem szólunk Neked
@@ -181,3 +185,6 @@ Elemei és történetei megegyeznek a 'Lezárandó év oldal' történeteivel é
 - fényképezd le önmagad webkameráddal, azt oszd meg
 - mutasd meg a tavalyi válaszaimat
 - a végén könnyen át lehet tekinteni az egészet
+- van rendszeradminisztrátor, aki tud fölvinni új nyelvi változatokat
+- a rendszer elmenti az előrehaladási állaoptot, és újbóli betöltéskor ott tudja folytatni a felhasználó, ahol abbahagyta
+- a megosztásoknál tud emailt küldeni a linkkel, saját üzenettel
