@@ -70,6 +70,14 @@ App = React.createClass({
         <LoginWrapper />
         <p>Meteor.userId: { this.data.userId } </p>
 
+        <div id="navigation">
+          { Object.keys(this.pages).map((page) =>
+            <button key={page} onClick={ () => this.turnPage(page)}
+                    className={this.state.currentPage == page ? "active" : ""}>
+              {this.pages[page]}
+            </button> )}
+        </div>
+
         { this.data.userId != null ? this.renderBooklet() : null }
       </div>
     );
