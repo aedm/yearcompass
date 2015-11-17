@@ -62,13 +62,20 @@ App = React.createClass({
   render() {
     return (
       <div className="container">
-        <p>Languages:
-          { Object.keys(translations).map((t) =>
-            <a href="#" key={t} onMouseDown={this.selectLanguage.bind(this, t)}>{t} </a> )}
-        </p>
 
-        <LoginWrapper />
-        <p>Meteor.userId: { this.data.userId } </p>
+        <div id="header">
+          <div className="content">
+            <div className="language">
+              Lang:
+              { Object.keys(translations).map((t) =>
+                <a href="#" key={t} onMouseDown={this.selectLanguage.bind(this, t)}>{t} </a> )}
+            </div>
+            <div className="title">YearCompass</div>
+            <div className="user">
+              <LoginWrapper />
+            </div>
+          </div>
+        </div>
 
         <div id="navigation">
           { Object.keys(this.pages).map((page) =>
