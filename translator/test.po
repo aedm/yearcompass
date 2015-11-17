@@ -1,0 +1,1026 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-11-16 23:20+0100\n"
+"PO-Revision-Date: 2015-11-16 23:30+0116\n"
+"Last-Translator: YearCompass Translator <hello@yearcompass.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+"X-Translated-Using: django-rosetta 0.7.6\n"
+
+#. Translators: T0001
+#: projects/yearcompass_booklet_2015_2016/translation.py:14
+msgctxt ""
+msgid "THE YEAR AHEAD"
+msgstr "THE YEAR AHEAD"
+
+#. Translators: T0002
+#: projects/yearcompass_booklet_2015_2016/translation.py:16
+msgctxt ""
+msgid "2015 / 2016"
+msgstr "2015 / 2016"
+
+#. Translators: T0003
+#: projects/yearcompass_booklet_2015_2016/translation.py:18
+msgctxt ""
+msgid "Year-planning booklet"
+msgstr "Year-planning booklet"
+
+#. Translators: T0004
+#: projects/yearcompass_booklet_2015_2016/translation.py:20
+msgctxt ""
+msgid "What is this?"
+msgstr "What is this?"
+
+#. Translators: T0005
+#: projects/yearcompass_booklet_2015_2016/translation.py:22
+msgctxt ""
+msgid ""
+"This booklet will help you look back over the past year and to plan the year"
+" ahead of you."
+msgstr ""
+"This booklet will help you look back over the past year and to plan the year"
+" ahead of you."
+
+#. Translators: T0006
+#: projects/yearcompass_booklet_2015_2016/translation.py:24
+msgctxt ""
+msgid "Why is this good for me?"
+msgstr "Why is this good for me?"
+
+#. Translators: T0007
+#: projects/yearcompass_booklet_2015_2016/translation.py:26
+msgctxt ""
+msgid ""
+"Planning your year is a good habit. It helps you identify your successes and"
+" sorrows and will help you realize how much can happen just in a year. By "
+"learning from the past you can plan your future so that you don't repeat the"
+" same patterns and can feel in control of your own life."
+msgstr ""
+"Planning your year is a good habit. It helps you identify your successes and"
+" sorrows and will help you realize how much can happen just in a year. By "
+"learning from the past you can plan your future so that you don't repeat the"
+" same patterns and can feel in control of your own life."
+
+#. Translators: T0008
+#: projects/yearcompass_booklet_2015_2016/translation.py:28
+msgctxt ""
+msgid "What do I need?"
+msgstr "What do I need?"
+
+#. Translators: T0009
+#: projects/yearcompass_booklet_2015_2016/translation.py:30
+msgctxt ""
+msgid "1st version (lone wolf version)"
+msgstr "1st version (lone wolf version)"
+
+#. Translators: T0010
+#: projects/yearcompass_booklet_2015_2016/translation.py:32
+msgctxt ""
+msgid "- at least 1 hour of uninterrupted time (to plan the year)"
+msgstr "- at least 1 hour of uninterrupted time (to plan the year)"
+
+#. Translators: T0011
+#: projects/yearcompass_booklet_2015_2016/translation.py:34
+msgctxt ""
+msgid "- at least 3 hours of uninterrupted time (to look back too)"
+msgstr "- at least 3 hours of uninterrupted time (to look back too)"
+
+#. Translators: T0012
+#. Translators: T0019
+#: projects/yearcompass_booklet_2015_2016/translation.py:36
+#: projects/yearcompass_booklet_2015_2016/translation.py:50
+msgctxt ""
+msgid "- a calendar of the past year"
+msgstr "- a calendar of the past year"
+
+#. Translators: T0013
+#. Translators: T0020
+#: projects/yearcompass_booklet_2015_2016/translation.py:38
+#: projects/yearcompass_booklet_2015_2016/translation.py:52
+msgctxt ""
+msgid "- a printed version of this workbook"
+msgstr "- a printed version of this workbook"
+
+#. Translators: T0014
+#. Translators: T0021
+#: projects/yearcompass_booklet_2015_2016/translation.py:40
+#: projects/yearcompass_booklet_2015_2016/translation.py:54
+msgctxt ""
+msgid "- honesty and openness"
+msgstr "- honesty and openness"
+
+#. Translators: T0015
+#. Translators: T0022
+#: projects/yearcompass_booklet_2015_2016/translation.py:42
+#: projects/yearcompass_booklet_2015_2016/translation.py:56
+msgctxt ""
+msgid "- a selection of your favorite pens"
+msgstr "- a selection of your favorite pens"
+
+#. Translators: T0016
+#: projects/yearcompass_booklet_2015_2016/translation.py:44
+msgctxt ""
+msgid "2nd version (group version)"
+msgstr "2nd version (group version)"
+
+#. Translators: T0017
+#: projects/yearcompass_booklet_2015_2016/translation.py:46
+msgctxt ""
+msgid "- an inspirative group of people (2-10 persons)"
+msgstr "- an inspirative group of people (2-10 persons)"
+
+#. Translators: T0018
+#: projects/yearcompass_booklet_2015_2016/translation.py:48
+msgctxt ""
+msgid "- at least 4 hours of creative time"
+msgstr "- at least 4 hours of creative time"
+
+#. Translators: T0023
+#: projects/yearcompass_booklet_2015_2016/translation.py:58
+msgctxt ""
+msgid "Get ready"
+msgstr "Get ready"
+
+#. Translators: T0024
+#: projects/yearcompass_booklet_2015_2016/translation.py:60
+msgctxt ""
+msgid "Arrive."
+msgstr "Arrive."
+
+#. Translators: T0025
+#: projects/yearcompass_booklet_2015_2016/translation.py:62
+msgctxt ""
+msgid "Put on some relaxing music."
+msgstr "Put on some relaxing music."
+
+#. Translators: T0026
+#: projects/yearcompass_booklet_2015_2016/translation.py:64
+msgctxt ""
+msgid "Pour yourself a hot beverage."
+msgstr "Pour yourself a hot beverage."
+
+#. Translators: T0027
+#: projects/yearcompass_booklet_2015_2016/translation.py:66
+msgctxt ""
+msgid "Let go all of your expectations."
+msgstr "Let go all of your expectations."
+
+#. Translators: T0028
+#: projects/yearcompass_booklet_2015_2016/translation.py:68
+msgctxt ""
+msgid "Start when ready."
+msgstr "Start when ready."
+
+#. Translators: T0029
+#. Translators: T0032
+#. Translators: T0047
+#. Translators: T0055
+#. Translators: T0063
+#. Translators: T0066
+#. Translators: T0075
+#. Translators: T0079
+#. Translators: T0082
+#. Translators: T0090
+#. Translators: T0098
+#: projects/yearcompass_booklet_2015_2016/translation.py:70
+#: projects/yearcompass_booklet_2015_2016/translation.py:76
+#: projects/yearcompass_booklet_2015_2016/translation.py:106
+#: projects/yearcompass_booklet_2015_2016/translation.py:122
+#: projects/yearcompass_booklet_2015_2016/translation.py:138
+#: projects/yearcompass_booklet_2015_2016/translation.py:144
+#: projects/yearcompass_booklet_2015_2016/translation.py:162
+#: projects/yearcompass_booklet_2015_2016/translation.py:170
+#: projects/yearcompass_booklet_2015_2016/translation.py:176
+#: projects/yearcompass_booklet_2015_2016/translation.py:192
+#: projects/yearcompass_booklet_2015_2016/translation.py:208
+msgctxt ""
+msgid "The past year"
+msgstr "The past year"
+
+#. Translators: T0030
+#: projects/yearcompass_booklet_2015_2016/translation.py:72
+msgctxt ""
+msgid "Going through your calendar"
+msgstr "Going through your calendar"
+
+#. Translators: T0031
+#: projects/yearcompass_booklet_2015_2016/translation.py:74
+msgctxt ""
+msgid ""
+"Go through your calendar for the past year week by week. If you see an "
+"important event, encounter or to-do write it down here."
+msgstr ""
+"Go through your calendar for the past year week by week. If you see an "
+"important event, encounter or to-do write it down here."
+
+#. Translators: T0033
+#: projects/yearcompass_booklet_2015_2016/translation.py:78
+msgctxt ""
+msgid "This is what my past year was about"
+msgstr "This is what my past year was about"
+
+#. Translators: T0034
+#: projects/yearcompass_booklet_2015_2016/translation.py:80
+msgctxt ""
+msgid ""
+"What were the most decisive aspects for you in the following areas*? Which "
+"events were the most important? Summarize briefly."
+msgstr ""
+"What were the most decisive aspects for you in the following areas*? Which "
+"events were the most important? Summarize briefly."
+
+#. Translators: T0035
+#. Translators: T0107
+#: projects/yearcompass_booklet_2015_2016/translation.py:82
+#: projects/yearcompass_booklet_2015_2016/translation.py:226
+msgctxt ""
+msgid "family, private life"
+msgstr "family, private life"
+
+#. Translators: T0036
+#. Translators: T0108
+#: projects/yearcompass_booklet_2015_2016/translation.py:84
+#: projects/yearcompass_booklet_2015_2016/translation.py:228
+msgctxt ""
+msgid "belongings (home, objects)"
+msgstr "belongings (home, objects)"
+
+#. Translators: T0037
+#. Translators: T0109
+#: projects/yearcompass_booklet_2015_2016/translation.py:86
+#: projects/yearcompass_booklet_2015_2016/translation.py:230
+msgctxt ""
+msgid "friends, community, service"
+msgstr "friends, community, service"
+
+#. Translators: T0038
+#. Translators: T0110
+#: projects/yearcompass_booklet_2015_2016/translation.py:88
+#: projects/yearcompass_booklet_2015_2016/translation.py:232
+msgctxt ""
+msgid "intellectual"
+msgstr "intellectual"
+
+#. Translators: T0039
+#. Translators: T0111
+#: projects/yearcompass_booklet_2015_2016/translation.py:90
+#: projects/yearcompass_booklet_2015_2016/translation.py:234
+msgctxt ""
+msgid "finances"
+msgstr "finances"
+
+#. Translators: T0040
+#. Translators: T0112
+#: projects/yearcompass_booklet_2015_2016/translation.py:92
+#: projects/yearcompass_booklet_2015_2016/translation.py:236
+msgctxt ""
+msgid "work, studies, profession"
+msgstr "work, studies, profession"
+
+#. Translators: T0041
+#. Translators: T0113
+#: projects/yearcompass_booklet_2015_2016/translation.py:94
+#: projects/yearcompass_booklet_2015_2016/translation.py:238
+msgctxt ""
+msgid "relaxation, hobbies, creativity"
+msgstr "relaxation, hobbies, creativity"
+
+#. Translators: T0042
+#. Translators: T0114
+#: projects/yearcompass_booklet_2015_2016/translation.py:96
+#: projects/yearcompass_booklet_2015_2016/translation.py:240
+msgctxt ""
+msgid "health, fitness"
+msgstr "health, fitness"
+
+#. Translators: T0043
+#. Translators: T0115
+#: projects/yearcompass_booklet_2015_2016/translation.py:98
+#: projects/yearcompass_booklet_2015_2016/translation.py:242
+msgctxt ""
+msgid "emotional, spiritual"
+msgstr "emotional, spiritual"
+
+#. Translators: T0044
+#. Translators: T0116
+#: projects/yearcompass_booklet_2015_2016/translation.py:100
+#: projects/yearcompass_booklet_2015_2016/translation.py:244
+msgctxt ""
+msgid "bucket list **"
+msgstr "bucket list **"
+
+#. Translators: T0045
+#: projects/yearcompass_booklet_2015_2016/translation.py:102
+msgctxt ""
+msgid ""
+"* The aspects are defined by what is important to you. We do not have a "
+"definition on purpose."
+msgstr ""
+"* The aspects are defined by what is important to you. We do not have a "
+"definition on purpose."
+
+#. Translators: T0046
+#: projects/yearcompass_booklet_2015_2016/translation.py:104
+msgctxt ""
+msgid "** In case you achieved something this year, you always wanted."
+msgstr "** In case you achieved something this year, you always wanted."
+
+#. Translators: T0048
+#: projects/yearcompass_booklet_2015_2016/translation.py:108
+msgctxt ""
+msgid "6 sentences about my past year"
+msgstr "6 sentences about my past year"
+
+#. Translators: T0049
+#: projects/yearcompass_booklet_2015_2016/translation.py:110
+msgctxt ""
+msgid "The wisest decision I made..."
+msgstr "The wisest decision I made..."
+
+#. Translators: T0050
+#: projects/yearcompass_booklet_2015_2016/translation.py:112
+msgctxt ""
+msgid "The biggest lesson I learned..."
+msgstr "The biggest lesson I learned..."
+
+#. Translators: T0051
+#: projects/yearcompass_booklet_2015_2016/translation.py:114
+msgctxt ""
+msgid "The biggest risk I took..."
+msgstr "The biggest risk I took..."
+
+#. Translators: T0052
+#: projects/yearcompass_booklet_2015_2016/translation.py:116
+msgctxt ""
+msgid "The biggest surprise of the year..."
+msgstr "The biggest surprise of the year..."
+
+#. Translators: T0053
+#: projects/yearcompass_booklet_2015_2016/translation.py:118
+msgctxt ""
+msgid "The biggest service I made..."
+msgstr "The biggest service I made..."
+
+#. Translators: T0054
+#: projects/yearcompass_booklet_2015_2016/translation.py:120
+msgctxt ""
+msgid "The biggest thing I completed/finished..."
+msgstr "The biggest thing I completed/finished..."
+
+#. Translators: T0056
+#: projects/yearcompass_booklet_2015_2016/translation.py:124
+msgctxt ""
+msgid "6 questions about my past year"
+msgstr "6 questions about my past year"
+
+#. Translators: T0057
+#: projects/yearcompass_booklet_2015_2016/translation.py:126
+msgctxt ""
+msgid "What are you the most proud of?"
+msgstr "What are you the most proud of?"
+
+#. Translators: T0058
+#: projects/yearcompass_booklet_2015_2016/translation.py:128
+msgctxt ""
+msgid "Who are the 3 people who influenced you the most?"
+msgstr "Who are the 3 people who influenced you the most?"
+
+#. Translators: T0059
+#: projects/yearcompass_booklet_2015_2016/translation.py:130
+msgctxt ""
+msgid "Who are the 3 people you influenced the most?"
+msgstr "Who are the 3 people you influenced the most?"
+
+#. Translators: T0060
+#: projects/yearcompass_booklet_2015_2016/translation.py:132
+msgctxt ""
+msgid "What were you not able to accomplish?"
+msgstr "What were you not able to accomplish?"
+
+#. Translators: T0061
+#: projects/yearcompass_booklet_2015_2016/translation.py:134
+msgctxt ""
+msgid "What is the best thing you have discovered about yourself?"
+msgstr "What is the best thing you have discovered about yourself?"
+
+#. Translators: T0062
+#: projects/yearcompass_booklet_2015_2016/translation.py:136
+msgctxt ""
+msgid "What are you the most grateful for?"
+msgstr "What are you the most grateful for?"
+
+#. Translators: T0064
+#: projects/yearcompass_booklet_2015_2016/translation.py:140
+msgctxt ""
+msgid "The best moments"
+msgstr "The best moments"
+
+#. Translators: T0065
+#: projects/yearcompass_booklet_2015_2016/translation.py:142
+msgctxt ""
+msgid ""
+"Describe the nicest, most joyful and memorable moments of the last year. "
+"Draw them on this sheet. How did you feel? Who was there with you? What were"
+" you doing? What kind of smells do you remember?"
+msgstr ""
+"Describe the nicest, most joyful and memorable moments of the last year. "
+"Draw them on this sheet. How did you feel? Who was there with you? What were"
+" you doing? What kind of smells do you remember?"
+
+#. Translators: T0067
+#: projects/yearcompass_booklet_2015_2016/translation.py:146
+msgctxt ""
+msgid "My three greatest accomplishments"
+msgstr "My three greatest accomplishments"
+
+#. Translators: T0068
+#: projects/yearcompass_booklet_2015_2016/translation.py:148
+msgctxt ""
+msgid "List your three greatest accomplishments from last year here."
+msgstr "List your three greatest accomplishments from last year here."
+
+#. Translators: T0069
+#: projects/yearcompass_booklet_2015_2016/translation.py:150
+msgctxt ""
+msgid "What have you done to achieve these?"
+msgstr "What have you done to achieve these?"
+
+#. Translators: T0070
+#: projects/yearcompass_booklet_2015_2016/translation.py:152
+msgctxt ""
+msgid "Who helped you achieve these successes? How?"
+msgstr "Who helped you achieve these successes? How?"
+
+#. Translators: T0071
+#: projects/yearcompass_booklet_2015_2016/translation.py:154
+msgctxt ""
+msgid "My three biggest challenges"
+msgstr "My three biggest challenges"
+
+#. Translators: T0072
+#: projects/yearcompass_booklet_2015_2016/translation.py:156
+msgctxt ""
+msgid "List your three biggest challenges from last year here."
+msgstr "List your three biggest challenges from last year here."
+
+#. Translators: T0073
+#: projects/yearcompass_booklet_2015_2016/translation.py:158
+msgctxt ""
+msgid "Who or what helped you overcome these challenges?"
+msgstr "Who or what helped you overcome these challenges?"
+
+#. Translators: T0074
+#: projects/yearcompass_booklet_2015_2016/translation.py:160
+msgctxt ""
+msgid ""
+"What have you learned about yourself while overcoming these challenges?"
+msgstr ""
+"What have you learned about yourself while overcoming these challenges?"
+
+#. Translators: T0076
+#: projects/yearcompass_booklet_2015_2016/translation.py:164
+msgctxt ""
+msgid "Forgiveness"
+msgstr "Forgiveness"
+
+#. Translators: T0077
+#: projects/yearcompass_booklet_2015_2016/translation.py:166
+msgctxt ""
+msgid ""
+"Did anything happen during the past year that still need to be forgiven? A "
+"deed or words that made you feel bad? Or are you angry with yourself? Write "
+"it down here. Do good for yourself and forgive.*"
+msgstr ""
+"Did anything happen during the past year that still need to be forgiven? A "
+"deed or words that made you feel bad? Or are you angry with yourself? Write "
+"it down here. Do good for yourself and forgive.*"
+
+#. Translators: T0078
+#: projects/yearcompass_booklet_2015_2016/translation.py:168
+msgctxt ""
+msgid ""
+"* If you don't feel ready to forgive yet, write it down anyway. It can work "
+"wonders."
+msgstr ""
+"* If you don't feel ready to forgive yet, write it down anyway. It can work "
+"wonders."
+
+#. Translators: T0080
+#: projects/yearcompass_booklet_2015_2016/translation.py:172
+msgctxt ""
+msgid "Letting go"
+msgstr "Letting go"
+
+#. Translators: T0081
+#: projects/yearcompass_booklet_2015_2016/translation.py:174
+msgctxt ""
+msgid ""
+"What else do you need to say to seal up the year behind you? Wht are the "
+"thing you must let go before you can start your next year? Draw or write, "
+"then evaluate and let them all go."
+msgstr ""
+"What else do you need to say to seal up the year behind you? Wht are the "
+"thing you must let go before you can start your next year? Draw or write, "
+"then evaluate and let them all go."
+
+#. Translators: T0083
+#: projects/yearcompass_booklet_2015_2016/translation.py:178
+msgctxt ""
+msgid "The past year in 3 words"
+msgstr "The past year in 3 words"
+
+#. Translators: T0084
+#: projects/yearcompass_booklet_2015_2016/translation.py:180
+msgctxt ""
+msgid "Choose three words to define your past year."
+msgstr "Choose three words to define your past year."
+
+#. Translators: T0085
+#: projects/yearcompass_booklet_2015_2016/translation.py:182
+msgctxt ""
+msgid "The book of my past year"
+msgstr "The book of my past year"
+
+#. Translators: T0086
+#: projects/yearcompass_booklet_2015_2016/translation.py:184
+msgctxt ""
+msgid "A book was made about your past year*. Write down its title."
+msgstr "A book was made about your past year*. Write down its title."
+
+#. Translators: T0087
+#: projects/yearcompass_booklet_2015_2016/translation.py:186
+msgctxt ""
+msgid ""
+"* Apologies if we got it wrong and yours was made into a movie. Sorry about "
+"that."
+msgstr ""
+"* Apologies if we got it wrong and yours was made into a movie. Sorry about "
+"that."
+
+#. Translators: T0088
+#: projects/yearcompass_booklet_2015_2016/translation.py:188
+msgctxt ""
+msgid "Farewell to your last year"
+msgstr "Farewell to your last year"
+
+#. Translators: T0089
+#: projects/yearcompass_booklet_2015_2016/translation.py:190
+msgctxt ""
+msgid ""
+"If there is anything else left that you would like to write down, or there "
+"is anybody you would like to say goodbye to, do it now."
+msgstr ""
+"If there is anything else left that you would like to write down, or there "
+"is anybody you would like to say goodbye to, do it now."
+
+#. Translators: T0091
+#: projects/yearcompass_booklet_2015_2016/translation.py:194
+msgctxt ""
+msgid "You’re done with the past year :)"
+msgstr "You’re done with the past year :)"
+
+#. Translators: T0092
+#: projects/yearcompass_booklet_2015_2016/translation.py:196
+msgctxt ""
+msgid "You are done with the first part."
+msgstr "You are done with the first part."
+
+#. Translators: T0093
+#: projects/yearcompass_booklet_2015_2016/translation.py:198
+msgctxt ""
+msgid "Take a deep breath :)."
+msgstr "Take a deep breath :)."
+
+#. Translators: T0094
+#: projects/yearcompass_booklet_2015_2016/translation.py:200
+msgctxt ""
+msgid "Get some rest."
+msgstr "Get some rest."
+
+#. Translators: T0095
+#: projects/yearcompass_booklet_2015_2016/translation.py:202
+msgctxt ""
+msgid ""
+"If you want to tell others about what you did, take and share a photo before"
+" / after filling out the booklet."
+msgstr ""
+"If you want to tell others about what you did, take and share a photo before"
+" / after filling out the booklet."
+
+#. Translators: T0096
+#: projects/yearcompass_booklet_2015_2016/translation.py:204
+msgctxt ""
+msgid "Feel free to use these hashtags:"
+msgstr "Feel free to use these hashtags:"
+
+#. Translators: T0097
+#: projects/yearcompass_booklet_2015_2016/translation.py:206
+msgctxt ""
+msgid "#<yearcompass in your own language> #yearcompass"
+msgstr "#yearcompass"
+
+#. Translators: T0099
+#. Translators: T0101
+#. Translators: T0104
+#. Translators: T0119
+#. Translators: T0125
+#. Translators: T0133
+#. Translators: T0141
+#. Translators: T0149
+#. Translators: T0154
+#. Translators: T0163
+#: projects/yearcompass_booklet_2015_2016/translation.py:210
+#: projects/yearcompass_booklet_2015_2016/translation.py:214
+#: projects/yearcompass_booklet_2015_2016/translation.py:220
+#: projects/yearcompass_booklet_2015_2016/translation.py:250
+#: projects/yearcompass_booklet_2015_2016/translation.py:262
+#: projects/yearcompass_booklet_2015_2016/translation.py:278
+#: projects/yearcompass_booklet_2015_2016/translation.py:294
+#: projects/yearcompass_booklet_2015_2016/translation.py:310
+#: projects/yearcompass_booklet_2015_2016/translation.py:320
+#: projects/yearcompass_booklet_2015_2016/translation.py:338
+msgctxt ""
+msgid "The year ahead"
+msgstr "The year ahead"
+
+#. Translators: T0100
+#: projects/yearcompass_booklet_2015_2016/translation.py:212
+msgctxt ""
+msgid "2016"
+msgstr "2016"
+
+#. Translators: T0102
+#: projects/yearcompass_booklet_2015_2016/translation.py:216
+msgctxt ""
+msgid "Dare to dream big"
+msgstr "Dare to dream big"
+
+#. Translators: T0103
+#: projects/yearcompass_booklet_2015_2016/translation.py:218
+msgctxt ""
+msgid ""
+"What does the year ahead of you look like? What can happen in an ideal case?"
+" Why will it be great? Write, draw, let go of your expectations and dare to "
+"dream."
+msgstr ""
+"What does the year ahead of you look like? What can happen in an ideal case?"
+" Why will it be great? Write, draw, let go of your expectations and dare to "
+"dream."
+
+#. Translators: T0105
+#. Translators: T0120
+#: projects/yearcompass_booklet_2015_2016/translation.py:222
+#: projects/yearcompass_booklet_2015_2016/translation.py:252
+msgctxt ""
+msgid "This is what my next year is about"
+msgstr "This is what my next year is about"
+
+#. Translators: T0106
+#: projects/yearcompass_booklet_2015_2016/translation.py:224
+msgctxt ""
+msgid ""
+"Define the most decisive aspects of the year ahead in the following areas*. "
+"Which events will be the most important? Summarize briefly."
+msgstr ""
+"Define the most decisive aspects of the year ahead in the following areas*. "
+"Which events will be the most important? Summarize briefly."
+
+#. Translators: T0117
+#: projects/yearcompass_booklet_2015_2016/translation.py:246
+msgctxt ""
+msgid "* We still don't have exact definitions, mean what you need to."
+msgstr "* We still don't have exact definitions, mean what you need to."
+
+#. Translators: T0118
+#: projects/yearcompass_booklet_2015_2016/translation.py:248
+msgctxt ""
+msgid ""
+"** This is where you can list those goals you eventually want to achieve."
+msgstr ""
+"** This is where you can list those goals you eventually want to achieve."
+
+#. Translators: T0121
+#: projects/yearcompass_booklet_2015_2016/translation.py:254
+msgctxt ""
+msgid ""
+"Feel free to cut out this page, put it on the wall or on your fridge or fold"
+" to make"
+msgstr ""
+"Feel free to cut out this page, put it on the wall or on your fridge or fold"
+" to make"
+
+#. Translators: T0122
+#: projects/yearcompass_booklet_2015_2016/translation.py:256
+msgctxt ""
+msgid "it fit in your wallet."
+msgstr "it fit in your wallet."
+
+#. Translators: T0123
+#: projects/yearcompass_booklet_2015_2016/translation.py:258
+msgctxt ""
+msgid ""
+"The point is to have it somewhere where you can look at it occasionally, "
+"feel"
+msgstr ""
+"The point is to have it somewhere where you can look at it occasionally, "
+"feel"
+
+#. Translators: T0124
+#: projects/yearcompass_booklet_2015_2016/translation.py:260
+msgctxt ""
+msgid ""
+"happy about the goals you have achieved, and work on the ones that are still"
+" left."
+msgstr ""
+"happy about the goals you have achieved, and work on the ones that are still"
+" left."
+
+#. Translators: T0126
+#. Translators: T0134
+#: projects/yearcompass_booklet_2015_2016/translation.py:264
+#: projects/yearcompass_booklet_2015_2016/translation.py:280
+msgctxt ""
+msgid "Magical triplets for the year ahead"
+msgstr "Magical triplets for the year ahead"
+
+#. Translators: T0127
+#: projects/yearcompass_booklet_2015_2016/translation.py:266
+msgctxt ""
+msgid "These three things I will love about myself."
+msgstr "These three things I will love about myself."
+
+#. Translators: T0128
+#: projects/yearcompass_booklet_2015_2016/translation.py:268
+msgctxt ""
+msgid "I am ready to let go of these three things."
+msgstr "I am ready to let go of these three things."
+
+#. Translators: T0129
+#: projects/yearcompass_booklet_2015_2016/translation.py:270
+msgctxt ""
+msgid "These three things I want to achieve the most."
+msgstr "These three things I want to achieve the most."
+
+#. Translators: T0130
+#: projects/yearcompass_booklet_2015_2016/translation.py:272
+msgctxt ""
+msgid "These three people will be my pillars during rough times."
+msgstr "These three people will be my pillars during rough times."
+
+#. Translators: T0131
+#: projects/yearcompass_booklet_2015_2016/translation.py:274
+msgctxt ""
+msgid "These three things I will dare to discover."
+msgstr "These three things I will dare to discover."
+
+#. Translators: T0132
+#: projects/yearcompass_booklet_2015_2016/translation.py:276
+msgctxt ""
+msgid "These three things I will have the power to say no to."
+msgstr "These three things I will have the power to say no to."
+
+#. Translators: T0135
+#: projects/yearcompass_booklet_2015_2016/translation.py:282
+msgctxt ""
+msgid "These three things I will make my surroundings cozy with."
+msgstr "These three things I will make my surroundings cozy with."
+
+#. Translators: T0136
+#: projects/yearcompass_booklet_2015_2016/translation.py:284
+msgctxt ""
+msgid "These three things I will do every morning."
+msgstr "These three things I will do every morning."
+
+#. Translators: T0137
+#: projects/yearcompass_booklet_2015_2016/translation.py:286
+msgctxt ""
+msgid "These three things I will pamper myself regularly."
+msgstr "hese three things I will pamper myself regularly."
+
+#. Translators: T0138
+#: projects/yearcompass_booklet_2015_2016/translation.py:288
+msgctxt ""
+msgid "These three places I will visit."
+msgstr "These three places I will visit."
+
+#. Translators: T0139
+#: projects/yearcompass_booklet_2015_2016/translation.py:290
+msgctxt ""
+msgid "In these three ways will I connect more to my loved ones."
+msgstr "In these three ways will I connect more to my loved ones."
+
+#. Translators: T0140
+#: projects/yearcompass_booklet_2015_2016/translation.py:292
+msgctxt ""
+msgid "With these three presents will I reward my successes."
+msgstr "With these three presents will I reward my successes."
+
+#. Translators: T0142
+#: projects/yearcompass_booklet_2015_2016/translation.py:296
+msgctxt ""
+msgid "Six sentences about my next year"
+msgstr "Six sentences about my next year"
+
+#. Translators: T0143
+#: projects/yearcompass_booklet_2015_2016/translation.py:298
+msgctxt ""
+msgid "This year I will not procrastinate any more to..."
+msgstr "This year I will not procrastinate any more to..."
+
+#. Translators: T0144
+#: projects/yearcompass_booklet_2015_2016/translation.py:300
+msgctxt ""
+msgid "This year I will draw the most energy from..."
+msgstr "This year I will draw the most energy from..."
+
+#. Translators: T0145
+#: projects/yearcompass_booklet_2015_2016/translation.py:302
+msgctxt ""
+msgid "This year, I will be the bravest when..."
+msgstr "This year, I will be the bravest when..."
+
+#. Translators: T0146
+#: projects/yearcompass_booklet_2015_2016/translation.py:304
+msgctxt ""
+msgid "This year I will say yes when..."
+msgstr "This year I will say yes when..."
+
+#. Translators: T0147
+#: projects/yearcompass_booklet_2015_2016/translation.py:306
+msgctxt ""
+msgid "I advise myself for this year to..."
+msgstr "I advise myself for this year to..."
+
+#. Translators: T0148
+#: projects/yearcompass_booklet_2015_2016/translation.py:308
+msgctxt ""
+msgid "This year will be special for me because..."
+msgstr "This year will be special for me because..."
+
+#. Translators: T0150
+#: projects/yearcompass_booklet_2015_2016/translation.py:312
+msgctxt ""
+msgid "My word for the year ahead"
+msgstr "My word for the year ahead"
+
+#. Translators: T0151
+#: projects/yearcompass_booklet_2015_2016/translation.py:314
+msgctxt ""
+msgid ""
+"Choose yourself a word for the year ahead. This will give you the power not "
+"to give up your dreams, and you can rely on this word if you need some extra"
+" energy. This word defines the next year."
+msgstr ""
+"Choose yourself a word for the year ahead. This will give you the power not "
+"to give up your dreams, and you can rely on this word if you need some extra"
+" energy. This word defines the next year."
+
+#. Translators: T0152
+#: projects/yearcompass_booklet_2015_2016/translation.py:316
+msgctxt ""
+msgid "Secret wish"
+msgstr "Secret wish"
+
+#. Translators: T0153
+#: projects/yearcompass_booklet_2015_2016/translation.py:318
+msgctxt ""
+msgid "Unleash your mind. What is your secret wish for the next year?"
+msgstr "Unleash your mind. What is your secret wish for the next year?"
+
+#. Translators: T0155
+#: projects/yearcompass_booklet_2015_2016/translation.py:322
+msgctxt ""
+msgid "I believe anything is possible this year."
+msgstr "I believe anything is possible this year."
+
+#. Translators: T0156
+#: projects/yearcompass_booklet_2015_2016/translation.py:324
+msgctxt ""
+msgid "Date:"
+msgstr "Date:"
+
+#. Translators: T0157
+#: projects/yearcompass_booklet_2015_2016/translation.py:326
+msgctxt ""
+msgid "signature"
+msgstr "signature"
+
+#. Translators: T0158
+#: projects/yearcompass_booklet_2015_2016/translation.py:328
+msgctxt ""
+msgid "You’re done with your year planning :)."
+msgstr "You’re done with your year planning :)."
+
+#. Translators: T0159
+#: projects/yearcompass_booklet_2015_2016/translation.py:330
+msgctxt ""
+msgid "Two small notes at the end:"
+msgstr "Two small notes at the end:"
+
+#. Translators: T0160
+#: projects/yearcompass_booklet_2015_2016/translation.py:332
+msgctxt ""
+msgid "Don’t forget to tear out page 18 and put it somewhere visible."
+msgstr "Don’t forget to tear out page 18 and put it somewhere visible."
+
+#. Translators: T0161
+#: projects/yearcompass_booklet_2015_2016/translation.py:334
+msgctxt ""
+msgid ""
+"If you've taken a photo before / after filling out the booklet feel free to "
+"use these hashtags:"
+msgstr ""
+"If you've taken a photo before / after filling out the booklet feel free to "
+"use these hashtags:"
+
+#. Translators: T0162
+#: projects/yearcompass_booklet_2015_2016/translation.py:336
+msgctxt ""
+"Please replace \"<yearcompass in your own language>\" with the translation "
+"of yearcompass in your own language."
+msgid "#<yearcompass in your own language> #yearcompass"
+msgstr "#yearcompass"
+
+#. Translators: T0164
+#: projects/yearcompass_booklet_2015_2016/translation.py:340
+msgctxt ""
+msgid ""
+"Made by the volunteers of YearCompass and Invisible University "
+"International."
+msgstr ""
+"Made by the volunteers of YearCompass and Invisible University "
+"International."
+
+#. Translators: T0165
+#: projects/yearcompass_booklet_2015_2016/translation.py:342
+msgctxt ""
+"Please replace \"<your ISO 3166-2 country code>\" with the ISO 3166-2 coutry"
+" code of your country (https://en.wikipedia.org/wiki/ISO_3166-2)"
+msgid "http://yearcompass.com/<your ISO 3166-2 country code>"
+msgstr "http://yearcompass.com/"
+
+#. Translators: T0166
+#: projects/yearcompass_booklet_2015_2016/translation.py:344
+msgctxt ""
+msgid ""
+"If you’d like to give someboby a Year-planning booklet as a gift (and "
+"support our cause) follow this link:"
+msgstr ""
+"If you’d like to give someboby a Year-planning booklet as a gift (and "
+"support our cause) follow this link:"
+
+#. Translators: T0167
+#: projects/yearcompass_booklet_2015_2016/translation.py:346
+msgctxt ""
+msgid "http://yearcompass.com/shop"
+msgstr "http://yearcompass.com/shop"
+
+#. Translators: T0168
+#: projects/yearcompass_booklet_2015_2016/translation.py:348
+msgctxt ""
+msgid ""
+"We are native Hungarians and this workbook is a translation of our original "
+"work. Should you discover any typos,"
+msgstr ""
+"We are native Hungarians and this workbook is a translation of our original "
+"work. Should you discover any typos,"
+
+#. Translators: T0169
+#: projects/yearcompass_booklet_2015_2016/translation.py:350
+msgctxt ""
+msgid ""
+"mistakes in grammar or nonexistent expressions be kind and drop us a line "
+"via the above website."
+msgstr ""
+"mistakes in grammar or nonexistent expressions be kind and drop us a line "
+"via the above website."
+
+#. Translators: T0170
+#: projects/yearcompass_booklet_2015_2016/translation.py:352
+msgctxt ""
+msgid ""
+"This work is licensed under a Creative Commons Attribution-NonCommercial-"
+"ShareAlike 4.0 International license."
+msgstr ""
+"This work is licensed under a Creative Commons Attribution-NonCommercial-"
+"ShareAlike 4.0 International license."
+
+#~ msgid "T0001"
+#~ msgstr "T0001 English"
+
+#~ msgid "T0002"
+#~ msgstr "T0002 English"
+
+#~ msgid "T0003"
+#~ msgstr "T0003 English"
