@@ -4,8 +4,8 @@ App = React.createClass({
   /// TODO: translate page names
   pages: {
     "start": "Start",
-    "past": "Past Year",
-    "next": "The Year Ahead",
+    "past": "2015",
+    "next": "2016",
     "finish": "Finish"
   },
 
@@ -64,16 +64,14 @@ App = React.createClass({
       <div className="container">
 
         <div id="header">
-          <div className="content">
+          <div className="ribbon">
             <div className="language">
               Lang:
               { Object.keys(translations).map((t) =>
                 <a href="#" key={t} onMouseDown={this.selectLanguage.bind(this, t)}>{t} </a> )}
             </div>
             <div className="title">YearCompass</div>
-            <div className="user">
-              <LoginWrapper />
-            </div>
+            <div className="user"><LoginWrapper /></div>
           </div>
         </div>
 

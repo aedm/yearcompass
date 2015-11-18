@@ -4,7 +4,9 @@ PastYearPage = React.createClass({
   render() {
     return (
         <div>
-          <h1>2015 &ndash; { this.text("T0014") }</h1>
+          <div id="jumbotron">
+            <p>{ this.text("T0014") }</p>
+          </div>
 
           <div className="bookletpage">
 

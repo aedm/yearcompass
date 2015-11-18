@@ -4,7 +4,9 @@ NextYearPage = React.createClass({
   render() {
     return (<div>
           {/* The year ahead */}
-          <h1>2016 &ndash; { this.text("T0072") }</h1>
+          <div id="jumbotron">
+            <p>{ this.text("T0072") }</p>
+          </div>
 
           <div className="bookletpage">
             {/* Dare to dream big */}

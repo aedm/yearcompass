@@ -4,7 +4,9 @@ StartPage = React.createClass({
   render() {
     return (
         <div>
-          <h1><img src="ui/logo_transparent_black_340.png" className="logo" /></h1>
+          <div id="jumbotron">
+            <p><img src="ui/logo_transparent_white_340_shadow.png" className="logo" /></p>
+          </div>
 
           <div className="bookletpage">
             {/* What is this? */}

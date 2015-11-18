@@ -1,76 +1,124 @@
+$width: 650px;
+$question-focusborder: 1px;
+$question-padding: 8px;
+$question-border: 1px;
+
+$serif: 'Slabo 27px', serif;
+$sans: 'Roboto Condensed', sans-serif;
+
 body {
-  background-color: white;
+  background-color: #ffffff;
   margin: 0px;
   padding: 0px 0px 100px;
-  font-family: 'Slabo 27px', serif;
+  font-family: $serif;
   font-size: 18px;
 }
 
+// header at the top of page
 #header {
-  background-color: black;
-  box-shadow: 0px 0px 10px black;
+  box-shadow: 0px 0px 12px black;
   color: grey;
-  padding: 10px 10px 10px 10px;
+  padding: 10px 0px 10px 0px;
   font-size: 16px;
+  margin: 0px;
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  background-color: black;
+  z-index: 100;
+
+  // thin ribbon
+  div.ribbon {
+  max-width: $width;
+  margin: 0px auto;
+  padding: 0px 10px;
+
+    div.title {
+      float: left;
+      position: relative;
+    }
+
+    div.language {
+      position: relative;
+      float: right;
+    }
+
+    div.user {
+      text-align: center;
+    }
+  }
 }
 
-div.content {
-  max-width: 650px;
-  margin: auto;
-}
-
-div.title {
-  float: left;
-  position: relative;
-}
-
-div.language {
-  position: relative;
-  float: right;
-}
-
-div.user {
-  text-align: center;
-}
-
+// navigation elements
 #navigation {
-  max-width: 650px;
-  margin: 10px auto;
+  width: 100%;
+  margin: 20px 0px 0px;
   text-align: center;
-  padding: 0px;
+  padding: 0px 0px 0px;
+  position: absolute;
+
+  button {
+    background-color: transparent;
+    //box-shadow: 0px 2px 5px -3px #555;
+    border-width: 0px;
+    color: #eee;
+    padding: 5px 10px 4px;
+    border-radius: 3px;
+    margin: 0px 5px;
+    text-shadow: 0px 1px 1px #777;
+    font-family: $sans;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.05);
+    transition: background-color 0.15s linear;
+  }
+
+  button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  button.active {
+    background-color: rgba(120, 180, 200, 0.6);
+  }
 }
+
+// large ribbon on the top with a background image
+#jumbotron {
+  font-weight: 700;
+  margin: 40px 0px 40px;
+  text-align: center;
+  background-image: url("ui/E60WQOGUFR.jpg");
+  background-position: center center;
+  background-size: cover;
+  max-height: 100px;
+  padding: 0.1% 0px 12vw 0px;
+  color: white;
+
+  p {
+    color: white;
+    font-family: $sans;
+    text-shadow: 0px 2px 5px #888;
+    font-size: 8.0vw;
+    margin: 70px 0px 0px;
+    text-transform: uppercase;
+
+    img.logo {
+      width: 10vw;
+    }
+  }
+}
+
 
 div.bookletpage {
   text-align: left;
   margin: 0px auto;
-  max-width: 650px;
+  max-width: $width;
   padding: 0px 10px;
 }
 
 h1, h2, h3 {
-  font-family: 'Roboto Condensed', sans-serif;
-}
-
-h1 {
-  padding: 8% 0px 10% 0;
-  margin: 0px;
-  color: white;
-}
-
-h1 {
-  font-size: 60px;
-  font-weight: 700;
-  margin: 20px 0px 40px;
-  text-align: center;
-  text-shadow: 0px 2px 5px #888;
-  background-image: url("ui/E60WQOGUFR.jpg");
-  background-position: center center;
-  background-size: cover;
-}
-
-img.logo {
-  display: box;
-  width: 15%;
+  font-family: $sans;
 }
 
 h3 {
@@ -104,7 +152,7 @@ button.navbutton {
   color: white;
   font-size: 22px;
   border: 0px;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: $sans;
   border-radius: 100px;
   box-shadow: 0px 0px 15px #caf;
 }
@@ -115,16 +163,21 @@ div.navbutton {
 }
 
 textarea {
-  border: 1px solid #e4e4e4;
+  border: $question-border solid #e4e4e4;
   margin: 5px auto 15px;
   width: 100%;
   resize: none;
   font-family: 'Slabo 27px', serif;
   font-size: 16px;
   font-weight: 100;
-  padding: 8px;
+  padding: $question-padding;
   color: #77a;
   border-radius: 8px;
+}
+
+textarea:focus {
+  border-width: $question-border + $question-focusborder;
+  padding: $question-padding - $question-focusborder;
 }
 
 button.navbutton {
@@ -163,4 +216,21 @@ button.navbutton:hover {
 button.navbutton:active {
   position: relative;
   top: 1px;
+}
+
+#navigation button.active {
+//  background-color: #bada55;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover {
+  outline: 0px !important;
+  -webkit-appearance: none;
 }
