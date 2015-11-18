@@ -11,110 +11,110 @@ NextYearPage = React.createClass({
           <div className="bookletpage">
             {/* Dare to dream big */}
             <h3>{ this.text("T0073") }</h3>
-            { this.text("T0074") }
+            <p>{ this.text("T0074") }</p>
             <TextQuestion question="ahead-dreambig"/>
 
             {/* This is what my next year is about */}
             <h3>{ this.text("T0075") }</h3>
             <h4>{ this.text("T0076") }</h4>
-            { this.text("T0021") }
+            <p>{ this.text("T0021") }</p>
             <TextQuestion question="ahead-about-family"/>
-            { this.text("T0022") }
+            <p>{ this.text("T0022") }</p>
             <TextQuestion question="ahead-about-work"/>
-            { this.text("T0023") }
+            <p>{ this.text("T0023") }</p>
             <TextQuestion question="ahead-about-belongings"/>
-            { this.text("T0024") }
+            <p>{ this.text("T0024") }</p>
             <TextQuestion question="ahead-about-hobbies"/>
-            { this.text("T0025") }
+            <p>{ this.text("T0025") }</p>
             <TextQuestion question="ahead-about-friends"/>
-            { this.text("T0026") }
+            <p>{ this.text("T0026") }</p>
             <TextQuestion question="ahead-about-health"/>
-            { this.text("T0027") }
+            <p>{ this.text("T0027") }</p>
             <TextQuestion question="ahead-about-intellectual"/>
-            { this.text("T0028") }
+            <p>{ this.text("T0028") }</p>
             <TextQuestion question="ahead-about-emotional"/>
-            { this.text("T0029") }
+            <p>{ this.text("T0029") }</p>
             <TextQuestion question="ahead-about-finances"/>
-            { this.text("T0030") }
+            <p>{ this.text("T0030") }</p>
             <TextQuestion question="ahead-about-bucketlist"/>
             <p><i>{ this.text("T0077") }</i></p>
             <p><i>{ this.text("T0078") }</i></p>
 
             {/* The year ahead of me */}
             <h3>{ this.text("T0081") }</h3>
-            { this.text("T0082") }
+            <p>{ this.text("T0082") }</p>
             <TextQuestion question="ahead-calendar"/>
 
             {/* Magical tricola for the year ahead */}
             <h3>{ this.text("T0084") }</h3>
-            { this.text("T0085") }
+            <p>{ this.text("T0085") }</p>
             <TextQuestion question="ahead-triplets-lovemyself"/>
-            { this.text("T0086") }
+            <p>{ this.text("T0086") }</p>
             <TextQuestion question="ahead-triplets-letgo"/>
-            { this.text("T0087") }
+            <p>{ this.text("T0087") }</p>
             <TextQuestion question="ahead-triplets-achieve"/>
-            { this.text("T0088") }
+            <p>{ this.text("T0088") }</p>
             <TextQuestion question="ahead-triplets-pillars"/>
-            { this.text("T0089") }
+            <p>{ this.text("T0089") }</p>
             <TextQuestion question="ahead-triplets-discover"/>
-            { this.text("T0090") }
+            <p>{ this.text("T0090") }</p>
             <TextQuestion question="ahead-triplets-sayno"/>
-            { this.text("T0091") }
+            <p>{ this.text("T0091") }</p>
             <TextQuestion question="ahead-triplets-cozy"/>
-            { this.text("T0092") }
+            <p>{ this.text("T0092") }</p>
             <TextQuestion question="ahead-triplets-morning"/>
-            { this.text("T0093") }
+            <p>{ this.text("T0093") }</p>
             <TextQuestion question="ahead-triplets-pamper"/>
-            { this.text("T0094") }
+            <p>{ this.text("T0094") }</p>
             <TextQuestion question="ahead-triplets-visit"/>
-            { this.text("T0095") }
+            <p>{ this.text("T0095") }</p>
             <TextQuestion question="ahead-triplets-connect"/>
-            { this.text("T0096") }
+            <p>{ this.text("T0096") }</p>
             <TextQuestion question="ahead-triplets-reward"/>
 
             {/* 6 sentences about my next year */}
             <h3>{ this.text("T0097") }</h3>
-            { this.text("T0098") }
+            <p>{ this.text("T0098") }</p>
             <TextQuestion question="ahead-6sentences-finally"/>
-            { this.text("T0099") }
+            <p>{ this.text("T0099") }</p>
             <TextQuestion question="ahead-6sentences-bravest"/>
-            { this.text("T0100") }
+            <p>{ this.text("T0100") }</p>
             <TextQuestion question="ahead-6sentences-advise"/>
-            { this.text("T0101") }
+            <p>{ this.text("T0101") }</p>
             <TextQuestion question="ahead-6sentences-habit"/>
-            { this.text("T0102") }
+            <p>{ this.text("T0102") }</p>
             <TextQuestion question="ahead-6sentences-procrastinate"/>
-            { this.text("T0103") }
+            <p>{ this.text("T0103") }</p>
             <TextQuestion question="ahead-6sentences-energy"/>
 
             {/* 6 more sentences about my next year */}
             <h3>{ this.text("T0104") }</h3>
-            { this.text("T0105") }
+            <p>{ this.text("T0105") }</p>
             <TextQuestion question="ahead-6sentences-dream"/>
-            { this.text("T0106") }
+            <p>{ this.text("T0106") }</p>
             <TextQuestion question="ahead-6sentences-plan"/>
-            { this.text("T0107") }
+            <p>{ this.text("T0107") }</p>
             <TextQuestion question="ahead-6sentences-feeling"/>
-            { this.text("T0108") }
+            <p>{ this.text("T0108") }</p>
             <TextQuestion question="ahead-6sentences-sayno"/>
-            { this.text("T0109") }
+            <p>{ this.text("T0109") }</p>
             <TextQuestion question="ahead-6sentences-sayyes"/>
-            { this.text("T0110") }
+            <p>{ this.text("T0110") }</p>
             <TextQuestion question="ahead-6sentences-special"/>
 
             {/* 30 day challenge */}
             <h3>{ this.text("T0111") }</h3>
-            { this.text("T0129") }
+            <p>{ this.text("T0129") }</p>
             <TextQuestion question="ahead-30day"/>
 
             {/* My word for the year ahead */}
             <h3>{ this.text("T0130") }</h3>
-            { this.text("T0131") }
+            <p>{ this.text("T0131") }</p>
             <TextQuestion question="ahead-myword"/>
 
             {/* Secret wish */}
             <h3>{ this.text("T0132") }</h3>
-            { this.text("T0133") }
+            <p>{ this.text("T0133") }</p>
             <TextQuestion question="ahead-secretwish"/>
 
             {/* I believe anything is possible this year. */}
