@@ -69,8 +69,8 @@ TextQuestionCore = React.createClass({
 
   render() {
     return (
-      <div className="container">
-        <textarea type="text" ref="answer" onChange={this.onChange} value={this.state.value} />
+      <div className="answer">
+        <textarea ref="answer" onChange={this.onChange} value={this.state.value} />
       </div>
     );
   }

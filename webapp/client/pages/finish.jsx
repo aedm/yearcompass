@@ -10,14 +10,14 @@ FinishPage = React.createClass({
           <div className="bookletpage">
 
             {/* You’re done with your year planning :). */}
-            <h3>{ this.text("T0137") }</h3>
-            <p>{ this.text("T00138") }</p>
-            <p>{ this.text("T00139") }</p>
-            <p>{ this.text("T00140") }</p>
+            <header>{ this.text("T0137") }</header>
+            <p>{ this.text("T0138") }</p>
+            <p>{ this.text("T0139") }</p>
+            <p>{ this.text("T0140") }</p>
             <p>#yearcompass #yearbehind #yearplanning #yearahead</p>
 
-            <p><i>{ this.text("T0141") }</i></p>
-            <p><i>{ this.text("T0142") }</i></p>
+            <footer>{ this.text("T0141") }</footer>
+            <footer>{ this.text("T0142") }</footer>
 
           </div>
         </div>);

@@ -10,24 +10,26 @@ StartPage = React.createClass({
 
           <div className="bookletpage">
             {/* What is this? */}
-            <h3>{ this.text("T0003") }</h3>
+            <header>{ this.text("T0003") }</header>
             <p>{ this.text("T0004") }</p>
 
             {/* Why is this good for me? */}
-            <h3>{ this.text("T0005") }</h3>
+            <header>{ this.text("T0005") }</header>
             <p>{ this.text("T0006") }</p>
 
             {/* What do I need? */}
-            <h3>{ this.text("T0007") }</h3>
-            <h4>{ this.text("T0008") }</h4>
-            <p>{ this.text("T0009") }</p>
-            <h4>{ this.text("T0010") }</h4>
-            <p>{ this.text("T0011") }</p>
+            <header>{ this.text("T0007") }</header>
+            <p>{ this.text("T0008") }</p>
+            <label>{ this.text("T0009") }</label>
+            <p>{ this.text("T0010") }</p>
+            <label>{ this.text("T0011") }</label>
 
             {/* Get ready */}
-            <h3>{ this.text("T0013") }</h3>
+            <header>{ this.text("T0013") }</header>
 
-            <button className="navbutton" onClick={this.props.onTurn}>Start</button>
+            <div className="navbutton">
+              <button onClick={this.props.onTurn}>Start</button>
+            </div>
           </div>
         </div>);
   }

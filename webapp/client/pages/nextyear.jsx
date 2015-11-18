@@ -10,43 +10,43 @@ NextYearPage = React.createClass({
 
           <div className="bookletpage">
             {/* Dare to dream big */}
-            <h3>{ this.text("T0073") }</h3>
+            <header>{ this.text("T0073") }</header>
             <p>{ this.text("T0074") }</p>
             <TextQuestion question="ahead-dreambig"/>
 
             {/* This is what my next year is about */}
-            <h3>{ this.text("T0075") }</h3>
-            <h4>{ this.text("T0076") }</h4>
-            <p>{ this.text("T0021") }</p>
+            <header>{ this.text("T0075") }</header>
+            <p>{ this.text("T0076") }</p>
+            <label>{ this.text("T0021") }</label>
             <TextQuestion question="ahead-about-family"/>
-            <p>{ this.text("T0022") }</p>
+            <label>{ this.text("T0022") }</label>
             <TextQuestion question="ahead-about-work"/>
-            <p>{ this.text("T0023") }</p>
+            <label>{ this.text("T0023") }</label>
             <TextQuestion question="ahead-about-belongings"/>
-            <p>{ this.text("T0024") }</p>
+            <label>{ this.text("T0024") }</label>
             <TextQuestion question="ahead-about-hobbies"/>
-            <p>{ this.text("T0025") }</p>
+            <label>{ this.text("T0025") }</label>
             <TextQuestion question="ahead-about-friends"/>
-            <p>{ this.text("T0026") }</p>
+            <label>{ this.text("T0026") }</label>
             <TextQuestion question="ahead-about-health"/>
-            <p>{ this.text("T0027") }</p>
+            <label>{ this.text("T0027") }</label>
             <TextQuestion question="ahead-about-intellectual"/>
-            <p>{ this.text("T0028") }</p>
+            <label>{ this.text("T0028") }</label>
             <TextQuestion question="ahead-about-emotional"/>
-            <p>{ this.text("T0029") }</p>
+            <label>{ this.text("T0029") }</label>
             <TextQuestion question="ahead-about-finances"/>
-            <p>{ this.text("T0030") }</p>
+            <label>{ this.text("T0030") }</label>
             <TextQuestion question="ahead-about-bucketlist"/>
-            <p><i>{ this.text("T0077") }</i></p>
-            <p><i>{ this.text("T0078") }</i></p>
+            <footer>{ this.text("T0077") }</footer>
+            <footer>{ this.text("T0078") }</footer>
 
             {/* The year ahead of me */}
-            <h3>{ this.text("T0081") }</h3>
+            <header>{ this.text("T0081") }</header>
             <p>{ this.text("T0082") }</p>
             <TextQuestion question="ahead-calendar"/>
 
             {/* Magical tricola for the year ahead */}
-            <h3>{ this.text("T0084") }</h3>
+            <header>{ this.text("T0084") }</header>
             <p>{ this.text("T0085") }</p>
             <TextQuestion question="ahead-triplets-lovemyself"/>
             <p>{ this.text("T0086") }</p>
@@ -73,7 +73,7 @@ NextYearPage = React.createClass({
             <TextQuestion question="ahead-triplets-reward"/>
 
             {/* 6 sentences about my next year */}
-            <h3>{ this.text("T0097") }</h3>
+            <header>{ this.text("T0097") }</header>
             <p>{ this.text("T0098") }</p>
             <TextQuestion question="ahead-6sentences-finally"/>
             <p>{ this.text("T0099") }</p>
@@ -88,7 +88,7 @@ NextYearPage = React.createClass({
             <TextQuestion question="ahead-6sentences-energy"/>
 
             {/* 6 more sentences about my next year */}
-            <h3>{ this.text("T0104") }</h3>
+            <header>{ this.text("T0104") }</header>
             <p>{ this.text("T0105") }</p>
             <TextQuestion question="ahead-6sentences-dream"/>
             <p>{ this.text("T0106") }</p>
@@ -103,25 +103,26 @@ NextYearPage = React.createClass({
             <TextQuestion question="ahead-6sentences-special"/>
 
             {/* 30 day challenge */}
-            <h3>{ this.text("T0111") }</h3>
+            <header>{ this.text("T0111") }</header>
             <p>{ this.text("T0129") }</p>
             <TextQuestion question="ahead-30day"/>
 
             {/* My word for the year ahead */}
-            <h3>{ this.text("T0130") }</h3>
+            <header>{ this.text("T0130") }</header>
             <p>{ this.text("T0131") }</p>
             <TextQuestion question="ahead-myword"/>
 
             {/* Secret wish */}
-            <h3>{ this.text("T0132") }</h3>
+            <header>{ this.text("T0132") }</header>
             <p>{ this.text("T0133") }</p>
             <TextQuestion question="ahead-secretwish"/>
 
             {/* I believe anything is possible this year. */}
-            <h4><input type="checkbox"/>{ this.text("T0134") }</h4>
+            <p><input type="checkbox"/>{ this.text("T0134") }</p>
 
-            <button className="navbutton" onClick={this.props.onTurn}>Finish</button>
-
+            <div className="navbutton">
+              <button onClick={this.props.onTurn}>Finish</button>
+            </div>
           </div>
         </div>
     );

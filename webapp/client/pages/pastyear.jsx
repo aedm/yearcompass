@@ -11,40 +11,43 @@ PastYearPage = React.createClass({
           <div className="bookletpage">
 
             {/* Going through your calendar */}
-            <h3>{ this.text("T0015") }</h3>
+            <header>{ this.text("T0015") }</header>
             <p>{ this.text("T0016") }</p>
             <TextQuestion question="past-flyover"/>
 
 
             {/* This is what my past year was about */}
-            <h3>{ this.text("T0017") }</h3>
-            <h4>{ this.text("T0018") }</h4>
-            <p>{ this.text("T0021") }</p>
+            <header>{ this.text("T0017") }</header>
+            <p>{ this.text("T0018") }</p>
+
+            <label>{ this.text("T0021") }</label>
             <TextQuestion question="past-about-family"/>
-            <p>{ this.text("T0022") }</p>
+            <label>{ this.text("T0022") }</label>
             <TextQuestion question="past-about-work"/>
-            <p>{ this.text("T0023") }</p>
+            <label>{ this.text("T0023") }</label>
             <TextQuestion question="past-about-belongings"/>
-            <p>{ this.text("T0024") }</p>
+            <label>{ this.text("T0024") }</label>
             <TextQuestion question="past-about-hobbies"/>
-            <p>{ this.text("T0025") }</p>
+            <label>{ this.text("T0025") }</label>
             <TextQuestion question="past-about-friends"/>
-            <p>{ this.text("T0026") }</p>
+            <label>{ this.text("T0026") }</label>
             <TextQuestion question="past-about-health"/>
-            <p>{ this.text("T0027") }</p>
+            <label>{ this.text("T0027") }</label>
             <TextQuestion question="past-about-intellectual"/>
-            <p>{ this.text("T0028") }</p>
+            <label>{ this.text("T0028") }</label>
             <TextQuestion question="past-about-emotional"/>
-            <p>{ this.text("T0029") }</p>
+            <label>{ this.text("T0029") }</label>
             <TextQuestion question="past-about-finances"/>
-            <p>{ this.text("T0030") }</p>
+            <label>{ this.text("T0030") }</label>
             <TextQuestion question="past-about-bucketlist"/>
-            <p><i>{ this.text("T0019") }</i></p>
-            <p><i>{ this.text("T0020") }</i></p>
+
+            <footer>{ this.text("T0019") }</footer>
+            <footer>{ this.text("T0020") }</footer>
 
 
             {/* 6 sentences about my past year */}
-            <h3>{ this.text("T0031") }</h3>
+            <header>{ this.text("T0031") }</header>
+
             <p>{ this.text("T0032") }</p>
             <TextQuestion question="past-sixsenteces-decision"/>
             <p>{ this.text("T0033") }</p>
@@ -59,7 +62,8 @@ PastYearPage = React.createClass({
             <TextQuestion question="past-sixsenteces-completed"/>
 
             {/* 6 questions about my past year */}
-            <h3>{ this.text("T0038") }</h3>
+            <header>{ this.text("T0038") }</header>
+
             <p>{ this.text("T0039") }</p>
             <TextQuestion question="past-sixquestions-proud"/>
             <p>{ this.text("T0040") }</p>
@@ -74,12 +78,12 @@ PastYearPage = React.createClass({
             <TextQuestion question="past-sixquestions-grateful"/>
 
             {/* Best moments */}
-            <h3>{ this.text("T0045") }</h3>
+            <header>{ this.text("T0045") }</header>
             <p>{ this.text("T0046") }</p>
             <TextQuestion question="past-bestmoments"/>
 
             {/* My three greatest accomplishments */}
-            <h3>{ this.text("T0047") }</h3>
+            <header>{ this.text("T0047") }</header>
             <p>{ this.text("T0048") }</p>
             <TextQuestion question="past-3accomplish-success"/>
             <p>{ this.text("T0049") }</p>
@@ -88,7 +92,7 @@ PastYearPage = React.createClass({
             <TextQuestion question="past-3accomplish-who"/>
 
             {/* My three biggest challenges */}
-            <h3>{ this.text("T0051") }</h3>
+            <header>{ this.text("T0051") }</header>
             <p>{ this.text("T0052") }</p>
             <TextQuestion question="past-3challenge-list"/>
             <p>{ this.text("T0053") }</p>
@@ -97,41 +101,42 @@ PastYearPage = React.createClass({
             <TextQuestion question="past-3challenge-learned"/>
 
             {/* Forgiveness */}
-            <h3>{ this.text("T0055") }</h3>
+            <header>{ this.text("T0055") }</header>
             <p>{ this.text("T0056") }</p>
             <TextQuestion question="past-forgive"/>
-            <p><i>{ this.text("T0057") }</i></p>
+            <footer>{ this.text("T0057") }</footer>
 
             {/* Letting go */}
-            <h3>{ this.text("T0058") }</h3>
+            <header>{ this.text("T0058") }</header>
             <p>{ this.text("T0059") }</p>
             <TextQuestion question="past-lettinggo"/>
 
             {/* The past year in 3 words */}
-            <h3>{ this.text("T0060") }</h3>
+            <header>{ this.text("T0060") }</header>
             <p>{ this.text("T0061") }</p>
             <TextQuestion question="past-3words"/>
 
             {/* The book of my past year */}
-            <h3>{ this.text("T0062") }</h3>
+            <header>{ this.text("T0062") }</header>
             <p>{ this.text("T0063") }</p>
             <TextQuestion question="past-book"/>
-            <p><i>{ this.text("T0064") }</i></p>
+            <footer>{ this.text("T0064") }</footer>
 
             {/* Farewell to your last year */}
-            <h3>{ this.text("T0065") }</h3>
+            <header>{ this.text("T0065") }</header>
             <p>{ this.text("T0066") }</p>
             <TextQuestion question="past-farewell"/>
 
             {/* You’re done with the past year :) */}
-            <h3>{ this.text("T0067") }</h3>
+            <header>{ this.text("T0067") }</header>
             <p>{ this.text("T0068") }</p>
             <p>{ this.text("T0069") }</p>
             <p>{ this.text("T0070") }</p>
             <p>{ this.text("T0071") }</p>
 
-            <button className="navbutton" onClick={this.props.onTurn}>Next Year</button>
-
+            <div className="navbutton">
+              <button className="navbutton" onClick={this.props.onTurn}>Next Year</button>
+            </div>
           </div>
         </div>);
   }
