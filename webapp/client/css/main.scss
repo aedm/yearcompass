@@ -1,4 +1,4 @@
-$width: 650px;
+$width: 750px;
 $question-focusborder: 1px;
 $question-padding: 8px;
 $question-border: 1px;
@@ -6,10 +6,21 @@ $question-border: 1px;
 $serif: 'Slabo 27px', serif;
 $sans: 'Roboto Condensed', sans-serif;
 
+$jumboFont: 11;
+$jumboFontSmall: $jumboFont * 1vw;
+$jumboFontNormal: $jumboFont * $width / 100;
+
+$jumboImageScale: 0.99;
+$jumboImageSmall: $jumboFontSmall * $jumboImageScale;
+$jumboImageNormal: $jumboFontNormal * $jumboImageScale;
+
+$smallScreen: "screen and (max-width : " + $width + ")";
+$normalScreen: "screen and (min-width : " + ($width + 1px) + ")";
+
 body {
   background-color: #ffffff;
   margin: 0px;
-  padding: 0px 0px 100px;
+  padding: 0px 0px 0px;
   font-family: $serif;
   font-size: 18px;
 }
@@ -52,10 +63,11 @@ body {
 // navigation elements
 #navigation {
   width: 100%;
-  margin: 20px 0px 0px;
+  margin: 0px 0px 0px;
   text-align: center;
   padding: 0px 0px 0px;
   position: absolute;
+  top: 60px;
 
   button {
     background-color: transparent;
@@ -86,26 +98,37 @@ body {
 // large ribbon on the top with a background image
 #jumbotron {
   font-weight: 700;
-  margin: 40px 0px 40px;
+  margin: 0px 0px 0px;
   text-align: center;
   background-image: url("ui/E60WQOGUFR.jpg");
   background-position: center center;
   background-size: cover;
-  max-height: 100px;
-  padding: 0.1% 0px 12vw 0px;
+  padding: 74px 0px 0px 0px;
   color: white;
 
   p {
     color: white;
     font-family: $sans;
-    text-shadow: 0px 2px 5px #888;
-    font-size: 8.0vw;
-    margin: 70px 0px 0px;
+    text-shadow: 0px 2px 6px #888;
+    margin: 0px 0px 0px;
     text-transform: uppercase;
+    padding: 60px 10px;
 
-    img.logo {
-      width: 10vw;
+    @media #{$smallScreen} {
+      font-size: $jumboFontSmall;
+      img { height: $jumboImageSmall; }
     }
+    @media #{$normalScreen} {
+      font-size: $jumboFontNormal;
+      img { height: $jumboImageNormal; }
+    }
+  }
+
+  p.logo {
+    background-image: url("ui/logo_transparent_white_340_shadow.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100px;
   }
 }
 
@@ -140,7 +163,7 @@ p {
   margin: 10px 0px 30px;
   color: #555;
   font-size: 18px;
-  white-space: pre-wrap;
+  //white-space: pre-wrap;
 }
 
 button.navbutton {
@@ -216,10 +239,6 @@ button.navbutton:hover {
 button.navbutton:active {
   position: relative;
   top: 1px;
-}
-
-#navigation button.active {
-//  background-color: #bada55;
 }
 
 textarea:hover,

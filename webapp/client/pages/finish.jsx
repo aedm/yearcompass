@@ -5,7 +5,7 @@ FinishPage = React.createClass({
     return (
         <div>
           <div id="jumbotron">
-            <p><img src="ui/logo_transparent_white_340_shadow.png" className="logo"/></p>
+            <p className="logo">&nbsp;</p>
           </div>
           <div className="bookletpage">
 
