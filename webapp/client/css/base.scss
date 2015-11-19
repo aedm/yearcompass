@@ -1,0 +1,15 @@
+$width: 700px;
+$question-focusborder: 1px;
+$question-padding: 8px;
+$question-border: 1px;
+
+$serif: 'Slabo 27px', serif;
+$sans: 'Roboto Condensed', sans-serif;
+
+$jumboFont: 11;
+$jumboFontSmall: $jumboFont * 1vw;
+$jumboFontNormal: $jumboFont * $width / 100;
+
+$question-color: #555;
+$smallScreen: "screen and (max-width : " + $width + ")";
+$normalScreen: "screen and (min-width : " + ($width + 1px) + ")";

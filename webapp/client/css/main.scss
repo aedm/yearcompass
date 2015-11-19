@@ -1,59 +1,42 @@
-$width: 650px;
-$question-focusborder: 1px;
-$question-padding: 8px;
-$question-border: 1px;
-
-$serif: 'Slabo 27px', serif;
-$sans: 'Roboto Condensed', sans-serif;
-
-$jumboFont: 11;
-$jumboFontSmall: $jumboFont * 1vw;
-$jumboFontNormal: $jumboFont * $width / 100;
-
-$question-color: #555;
-$smallScreen: "screen and (max-width : " + $width + ")";
-$normalScreen: "screen and (min-width : " + ($width + 1px) + ")";
+@import 'base.scss';
 
 body {
   background-color: white;
   margin: 0px;
   padding: 0px 0px 0px;
-  font-family: $serif;
-  font-size: 18px;
 }
 
 // header at the top of page
 #header {
-  box-shadow: 0px 0px 12px black;
-  color: grey;
-  padding: 10px 0px 10px 0px;
-  font-size: 16px;
-  margin: 0px;
-  position: absolute;
-  width: 100%;
-  top: 0px;
-  background-color: black;
+  box-shadow: 0px 0px 12px white;
+  color: #ddd;
+  padding: 0px 0px 0px 0px;
+  font-size: 20px;
+  margin: 0px auto;
+  max-width: 1100px;
+  background-color: white;
   z-index: 100;
+  height: 80px;
 
-  // thin ribbon
-  div.ribbon {
-    max-width: $width;
-    margin: 0px auto;
-    padding: 0px 10px;
+  div.title {
+    float: left;
+    position: relative;
+    top: 18px;
+    left: 10px;
 
-    div.title {
-      float: left;
-      position: relative;
+    img {
+      width: 183px;
     }
+  }
 
-    div.language {
-      position: relative;
-      float: right;
-    }
-
-    div.user {
-      text-align: center;
-    }
+  div.menu {
+    font-family: $serif;
+    font-size: 16px;
+    top: 30px;
+    right: 10px;
+    position: relative;
+    float: right;
+    color: black;
   }
 }
 
@@ -64,7 +47,7 @@ body {
   text-align: center;
   padding: 0px 0px 0px;
   position: absolute;
-  top: 60px;
+  top: 110px;
 
   button {
     background-color: transparent;
@@ -100,7 +83,7 @@ body {
   background-image: url("ui/E60WQOGUFR.jpg");
   background-position: center center;
   background-size: cover;
-  padding: 74px 0px 0px 0px;
+  padding: 30px 0px 0px 0px;
   color: white;
 
   p {
@@ -124,74 +107,6 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100px;
-  }
-}
-
-div.bookletpage {
-  text-align: left;
-  margin: 0px auto;
-  max-width: $width;
-  padding: 0px 10px;
-
-  header {
-    font-family: $sans;
-    font-weight: 400;
-    font-size: 26px;
-    margin: 40px 0px 0px 0px;
-    color: black;
-  }
-
-  p, label {
-    font-family: $serif;
-    padding: 0px;
-    margin: 15px 0px 0px 10px;
-    color: $question-color;
-    font-size: 18px;
-    display: block;
-  }
-
-  /*label {
-    font-family: $serif;
-    margin: 15px 0px 0px 0px;
-    font-weight: 400;
-    font-size: 16px;
-    font-style: italic;
-    color: $question-color;
-    padding: 0px 0px 0px 10px;
-    display: block;
-  }*/
-
-  footer {
-    font-family: $serif;
-    margin: 5px 0px 0px 0px;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 14px;
-    color: lighten($question-color, 20);
-    padding: 0px 0px 0px 10px;
-    display: block;
-  }
-
-  div.answer {
-    margin: 10px 10px 20px;
-  }
-
-  textarea {
-    border: $question-border solid #e4e4e4;
-    width: 100%;
-    resize: none;
-    font-family: 'Slabo 27px', serif;
-    font-size: 16px;
-    font-weight: 100;
-    padding: $question-padding $question-padding;
-    color: #77a;
-    border-radius: 6px;
-    box-sizing: border-box;
-  }
-
-  textarea:focus {
-    border-width: $question-border + $question-focusborder;
-    padding: $question-padding - $question-focusborder;
   }
 }
 
@@ -221,13 +136,7 @@ div.navbutton {
   }
 
   button:hover {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #408c99), color-stop(1, #599bb3));
-    background: -moz-linear-gradient(top, #408c99 5%, #599bb3 100%);
-    background: -webkit-linear-gradient(top, #408c99 5%, #599bb3 100%);
-    background: -o-linear-gradient(top, #408c99 5%, #599bb3 100%);
-    background: -ms-linear-gradient(top, #408c99 5%, #599bb3 100%);
     background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#408c99', endColorstr='#599bb3', GradientType=0);
     background-color: #408c99;
   }
 
@@ -237,15 +146,3 @@ div.navbutton {
   }
 }
 
-textarea:hover,
-input:hover,
-textarea:active,
-input:active,
-textarea:focus,
-input:focus,
-button:focus,
-button:active,
-button:hover {
-  outline: 0px !important;
-  -webkit-appearance: none;
-}

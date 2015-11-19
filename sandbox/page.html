@@ -1,6 +1,8 @@
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" class="__meteor-css__" href="main.css">
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="booklet.css">
 
   <title>yearcompass</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,71 +17,64 @@
 <div id="app">
   <div class="container">
     <div id="header">
-      <div class="ribbon">
-        <div class="language"><span>Lang:</span><a
-            href="#"><span
-        >en</span><span> </span></a><a
-            href="#"><span
-        >hr</span><span> </span></a><a
-            href="#"><span
-        >hu</span><span> </span></a>
-        </div>
-        <div class="title">YearCompass</div>
-        <div class="user"><span><div
-            id="login-buttons" class="login-buttons-dropdown-align-">
 
-          <div class="login-link-and-dropdown-list">
-            <a class="login-link-text" id="login-name-link">
-              aaa ▾
-            </a>
-
-          </div>
-
-        </div></span></div>
+      <div class="title">
+        <a href=""><img src="ui/logotext_small_black.png" alt="YearCompass"/></a>
       </div>
+
+      <div class="menu">
+        <span>Lang:</span>
+        <a href="#">
+          <span>en</span>
+          <span></span>
+        </a><a href="#">
+
+          <span>hr</span>
+          <span></span>
+        </a><a href="#">
+          <span>hu</span>
+          <span></span>
+        </a>
+      </div>
+
     </div>
     <div id="navigation">
       <button class="active">Start</button>
-      <button class="">Past Year</button>
-      <button class="">The Year Ahead</button>
+      <button class="">2015</button>
+      <button class="">2016</button>
       <button class="">Finish</button>
     </div>
     <div class="booklet">
       <div>
         <div id="jumbotron">
-          <p><img src="ui/logo_transparent_white_340_shadow.png" class="logo"
-          ></p>
+          <p class="logo">&nbsp;</p>
         </div>
         <div class="bookletpage">
-          <h3>What is this?</h3>
-          <p>This booklet will help you look back over the past year and
-            to plan the year ahead of you.
+          <header>What is this?</header>
+          <p>This booklet will help you look back over the past year and to plan the year ahead of
+            you.
           </p>
-          <h3>Why is this good for me?</h3>
-          <p>Planning your year is a good habit. It helps you identify
-            your successes and sorrows and will help you realize how much can happen just in a year.
-            By learning from the past you can plan your future so that you don't repeat the same
-            patterns and can feel in control of your own life.
+          <header>Why is this good for me?</header>
+          <p>Planning your year is a good habit. It helps you identify your successes and sorrows
+            and will help you realize how much can happen just in a year. By learning from the past
+            you can plan your future so that you don't repeat the same patterns and can feel in
+            control of your own life.
           </p>
-          <h3>What do I need?</h3>
-          <h4>1st version (lone wolf version)</h4>
-          <p>- at least 1 hour of uninterrupted time
-            - a calendar of the past year
-            - a printed version of this workbook
-            - honesty and openness
-            - a selection of your favorite pens
-          </p>
-          <h4>2nd version (group version)</h4>
-          <p>- an inspirative group of people (2-10 persons)
-            - at least 2 hours of creative time
-          </p>
-          <h3>Arrive.
-            Put on some relaxing music.
-            Pour yourself a hot beverage.
-            Let go all of your expectations.
-            Start when ready.
-          </h3>
-          <button class="navbutton">Start</button>
+          <header>What do I need?</header>
+          <p>1st version (lone wolf version)</p>
+          <label>- at least 1 hour of uninterrupted time - a calendar of the past year - a printed
+            version of this workbook - honesty and openness - a selection of your favorite
+            pens</label>
+
+          <p>2nd version (group version)</p>
+          <label>- an inspirative group of people (2-10 persons) - at least 2 hours of creative
+            time</label>
+          <header>Arrive. Put on some relaxing music. Pour yourself a hot beverage. Let go all of
+            your expectations. Start when ready.
+          </header>
+          <div class="navbutton">
+            <button>Start</button>
+          </div>
         </div>
       </div>
     </div>

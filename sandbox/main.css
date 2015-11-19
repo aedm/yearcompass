@@ -1,33 +1,33 @@
 body {
   background-color: white;
   margin: 0px;
-  padding: 0px 0px 0px;
-  font-family: 'Slabo 27px', serif;
-  font-size: 18px; }
+  padding: 0px 0px 0px; }
 
 #header {
-  box-shadow: 0px 0px 12px black;
-  color: grey;
-  padding: 10px 0px 10px 0px;
-  font-size: 16px;
-  margin: 0px;
-  position: absolute;
-  width: 100%;
-  top: 0px;
-  background-color: black;
-  z-index: 100; }
-  #header div.ribbon {
-    max-width: 650px;
-    margin: 0px auto;
-    padding: 0px 10px; }
-    #header div.ribbon div.title {
-      float: left;
-      position: relative; }
-    #header div.ribbon div.language {
-      position: relative;
-      float: right; }
-    #header div.ribbon div.user {
-      text-align: center; }
+  box-shadow: 0px 0px 12px white;
+  color: #ddd;
+  padding: 0px 0px 0px 0px;
+  font-size: 20px;
+  margin: 0px auto;
+  max-width: 1100px;
+  background-color: white;
+  z-index: 100;
+  height: 80px; }
+  #header div.title {
+    float: left;
+    position: relative;
+    top: 18px;
+    left: 10px; }
+    #header div.title img {
+      width: 183px; }
+  #header div.menu {
+    font-family: 'Slabo 27px', serif;
+    font-size: 16px;
+    top: 30px;
+    right: 10px;
+    position: relative;
+    float: right;
+    color: black; }
 
 #navigation {
   width: 100%;
@@ -35,7 +35,7 @@ body {
   text-align: center;
   padding: 0px 0px 0px;
   position: absolute;
-  top: 60px; }
+  top: 110px; }
   #navigation button {
     background-color: transparent;
     border-width: 0px;
@@ -62,7 +62,7 @@ body {
   background-image: url("ui/E60WQOGUFR.jpg");
   background-position: center center;
   background-size: cover;
-  padding: 74px 0px 0px 0px;
+  padding: 30px 0px 0px 0px;
   color: white; }
   #jumbotron p {
     color: white;
@@ -71,71 +71,17 @@ body {
     margin: 0px 0px 0px;
     text-transform: uppercase;
     padding: 60px 10px; }
-    @media screen and (max-width : 650px) {
+    @media screen and (max-width : 700px) {
       #jumbotron p {
         font-size: 11vw; } }
-    @media screen and (min-width : 651px) {
+    @media screen and (min-width : 701px) {
       #jumbotron p {
-        font-size: 71.5px; } }
+        font-size: 77px; } }
   #jumbotron p.logo {
     background-image: url("ui/logo_transparent_white_340_shadow.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100px; }
-
-div.bookletpage {
-  text-align: left;
-  margin: 0px auto;
-  max-width: 650px;
-  padding: 0px 10px;
-  /*label {
-    font-family: $serif;
-    margin: 15px 0px 0px 0px;
-    font-weight: 400;
-    font-size: 16px;
-    font-style: italic;
-    color: $question-color;
-    padding: 0px 0px 0px 10px;
-    display: block;
-  }*/ }
-  div.bookletpage header {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 400;
-    font-size: 26px;
-    margin: 40px 0px 0px 0px;
-    color: black; }
-  div.bookletpage p, div.bookletpage label {
-    font-family: 'Slabo 27px', serif;
-    padding: 0px;
-    margin: 15px 0px 0px 10px;
-    color: #555;
-    font-size: 18px;
-    display: block; }
-  div.bookletpage footer {
-    font-family: 'Slabo 27px', serif;
-    margin: 5px 0px 0px 0px;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 14px;
-    color: #888888;
-    padding: 0px 0px 0px 10px;
-    display: block; }
-  div.bookletpage div.answer {
-    margin: 10px 10px 20px; }
-  div.bookletpage textarea {
-    border: 1px solid #e4e4e4;
-    width: 100%;
-    resize: none;
-    font-family: 'Slabo 27px', serif;
-    font-size: 16px;
-    font-weight: 100;
-    padding: 8px 8px;
-    color: #77a;
-    border-radius: 6px;
-    box-sizing: border-box; }
-  div.bookletpage textarea:focus {
-    border-width: 2px;
-    padding: 7px; }
 
 div.navbutton {
   text-align: center;
@@ -157,18 +103,8 @@ div.navbutton {
     text-shadow: 0px 0px 0px #3d768a;
     text-transform: uppercase; }
   div.navbutton button:hover {
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #408c99), color-stop(1, #599bb3));
-    background: -moz-linear-gradient(top, #408c99 5%, #599bb3 100%);
-    background: -webkit-linear-gradient(top, #408c99 5%, #599bb3 100%);
-    background: -o-linear-gradient(top, #408c99 5%, #599bb3 100%);
-    background: -ms-linear-gradient(top, #408c99 5%, #599bb3 100%);
     background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#408c99', endColorstr='#599bb3', GradientType=0);
     background-color: #408c99; }
   div.navbutton button:active {
     position: relative;
     top: 1px; }
-
-textarea:hover, input:hover, textarea:active, input:active, textarea:focus, input:focus, button:focus, button:active, button:hover {
-  outline: 0px !important;
-  -webkit-appearance: none; }
