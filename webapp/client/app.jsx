@@ -71,7 +71,9 @@ App = React.createClass({
                   <a href="#" key={t} onMouseDown={this.selectLanguage.bind(this, t)}>{t} </a> )}
             </div>
             <div className="title">
-              <a href=""><img src="ui/logotext_small_black.png" alt="YearCompass"/></a>
+              <a href="http://yearcompass.com">
+                <img src="ui/logotext_small_black.png" alt="YearCompass"/>
+              </a>
             </div>
           </div>
 
