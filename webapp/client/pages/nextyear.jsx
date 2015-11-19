@@ -117,11 +117,8 @@ NextYearPage = React.createClass({
             <p>{ this.text("T0133") }</p>
             <TextQuestion question="ahead-secretwish"/>
 
-            {/* I believe anything is possible this year. */}
-            <p><input type="checkbox"/>{ this.text("T0134") }</p>
-
             <div className="navbutton">
-              <button onClick={this.props.onTurn}>Finish</button>
+              <button onClick={this.props.onTurn}>{ this.text("T0134") }</button>
             </div>
           </div>
         </div>
