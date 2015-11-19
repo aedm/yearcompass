@@ -34,6 +34,7 @@ App = React.createClass({
   turnPage(page) {
     this.setState({currentPage: page});
     window.scrollTo(0, 0);
+    //$('html, body').animate({ scrollTop: 0 }, '2000', 'swing');
   },
 
   renderBooklet() {

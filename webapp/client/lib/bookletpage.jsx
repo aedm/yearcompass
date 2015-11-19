@@ -7,5 +7,5 @@ BookletPage = {
 
   text(token) {
     return translations[this.props.language][token];
-  },
+  }
 };

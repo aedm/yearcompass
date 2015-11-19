@@ -52,6 +52,10 @@ TextQuestionCore = React.createClass({
     this.notifyParentDebounce = _.debounce(this.notifyParent, 3000);
   },
 
+  componentDidMount() {
+    this.adjustTextareaHeight();
+  },
+
   /** Called when the Mongo collection was updated by any of the clients */
   componentWillReceiveProps(nextProps) {
     this.setState({value: nextProps.answer});
@@ -65,6 +69,14 @@ TextQuestionCore = React.createClass({
     let answer = ReactDOM.findDOMNode(this.refs.answer).value;
     this.setState({value: answer});
     this.notifyParentDebounce(answer);
+    this.adjustTextareaHeight();
+  },
+
+  /* JavaScript hack to adjust textarea height to fit content. */
+  adjustTextareaHeight() {
+    let element = ReactDOM.findDOMNode(this.refs.answer);
+    element.style.height = "5px";
+    element.style.height = (element.scrollHeight)+"px";
   },
 
   render() {

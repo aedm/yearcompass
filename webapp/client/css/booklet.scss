@@ -53,11 +53,13 @@ div.bookletpage {
     border: $question-border solid #e4e4e4;
     width: 100%;
     resize: none;
-    font-family: 'Slabo 27px', serif;
+    font-family: $serif;
     font-size: 16px;
     font-weight: 100;
     padding: $question-padding $question-padding;
     color: #77a;
+    overflow: hidden;
+    min-height: 65px;
     border-radius: 6px;
     box-sizing: border-box;
   }
