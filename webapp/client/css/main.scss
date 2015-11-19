@@ -30,13 +30,24 @@ body {
   }
 
   div.menu {
+    //border: 2px solid red;
     font-family: $serif;
     font-size: 16px;
-    top: 30px;
-    right: 10px;
+    top: 23px;
+    right: 15px;
     position: relative;
     float: right;
     color: black;
+    text-align: right;
+    margin: 0px 0px 0px auto;
+    width: 200px;
+  }
+
+  // Makes the dropdown menu aligned to the right edge
+  .pure-menu-children {
+    border: 1px solid #888;
+    right: 0px;
+    left: auto;
   }
 }
 

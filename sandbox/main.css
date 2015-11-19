@@ -23,11 +23,18 @@ body {
   #header div.menu {
     font-family: 'Slabo 27px', serif;
     font-size: 16px;
-    top: 30px;
-    right: 10px;
+    top: 23px;
+    right: 15px;
     position: relative;
     float: right;
-    color: black; }
+    color: black;
+    text-align: right;
+    margin: 0px 0px 0px auto;
+    width: 200px; }
+  #header .pure-menu-children {
+    border: 1px solid #888;
+    right: 0px;
+    left: auto; }
 
 #navigation {
   width: 100%;

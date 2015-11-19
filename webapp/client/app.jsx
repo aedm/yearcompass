@@ -66,23 +66,41 @@ App = React.createClass({
         <div>
           <div id="header">
             <div className="menu">
-              <LoginWrapper />
-              &nbsp;{ Object.keys(translations).map((t) =>
-                  <a href="#" key={t} onMouseDown={this.selectLanguage.bind(this, t)}>{t} </a> )}
+              <div className="pure-menu pure-menu-horizontal">
+                <ul className="pure-menu-list">
+                  <li className="pure-menu-item"><LoginWrapper /></li>
+                  <li className="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" id="menuLink1" className="pure-menu-link">Menu</a>
+                    <ul className="pure-menu-children">
+                      <li className="pure-menu-item">
+                        <a href="#" className="pure-menu-link">Logout</a>
+                      </li>
+                      <li className="pure-menu-item">
+                        <div>{ Object.keys(translations).map((t) =>
+                            <a href="#" key={t} onMouseDown={this.selectLanguage.bind(this, t)}>
+                              {t} </a> )}
+                        </div>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
             </div>
+
             <div className="title">
-              <a href="http://yearcompass.com">
-                <img src="ui/logotext_small_black.png" alt="YearCompass"/>
-              </a>
+              <a href="http://yearcompass.com"> <img src="ui/logotext_small_black.png"
+                                                     alt="YearCompass"/> </a>
             </div>
+
           </div>
 
           <div id="navigation">
-            { Object.keys(this.pages).map((page) =>
-                <button key={page} onClick={ () => this.turnPage(page)}
-                        className={this.state.currentPage == page ? "active" : ""}>
-                  {this.pages[page]}
-                </button> )}
+            { Object.keys(this.pages).map((page) =><button key={page}
+                                                           onClick={ () => this.turnPage(page)}
+                                                           className={this.state.currentPage == page ? "active" : ""}>
+              {this.pages[page]}
+            </button> )}
           </div>
 
           { this.data.userId != null ? this.renderBooklet() : null }
