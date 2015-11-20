@@ -67,6 +67,11 @@ App = React.createClass({
   },
 
   renderMenu() {
+    let logoutButton = Meteor.userId() == null ? null : (
+        <li className="pure-menu-item">
+          <a href="#" onClick={this.logout} className="pure-menu-link">Logout</a>
+        </li>);
+
     return (
         <div className="menu pure-menu pure-menu-horizontal">
           <ul className="pure-menu-list">
@@ -74,9 +79,7 @@ App = React.createClass({
             <li className="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
               <a href="#" id="menuLink1" className="pure-menu-link">Menu</a>
               <ul className="pure-menu-children">
-                <li className="pure-menu-item">
-                  <a href="#" onClick={this.logout} className="pure-menu-link">Logout</a>
-                </li>
+                { logoutButton }
                 <li className="pure-menu-item">
                   <div id="menuLanguageSelector">
                     { Object.keys(translations).map((t) =>
