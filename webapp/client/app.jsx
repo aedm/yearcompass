@@ -3,7 +3,6 @@ App = React.createClass({
 
   /// TODO: translate page names
   pages: {
-    "start": "Start",
     "past": "2015",
     "next": "2016",
     "finish": "Finish"
@@ -12,13 +11,15 @@ App = React.createClass({
   getInitialState() {
     return {
       language: Object.keys(translations)[0],
-      currentPage: "start"
+      currentPage: "past"
     }
   },
 
   getMeteorData() {
+    if (Meteor.user() == undefined) return {};
     return {
-      userId: Meteor.userId()
+      userId: Meteor.userId(),
+      userPhoto: Meteor.user().profile.picture,
     };
   },
 
@@ -46,9 +47,6 @@ App = React.createClass({
     let lang = this.state.language;
     let page;
     switch (this.state.currentPage) {
-      case "start":
-        page = <StartPage language={lang} onTurn={ () => this.turnPage("past") }/>;
-        break;
       case "past":
         page = <PastYearPage language={lang} onTurn={ () => this.turnPage("next") }/>;
         break;
@@ -60,14 +58,21 @@ App = React.createClass({
         break;
     }
     return (
-        <div className="booklet">
-          { page }
+        <div>
+          <div id="navigation">
+            { Object.keys(this.pages).map((page) =>
+                <button key={page} onClick={ () => this.turnPage(page)}
+                        className={this.state.currentPage == page ? "active" : ""}>
+                  { this.pages[page] }
+                </button> )}
+          </div>
+          <div className="booklet">{ page }</div>
         </div>
     );
   },
 
   renderMenu() {
-    let logoutButton = Meteor.userId() == null ? null : (
+    let logoutButton = this.data.userId == null ? null : (
         <li className="pure-menu-item">
           <a href="#" onClick={this.logout} className="pure-menu-link">Logout</a>
         </li>);
@@ -75,9 +80,12 @@ App = React.createClass({
     return (
         <div className="menu pure-menu pure-menu-horizontal">
           <ul className="pure-menu-list">
-            <li className="pure-menu-item"><LoginWrapper /></li>
             <li className="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
-              <a href="#" id="menuLink1" className="pure-menu-link">Menu</a>
+              <a href="#" id="menuLink1" className="pure-menu-link">
+                { this.data.userPhoto == undefined
+                    ? "Select language"
+                    : <img src={ this.data.userPhoto } alt="profile photo" className="photo"/> }
+              </a>
               <ul className="pure-menu-children">
                 { logoutButton }
                 <li className="pure-menu-item">
@@ -105,15 +113,9 @@ App = React.createClass({
             { this.renderMenu() }
           </div>
 
-          <div id="navigation">
-            { Object.keys(this.pages).map((page) =><button key={page}
-                                                           onClick={ () => this.turnPage(page)}
-                                                           className={this.state.currentPage == page ? "active" : ""}>
-              {this.pages[page]}
-            </button> )}
-          </div>
-
-          { this.data.userId != null ? this.renderBooklet() : null }
+          { this.data.userId == null
+                ? <StartPage language={this.state.language} />
+                : this.renderBooklet() }
         </div>
     );
   }

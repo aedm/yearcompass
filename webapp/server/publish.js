@@ -1,5 +1,13 @@
-
-Meteor.publish('answers', function() {
+Meteor.publish('answers', function () {
   if (!this.userId) return [];
   return Answers.find({userId: this.userId});
+});
+
+Accounts.onCreateUser(function (options, user) {
+  if (options.profile) {
+    options.profile.picture =
+        "http://graph.facebook.com/" + user.services.facebook.id + "/picture/?type=large";
+    user.profile = options.profile;
+  }
+  return user;
 });

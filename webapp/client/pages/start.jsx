@@ -1,6 +1,10 @@
 StartPage = React.createClass({
   mixins: [BookletPage],
 
+  scrollTop() {
+    window.scrollTo(0, 0);
+  },
+
   render() {
     return (
         <div>
@@ -28,7 +32,9 @@ StartPage = React.createClass({
             <header>{ this.text("T0013") }</header>
 
             <div className="navbutton">
-              <button onClick={this.props.onTurn}>Start</button>
+              <button onClick={() => {Meteor.loginWithFacebook(this.scrollTop)}}>
+                Login with Facebook
+              </button>
             </div>
           </div>
         </div>);

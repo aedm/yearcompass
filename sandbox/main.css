@@ -31,6 +31,9 @@ body {
     text-align: right;
     margin: 0px 0px 0px auto;
     width: 200px; }
+    #header div.menu img.photo {
+      height: 25px;
+      border-radius: 3px; }
   #header .pure-menu-children {
     border: 1px solid #888;
     right: 0px;
