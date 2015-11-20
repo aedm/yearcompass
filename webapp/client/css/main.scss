@@ -49,6 +49,22 @@ body {
     right: 0px;
     left: auto;
   }
+
+  #menuLanguageSelector {
+    width: 150px;
+    white-space: normal;
+    padding: 10px 0px;
+    text-align: center;
+    //background-color: #f8f8f8;
+
+    button.lang {
+      margin: 5px;
+      //background-color: #ddd;
+      border-width: 1px;
+      display: inline-block;
+      border-radius: 3px;
+    }
+  }
 }
 
 // navigation elements

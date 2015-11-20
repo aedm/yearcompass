@@ -1,269 +1,118 @@
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="booklet.css">
 
-  <link href='https://fonts.googleapis.com/css?family=Domine&subset=latin,latin-ext'
-        rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Slabo+27px&subset=latin,latin-ext'
-        rel='stylesheet' type='text/css'>
-  <link
-      href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700&subset=latin,latin-ext'
-      rel='stylesheet' type='text/css'>
-
-  <title>yearcompass</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YearCompass online booklet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px&amp;subset=latin,latin-ext"
+          rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700&amp;subset=latin,latin-ext"
+          rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="shortcut icon" href="ui/favico.png">
 </head>
-<body>
-<div>
-  <div>
-    <div id="header">
-      <div class="ribbon">
-        <div class="language">lang: en</div>
-        <div class="title">YearCompass</div>
-        <div class="user">John Doe</div>
-      </div>
+<body data-feedly-mini="yes">
+
+
+<div id="app">
+    <div>
+        <div id="header">
+                        <div class="title"><a href="http://yearcompass.com"
+            ><img
+                    src="ui/logotext_small_black.png" alt="YearCompass"
+            ><span> </span></a>
+            </div>
+
+            <div class="menu pure-menu pure-menu-horizontal">
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item"><span
+                    ><div id="login-buttons"
+                          class="login-buttons-dropdown-align-">
+
+
+                        <div class="login-link-and-dropdown-list">
+                            <a class="login-link-text" id="login-name-link">
+                                aaa ▾
+                            </a>
+
+
+                        </div>
+
+
+                    </div></span></li>
+                    <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover"
+                    ><a href="#" id="menuLink1"
+                        class="pure-menu-link"
+                    >Menu</a>
+                        <ul class="pure-menu-children">
+                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Logout</a></li>
+                            <li class="pure-menu-item">
+                                <div id="menuLanguageSelector">
+                                    <button class="lang">hu</button>
+                                    <button class="lang">hu</button>
+                                    <button class="lang">hu</button>
+                                    <button class="lang">hu</button>
+                                    <button class="lang">hu</button>
+                                    <button class="lang">hu</button>
+                                    <button class="lang">hu</button>
+                                    <button class="lang">hu</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div id="navigation">
+            <button class="active">Start</button>
+            <button class="">2015</button>
+            <button class="">2016</button>
+            <button class="">Finish</button>
+        </div>
+        <div class="booklet">
+            <div>
+                <div id="jumbotron"><p class="logo"
+                >
+                    &nbsp;</p></div>
+                <div class="bookletpage">
+                    <header>What is this?</header>
+                    <p>This booklet will help you look back over
+                        the past year and to plan the year ahead of you.</p>
+                    <header>Why is this good for me?</header>
+                    <p>Planning your year is a good habit. It
+                        helps you identify your successes and sorrows and will help you
+                        realize how much can happen just in a year. By learning from the
+                        past you can plan your future so that you don't repeat the same
+                        patterns and can feel in control of your own life.</p>
+                    <header>What do I need?</header>
+                    <p>1st version (lone wolf version)</p><label
+                >- at least 1 hour of uninterrupted time
+                    - a calendar of the past year
+                    - a printed version of this workbook
+                    - honesty and openness
+                    - a selection of your favorite pens</label>
+
+                    <p>2nd version (group version)</p><label
+                >- an inspirative group of people (2-10
+                    persons)
+                    - at least 2 hours of creative time</label>
+                    <header>Arrive.
+                        Put on some relaxing music.
+                        Pour yourself a hot beverage.
+                        Let go all of your expectations.
+                        Start when ready.
+                    </header>
+                    <div class="navbutton">
+                        <button>Start</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div id="navigation">
-      <button class="">Start</button>
-      <button class="active">2015</button>
-      <button class="">2016</button>
-      <button class="">Finish</button>
-    </div>
-    <div id="jumbotron">
-      <!--<p class="page2015">The year ahead</p>-->
-      <p class="logo">&nbsp;</p>
-
-    </div>
-
-    <div class="booklet">
-      <div class="bookletpage">
-        <h3>Going through your
-          calendar
-        </h3>
-        <span>Go through your calendar for the past year week by week. If you see an important event, encounter or to-do write it down here.</span>
-
-        <div class="container">
-          <textarea type="text">53534</textarea>
-        </div>
-        <h3>This is what my past year was about</h3>
-
-        <h4>What were the most decisive aspects for you in the following
-          areas*? Which events were the most important? Summarize briefly.
-        </h4>
-        <span>Family, private life</span>
-
-        <div class="container">
-          <textarea type="text"></textarea>
-        </div>
-        <span>Work, studies, profession</span>
-
-        <div class="container">
-          <textarea type="text"></textarea>
-        </div>
-        <span>Belongings (home, objects)</span>
-
-        <div class="container">
-          <textarea type="text"></textarea>
-        </div>
-        <span>Relaxation, hobbies, creativity</span>
-
-        <div class="container">
-          <textarea type="text"></textarea>
-        </div>
-        <span>Friends, community, service</span>
-
-        <div class="container">
-          <textarea type="text"></textarea>
-        </div>
-        <span>Health, fitness</span>
-
-        <div class="container">
-          <textarea type="text"></textarea>
-        </div>
-        <span>Intellectual</span>
-
-        <div class="container">
-          <textarea type="text"></textarea>
-        </div>
-        <span>Emotional, spiritual</span>
-
-        <div class="container">
-          <textarea type="text"></textarea>
-        </div>
-        <span>Finances</span>
-
-        <div class="container">
-          <textarea type="text"></textarea>
-        </div>
-        <span>Bucket List **</span>
-
-        <div class="container">
-          <textarea type="text"></textarea>
-        </div>
-        <p><i>* The aspects are defined by what is
-          important to you. We do not have a definition on purpose.</i></p>
-
-        <p><i>** In case you achieved something
-          this year, you always wanted.</i></p>
-
-        <h3>6 sentences about my past year</h3>
-        <span>The wisest decision I made...</span>
-
-        <div class="container">
-          <textarea type="text"></textarea>
-        </div>
-        <span>The biggest lesson I learned...</span>
-
-        <div class="container">
-          <textarea type="text"></textarea>
-        </div>
-        <span>The biggest risk I took...</span>
-
-        <div class="container">
-          <textarea type="text"></textarea>
-        </div>
-        <span>The biggest surprise of the year...</span>
-
-        <div class="container">
-          <textarea type="text"></textarea>
-        </div>
-        <span>The biggest service I made...</span>
-
-        <div class="container">
-          <textarea type="text"></textarea>
-        </div>
-        <span>The biggest thing I completed/finished...</span>
-
-        <div class="container">
-          <textarea type="text"></textarea>
-        </div>
-        <h3>6 questions about my past year</h3>
-        <span>What are you the most proud of?</span>
-
-        <div class="container">
-          <textarea type="text"></textarea>
-        </div>
-        <span>Who are the 3 people who influenced you the most?</span>
-
-        <div class="container">
-          <textarea type="text"></textarea>
-        </div>
-        <span>Who are the 3 people you influenced the most?</span>
-
-        <div class="container">
-          <textarea type="text"></textarea>
-        </div>
-        <span>What were you not able to accomplish?</span>
-
-        <div class="container">
-          <textarea type="text"></textarea>
-        </div>
-        <span>What is the best thing you have discovered about yourself?</span>
-
-        <div class="container">
-          <textarea type="text"></textarea>
-        </div>
-        <span>What are you the most grateful for?</span>
-
-        <div class="container">
-          <textarea type="text"></textarea>
-        </div>
-        <h3>The best moments</h3>
-        <span>Describe the nicest, most joyful and memorable moments of the last year. Draw them on this sheet. How did you feel? Who was there with you? What were you doing? What kind of smells do you remember?</span>
-
-        <div class="container">
-          <textarea type="text"></textarea>
-        </div>
-        <h3>My three greatest accomplishments</h3>
-        <span>List your three biggest successes here</span>
-
-        <div class="container">
-          <textarea type="text"></textarea>
-        </div>
-        <span>What have you done to achieve these?</span>
-
-        <div class="container">
-          <textarea type="text"></textarea>
-        </div>
-        <span>Who helped you achieve these successes? How?</span>
-
-        <div class="container">
-          <textarea type="text"></textarea>
-        </div>
-        <h3>My three biggest challenges</h3>
-        <span>List your three biggest challenges from last year here.</span>
-
-        <div class="container">
-          <textarea type="text"></textarea>
-        </div>
-        <span>Who or what helped you overcome these challenges?</span>
-
-        <div class="container">
-          <textarea type="text"></textarea>
-        </div>
-        <span>What have you learned about yourself while overcoming these challenges?</span>
-
-        <div class="container">
-          <textarea type="text"></textarea>
-        </div>
-        <h3>Forgiveness</h3>
-        <span>Did anything happen during the past year that still need to be forgiven? A deed or words that made you feel bad? Or are you angry with yourself? Write it down here. Do good for yourself and forgive.*</span>
-
-        <div class="container">
-          <textarea type="text"></textarea>
-        </div>
-        <p><i>* If you don't feel ready to
-          forgive yet, write it down anyway. It can work wonders.</i></p>
-
-        <h3>Letting go</h3>
-        <span>What else do you need to say to seal up the year behind you? Wht are the thing you must let go before you can start your next year? Draw or write, then evaluate and let them all go.</span>
-
-        <div class="container">
-          <textarea type="text"></textarea>
-        </div>
-        <h3>The past year in 3 words</h3>
-        <span>Choose three words to define your past year.</span>
-
-        <div class="container">
-          <textarea type="text"></textarea>
-        </div>
-        <h3>The book of my past year</h3>
-        <span>A book was made about your past year*. Write down its title.</span>
-
-        <div class="container">
-          <textarea type="text"></textarea>
-        </div>
-        <p><i>* Apologies if we got it wrong and
-          yours was made into a movie. Sorry about that.</i></p>
-
-        <h3>Farewell to your last year</h3>
-        <span>If there is anything else left that you would like to write down, or there is anybody you would like to say goodbye to, do it now.</span>
-
-        <div class="container">
-          <textarea type="text"></textarea>
-        </div>
-        <h3>You’re done with the past year :)</h3>
-
-        <p>You are done with the first part. Take a deep breath :).
-          Get some rest.
-        </p>
-
-        <p>Continue the planning together with us, plan 2015 on 10th
-          January 2015.
-        </p>
-
-        <p>If you want to tell others about what you did,
-          take and share a photo before / after filling out the booklet,
-          feel free to use these hashtags:
-        </p>
-
-        <p>#yearcompass #yearbehind
-          #yearplanning # yearahead
-        </p>
-        <button>Next Year</button>
-      </div>
-    </div>
-  </div>
 </div>
+<div id="feedly-mini" title="feedly Mini tookit"></div>
 </body>
 </html>

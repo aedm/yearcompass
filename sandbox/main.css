@@ -35,6 +35,16 @@ body {
     border: 1px solid #888;
     right: 0px;
     left: auto; }
+  #header #menuLanguageSelector {
+    width: 150px;
+    white-space: normal;
+    padding: 10px 0px;
+    text-align: center; }
+    #header #menuLanguageSelector button.lang {
+      margin: 5px;
+      border-width: 1px;
+      display: inline-block;
+      border-radius: 3px; }
 
 #navigation {
   width: 100%;
