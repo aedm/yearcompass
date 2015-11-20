@@ -37,6 +37,11 @@ App = React.createClass({
     //$('html, body').animate({ scrollTop: 0 }, '2000', 'swing');
   },
 
+  logout(event) {
+    event.preventDefault();
+    Meteor.logout();
+  },
+
   renderBooklet() {
     let lang = this.state.language;
     let page;
@@ -70,7 +75,7 @@ App = React.createClass({
               <a href="#" id="menuLink1" className="pure-menu-link">Menu</a>
               <ul className="pure-menu-children">
                 <li className="pure-menu-item">
-                  <a href="#" className="pure-menu-link">Logout</a>
+                  <a href="#" onClick={this.logout} className="pure-menu-link">Logout</a>
                 </li>
                 <li className="pure-menu-item">
                   <div id="menuLanguageSelector">
