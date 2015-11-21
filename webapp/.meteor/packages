@@ -19,8 +19,9 @@ react
 check
 templating
 accounts-ui
-accounts-password
 blaze-html-templates
 accounts-facebook
 underscore
 fourseven:scss
+accounts-google
+accounts-twitter

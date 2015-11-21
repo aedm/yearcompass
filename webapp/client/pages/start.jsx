@@ -29,13 +29,22 @@ StartPage = React.createClass({
             <label>{ this.text("T0011") }</label>
 
             {/* Get ready */}
-            <header>{ this.text("T0013") }</header>
+            <p>{ this.text("T0013") }</p>
 
+            <header>We'll remember it for you</header>
+            <p>
+              Your answers aren't just a shouting into the void. We keep them for you.
+              But in order to do so, we must remember you as well. Please log in.
+            </p>
             <div className="navbutton">
               <button onClick={() => {Meteor.loginWithFacebook(this.scrollTop)}}>
-                Login with Facebook
+                Facebook
+              </button>
+              <button onClick={() => {Meteor.loginWithGoogle(this.scrollTop)}}>
+                Google
               </button>
             </div>
+            {/*<LoginWrapper />*/}
           </div>
         </div>);
   }
