@@ -18,6 +18,10 @@ FinishPage = React.createClass({
              className="share-button reddit" target="_blank">Reddit</a>
           <a href={`http://plus.google.com/share?url=${url}`}
              className="share-button google" target="_blank">Google+</a>
+          <a href={`http://www.linkedin.com/shareArticle?mini=true&url=${url}`}
+             className="share-button linkedin" target="_blank">LinkedIn</a>
+          <a href={`whatsapp://send?text=${url}`}
+             className="share-button linkedin" target="_blank">WhatsApp</a>
         </p>
     );
   },
