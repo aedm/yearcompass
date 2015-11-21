@@ -10,7 +10,7 @@ Accounts.onCreateUser(function (options, user) {
       picture = user.services.google.picture;
     }
     else if (user.services.twitter !== undefined) {
-      picture = user.services.twitter.profile_url; // sudo param name
+      picture = user.services.twitter.profile_image_url_https; // sudo param name
     }
     else if (user.services.facebook !== undefined) {
       picture =

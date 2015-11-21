@@ -43,8 +43,10 @@ StartPage = React.createClass({
               <button onClick={() => {Meteor.loginWithGoogle(this.scrollTop)}}>
                 Google
               </button>
+              <button onClick={() => {Meteor.loginWithTwitter(this.scrollTop)}}>
+                Twitter
+              </button>
             </div>
-            {/*<LoginWrapper />*/}
           </div>
         </div>);
   }
