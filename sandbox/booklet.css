@@ -53,3 +53,8 @@ div.bookletpage {
   div.bookletpage textarea:focus {
     border-width: 2px;
     padding: 9px; }
+  div.bookletpage p.share {
+    text-align: center; }
+    div.bookletpage p.share .share-button {
+      display: inline-block;
+      padding: 0px 10px; }

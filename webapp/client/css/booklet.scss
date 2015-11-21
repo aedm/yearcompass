@@ -68,4 +68,13 @@ div.bookletpage {
     border-width: $question-border + $question-focusborder;
     padding: $question-padding - $question-focusborder;
   }
+
+  p.share {
+    text-align: center;
+
+    .share-button {
+      display: inline-block;
+      padding: 0px 10px;
+    }
+  }
 }
