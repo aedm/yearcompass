@@ -112,7 +112,6 @@ App = React.createClass({
             </div>
             { this.renderMenu() }
           </div>
-
           { this.data.userId == null
                 ? <StartPage language={this.state.language} />
                 : this.renderBooklet() }
