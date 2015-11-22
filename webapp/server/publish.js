@@ -3,6 +3,11 @@ Meteor.publish('answers', function () {
   return Answers.find({userId: this.userId});
 });
 
+Meteor.publish('feedback', function () {
+  if (!this.userId) return [];
+  return Feedback.find({userId: this.userId});
+});
+
 Accounts.onCreateUser(function (options, user) {
   if (options.profile) {
     let picture = "";

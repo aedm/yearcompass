@@ -26,6 +26,54 @@ FinishPage = React.createClass({
     );
   },
 
+  renderFeedbackQuestions() {
+    return (<div>
+        <header>Please rate the questions you answered</header>
+        <div className="feedback">
+          {/* Going through your calendar */}
+          <p>{ this.text("T0015") }</p>
+          <RateQuestion question="past-going-through" />
+          {/* This is what my past year was about */}
+          <p>{ this.text("T0017") }</p>
+          <RateQuestion question="past-about" />
+          {/* 6 sentences about my past year */}
+          <p>{ this.text("T0031") }</p>
+          <RateQuestion question="past-6sentences" />
+          {/* 6 questions about my past year */}
+          <p>{ this.text("T0038") }</p>
+          <RateQuestion question="past-1" />
+          {/* Best moments */}
+          <p>{ this.text("T0045") }</p>
+          <RateQuestion question="past-2" />
+          {/* My three greatest accomplishments */}
+          <p>{ this.text("T0047") }</p>
+          <RateQuestion question="past-3" />
+          {/* My three biggest challenges */}
+          <p>{ this.text("T0051") }</p>
+          <RateQuestion question="past-4" />
+          {/* Forgiveness */}
+          <p>{ this.text("T0055") }</p>
+          <RateQuestion question="past-5" />
+          {/* Letting go */}
+          <p>{ this.text("T0058") }</p>
+          <RateQuestion question="past-6" />
+          {/* The past year in 3 words */}
+          <p>{ this.text("T0060") }</p>
+          <RateQuestion question="past-7" />
+          {/* The book of my past year */}
+          <p>{ this.text("T0062") }</p>
+          <RateQuestion question="past-8" />
+          {/* Farewell to your last year */}
+          <p>{ this.text("T0065") }</p>
+          <RateQuestion question="past-9" />
+
+          <p>Tell us about anything.</p>
+          <TextQuestion question="feedback"/>
+
+        </div>
+    </div>);
+  },
+
   render() {
     return (
         <div>
@@ -46,6 +94,8 @@ FinishPage = React.createClass({
 
             <header>Share it</header>
             { this.renderShare() }
+
+            { this.renderFeedbackQuestions() }
           </div>
         </div>);
   }

@@ -3,3 +3,4 @@ Meteor.startup(function () {
 });
 
 Meteor.subscribe("answers");
+Meteor.subscribe("feedback");

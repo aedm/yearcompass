@@ -14,4 +14,16 @@ Meteor.methods({
     });
   },
 
+  rateQuestion(question, rating) {
+    check(question, String);
+    check(rating, Number)
+    Feedback.upsert({
+        userId: Meteor.userId(),
+        question: question,
+      }, {
+        userId: Meteor.userId(),
+        question: question,
+        rating: rating
+    });
+  },
 });

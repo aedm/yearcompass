@@ -78,4 +78,33 @@ div.bookletpage {
       color: $question-color;
     }
   }
+
+  div.feedback {
+    text-align: left;
+  }
+
+  div.starContainer {
+    text-align: left;
+    margin: 4px 0px 20px 10px;
+  }
+
+  div.stars {
+    display: inline-block;
+    text-align: left;
+    margin: 0px auto;
+
+    i {
+      font-size: 24px;
+      padding: 0px 1px;
+      cursor: pointer;
+      color: #068;
+      transition: color 0.10s linear;
+    }
+  }
+
+  div.stars:hover {
+    i.hovered {
+      color: #c5a;
+    }
+  }
 }

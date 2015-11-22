@@ -59,3 +59,20 @@ div.bookletpage {
       display: inline-block;
       padding: 0px 10px;
       color: #555; }
+  div.bookletpage div.feedback {
+    text-align: left; }
+  div.bookletpage div.starContainer {
+    text-align: left;
+    margin: 4px 0px 20px 10px; }
+  div.bookletpage div.stars {
+    display: inline-block;
+    text-align: left;
+    margin: 0px auto; }
+    div.bookletpage div.stars i {
+      font-size: 24px;
+      padding: 0px 1px;
+      cursor: pointer;
+      color: #068;
+      transition: color 0.1s linear; }
+  div.bookletpage div.stars:hover i.hovered {
+    color: #c5a; }
