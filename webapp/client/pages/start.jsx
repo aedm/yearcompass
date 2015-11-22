@@ -37,15 +37,12 @@ StartPage = React.createClass({
               But in order to do so, we must remember you as well. Please log in.
             </p>
             <div className="navbutton">
-              <button onClick={() => {Meteor.loginWithFacebook(this.scrollTop)}}>
-                Facebook
-              </button>
-              <button onClick={() => {Meteor.loginWithGoogle(this.scrollTop)}}>
-                Google
-              </button>
-              <button onClick={() => {Meteor.loginWithTwitter(this.scrollTop)}}>
-                Twitter
-              </button>
+              <i onClick={() => {Meteor.loginWithFacebook(this.scrollTop)}}
+                 className="fa fa-facebook-square"></i>
+              <i onClick={() => {Meteor.loginWithGoogle(this.scrollTop)}}
+                 className="fa fa-google-plus-square"></i>
+              <i onClick={() => {Meteor.loginWithTwitter(this.scrollTop)}}
+                 className="fa fa-twitter-square"></i>
             </div>
           </div>
         </div>);
