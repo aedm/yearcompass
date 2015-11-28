@@ -1,11 +1,10 @@
 App = React.createClass({
   mixins: [ReactMeteorData],
 
-  /// TODO: translate page names
   pages: {
-    "past": "2015",
-    "next": "2016",
-    "finish": "Finish"
+    "past": "{ this.text('T0002') }",
+    "next": "{ this.text('T0003') }",
+    "finish": "{ this.text('T0192') }"
   },
 
   getInitialState() {
@@ -74,7 +73,7 @@ App = React.createClass({
   renderMenu() {
     let logoutButton = this.data.userId == null ? null : (
         <li className="pure-menu-item">
-          <a href="#" onClick={this.logout} className="pure-menu-link">Logout</a>
+          <a href="#" onClick={this.logout} className="pure-menu-link">{ this.text("T0193") }</a>
         </li>);
 
     return (
@@ -83,7 +82,7 @@ App = React.createClass({
             <li className="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
               <a href="#" id="menuLink1" className="pure-menu-link">
                 { this.data.userPhoto == undefined
-                    ? "Select language"
+                    ? this.text("T0182")
                     : <img src={ this.data.userPhoto } alt="profile photo" className="photo"/> }
               </a>
               <ul className="pure-menu-children">
@@ -107,8 +106,8 @@ App = React.createClass({
         <div>
           <div id="header">
             <div className="title">
-              <a href="http://yearcompass.com">
-                <img src="ui/logotext_small_black.png" alt="YearCompass"/> </a>
+              <a href={ this.text("T0171") }>
+                <img src="ui/logotext_small_black.png" alt={ this.text("T0191") }/> </a>
             </div>
             { this.renderMenu() }
           </div>
