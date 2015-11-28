@@ -2,9 +2,9 @@ FinishPage = React.createClass({
   mixins: [BookletPage],
 
   renderShare() {
-    let url = "http://yearcompass.com";
+    let url = '{ this.text("T0171") }';
     let img = "http://www.yearcompass.com/wp-content/uploads/2014/12/zen_share1.png";
-    let title = "YearCompass";
+    let title = '{ this.text("T0191") }';
 
     return (
         <p className="share">
@@ -28,46 +28,81 @@ FinishPage = React.createClass({
 
   renderFeedbackQuestions() {
     return (<div>
-        <header>Please rate the questions you answered</header>
+        {/* Help us make YearCompass better. */}
+        <header>{ this.text("T0179") }</header>
+        <p>{ this.text("T0180") }</p>
+        
         <div className="feedback">
+
+          {/* The past year */}
+          <header>{ this.text("T0031") }</header>
+
           {/* Going through your calendar */}
-          <p>{ this.text("T0015") }</p>
+          <p>{ this.text("T0032") }</p>
           <RateQuestion question="past-going-through" />
           {/* This is what my past year was about */}
-          <p>{ this.text("T0017") }</p>
+          <p>{ this.text("T0036") }</p>
           <RateQuestion question="past-about" />
           {/* 6 sentences about my past year */}
-          <p>{ this.text("T0031") }</p>
+          <p>{ this.text("T0051") }</p>
           <RateQuestion question="past-6sentences" />
           {/* 6 questions about my past year */}
-          <p>{ this.text("T0038") }</p>
-          <RateQuestion question="past-1" />
+          <p>{ this.text("T0059") }</p>
+          <RateQuestion question="past-6questions" />
           {/* Best moments */}
-          <p>{ this.text("T0045") }</p>
-          <RateQuestion question="past-2" />
+          <p>{ this.text("T0067") }</p>
+          <RateQuestion question="past-best-moments" />
           {/* My three greatest accomplishments */}
-          <p>{ this.text("T0047") }</p>
-          <RateQuestion question="past-3" />
+          <p>{ this.text("T0071") }</p>
+          <RateQuestion question="past-accomplishments" />
           {/* My three biggest challenges */}
-          <p>{ this.text("T0051") }</p>
-          <RateQuestion question="past-4" />
+          <p>{ this.text("T0075") }</p>
+          <RateQuestion question="past-challenges" />
           {/* Forgiveness */}
-          <p>{ this.text("T0055") }</p>
-          <RateQuestion question="past-5" />
+          <p>{ this.text("T0080") }</p>
+          <RateQuestion question="past-forgiveness" />
           {/* Letting go */}
-          <p>{ this.text("T0058") }</p>
-          <RateQuestion question="past-6" />
+          <p>{ this.text("T0085") }</p>
+          <RateQuestion question="past-letting-go" />
           {/* The past year in 3 words */}
-          <p>{ this.text("T0060") }</p>
-          <RateQuestion question="past-7" />
+          <p>{ this.text("T0089") }</p>
+          <RateQuestion question="past-3words" />
           {/* The book of my past year */}
-          <p>{ this.text("T0062") }</p>
-          <RateQuestion question="past-8" />
+          <p>{ this.text("T0091") }</p>
+          <RateQuestion question="past-book" />
           {/* Farewell to your last year */}
-          <p>{ this.text("T0065") }</p>
-          <RateQuestion question="past-9" />
+          <p>{ this.text("T0094") }</p>
+          <RateQuestion question="past-farewell" />
 
-          <p>Tell us about anything.</p>
+          {/* The year ahead */}
+          <header>{ this.text("T0106") }</header>
+
+          {/* Dare to dream big */}
+          <p>{ this.text("T0109") }</p>
+          <RateQuestion question="ahead-dream" />
+
+          {/* This is what my next year is about */}
+          <p>{ this.text("T0128") }</p>
+          <RateQuestion question="ahead-about" />
+
+          {/* Magical triplets for the year ahead */}
+          <p>{ this.text("T0132") }</p>
+          <RateQuestion question="ahead-triplets" />
+
+          {/* 6 sentences about my next year */}
+          <p>{ this.text("T0148") }</p>
+          <RateQuestion question="ahead-6sentences" />
+
+          {/* My word for the year ahead */}
+          <p>{ this.text("T0156") }</p>
+          <RateQuestion question="ahead-word" />
+
+          {/* Secret wish */}
+          <p>{ this.text("T0158") }</p>
+          <RateQuestion question="ahead-wish" />
+
+
+          <p>{ this.text("T0181") }</p>
           <TextQuestion question="feedback"/>
 
         </div>
@@ -82,18 +117,23 @@ FinishPage = React.createClass({
           </div>
           <div className="bookletpage">
 
-            {/* You’re done with your year planning :). */}
-            <header>{ this.text("T0137") }</header>
-            <p>{ this.text("T0138") }</p>
-            <p>{ this.text("T0139") }</p>
-            <p>{ this.text("T0140") }</p>
-            <p>#yearcompass #yearbehind #yearplanning #yearahead</p>
+            {/* You are now done with planning your year. */}
+            <header>{ this.text("T0164") }</header>
 
-            <footer>{ this.text("T0141") }</footer>
-            <footer>{ this.text("T0142") }</footer>
+            {/* Share your achievement */}
+            <header>{ this.text("T0178") }</header>
+            <p>{ this.text("T0103") }</p>
+            <p>{ this.text("T0168") }</p>
 
-            <header>Share it</header>
             { this.renderShare() }
+
+            <hr />
+          
+            {/* The small print */}
+            <footer>{ this.text("T0170") }</footer>
+            <footer>{ this.text("T0175") }</footer>
+            <footer>{ this.text("T0174") }</footer>
+
 
             { this.renderFeedbackQuestions() }
           </div>
