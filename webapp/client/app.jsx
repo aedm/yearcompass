@@ -2,9 +2,9 @@ App = React.createClass({
   mixins: [ReactMeteorData],
 
   pages: {
-    "past": "{ this.text('T0002') }",
-    "next": "{ this.text('T0003') }",
-    "finish": "{ this.text('T0192') }"
+    "past": "T0002",
+    "next": "T0003",
+    "finish": "T0192"
   },
 
   getInitialState() {
@@ -62,7 +62,7 @@ App = React.createClass({
             { Object.keys(this.pages).map((page) =>
                 <button key={page} onClick={ () => this.turnPage(page)}
                         className={this.state.currentPage == page ? "active" : ""}>
-                  { this.pages[page] }
+                  { this.text(this.pages[page]) }
                 </button> )}
           </div>
           <div className="booklet">{ page }</div>
