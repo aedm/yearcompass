@@ -10,7 +10,6 @@ App = React.createClass({
   getInitialState() {
     return {
       language: Object.keys(translations)[0],
-      currentPage: "past"
     }
   },
 
@@ -31,41 +30,26 @@ App = React.createClass({
     this.setState({language: lang});
   },
 
-  turnPage(page) {
-    this.setState({currentPage: page});
-    window.scrollTo(0, 0);
-    //$('html, body').animate({ scrollTop: 0 }, '2000', 'swing');
-  },
-
   logout(event) {
     event.preventDefault();
-    Meteor.logout();
+    Meteor.logout(() => FlowRouter.go("login"));
   },
 
   renderBooklet() {
-    let lang = this.state.language;
-    let page;
-    switch (this.state.currentPage) {
-      case "past":
-        page = <PastYearPage language={lang} onTurn={ () => this.turnPage("next") }/>;
-        break;
-      case "next":
-        page = <NextYearPage language={lang} onTurn={ () => this.turnPage("finish") }/>;
-        break;
-      case "finish":
-        page = <FinishPage language={lang}/>;
-        break;
-    }
     return (
         <div>
-          <div id="navigation">
-            { Object.keys(this.pages).map((page) =>
-                <button key={page} onClick={ () => this.turnPage(page)}
-                        className={this.state.currentPage == page ? "active" : ""}>
+          { this.data.userId == null ? null :
+              <div id="navigation">
+                { Object.keys(this.pages).map((page) =>
+                <button key={page} onClick={ () => FlowRouter.go(page) }
+                        className={FlowRouter.getRouteName() == page ? "active" : ""}>
                   { this.text(this.pages[page]) }
                 </button> )}
+              </div>
+          }
+          <div className="booklet">
+            { React.cloneElement(this.props.content, { language: this.state.language }) }
           </div>
-          <div className="booklet">{ page }</div>
         </div>
     );
   },
@@ -111,9 +95,7 @@ App = React.createClass({
             </div>
             { this.renderMenu() }
           </div>
-          { this.data.userId == null
-                ? <StartPage language={this.state.language} />
-                : this.renderBooklet() }
+          { this.renderBooklet() }
         </div>
     );
   }
