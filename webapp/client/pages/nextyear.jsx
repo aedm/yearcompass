@@ -92,7 +92,9 @@ NextYearPage = React.createClass({
             <TextQuestion question="ahead-secretwish"/>
 
             <div className="navbutton">
-              <button onClick={this.props.onTurn}>{ this.text("T0161") }</button>
+              <button onClick={ () => FlowRouter.go("finish") }>
+                { this.text("T0161") }
+              </button>
             </div>
           </div>
         </div>

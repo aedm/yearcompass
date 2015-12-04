@@ -128,7 +128,9 @@ PastYearPage = React.createClass({
             <p>{ this.text("T0101") }</p>
 
             <div className="navbutton">
-              <button className="navbutton" onClick={this.props.onTurn}>{ this.text("T0194") }</button>
+              <button className="navbutton" onClick={ () => FlowRouter.go("next") }>
+                { this.text("T0194") }
+              </button>
             </div>
           </div>
         </div>);

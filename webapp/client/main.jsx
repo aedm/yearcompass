@@ -1,6 +1,5 @@
-Meteor.startup(function () {
-  ReactDOM.render(<App />, document.getElementById("app"));
+Meteor.startup(() => {
+  Meteor.subscribe("answers");
+  Meteor.subscribe("feedback");
 });
 
-Meteor.subscribe("answers");
-Meteor.subscribe("feedback");
