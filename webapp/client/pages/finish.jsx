@@ -2,9 +2,9 @@ FinishPage = React.createClass({
   mixins: [BookletPage],
 
   renderShare() {
-    let url = '{ this.text("T0171") }';
+    let url = this.text("T0171");
     let img = "http://www.yearcompass.com/wp-content/uploads/2014/12/zen_share1.png";
-    let title = '{ this.text("T0191") }';
+    let title = this.text("T0191");
 
     return (
         <p className="share">
