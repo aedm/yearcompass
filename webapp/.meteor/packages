@@ -24,7 +24,6 @@ accounts-facebook
 underscore
 fourseven:scss
 accounts-google
-accounts-twitter
 okgrow:analytics
 kadira:flow-router
 kadira:react-layout

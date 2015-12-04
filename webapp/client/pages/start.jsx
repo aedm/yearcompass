@@ -43,8 +43,6 @@ StartPage = React.createClass({
                  className="fa fa-facebook-square"></i>
               <i onClick={() => {Meteor.loginWithGoogle(this.scrollTop)}}
                  className="fa fa-google-plus-square"></i>
-              <i onClick={() => {Meteor.loginWithTwitter(this.scrollTop)}}
-                 className="fa fa-twitter-square"></i>
             </div>
           </div>
         </div>);
