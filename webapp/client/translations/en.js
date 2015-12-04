@@ -192,5 +192,7 @@ translations["en"] = {
   "T0191": "YearCompass",
   "T0192": "Finish",
   "T0193": "Logout",
-  "T0194": "Next year"
+  "T0194": "Next year",
+  "T0197": "Feedback",
+  "T0198": "OK",
 };

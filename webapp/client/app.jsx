@@ -4,7 +4,7 @@ App = React.createClass({
   pages: {
     "past": "T0002",
     "next": "T0003",
-    "finish": "T0192"
+    "finish": "T0192",
   },
 
   getInitialState() {

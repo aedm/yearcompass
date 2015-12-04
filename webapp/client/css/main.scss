@@ -134,6 +134,15 @@ body {
     }
   }
 
+  p.feedback {
+    @media #{$smallScreen} {
+      font-size: $jumboFontSmall * 0.6;
+    }
+    @media #{$normalScreen} {
+      font-size: $jumboFontNormal * 0.6;
+    }
+  }
+
   p.logo {
     background-image: url("ui/logo_transparent_white_340_shadow.png");
     background-position: center center;

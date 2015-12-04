@@ -45,3 +45,10 @@ loggedInRoutes.route('/finish', {
     ReactLayout.render(App, {content: <FinishPage />});
   }
 });
+
+loggedInRoutes.route('/feedback', {
+  name: "feedback",
+  action() {
+    ReactLayout.render(App, {content: <FeedbackPage />});
+  }
+});
