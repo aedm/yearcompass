@@ -9,37 +9,26 @@ div.bookletpage {
   header {
     font-family: $sans;
     font-weight: 400;
-    font-size: 26px;
-    margin: 40px 0px 0px 0px;
+    font-size: 30px;
+    margin: 60px 0px 0px 0px;
     color: black;
   }
 
   p, label {
     font-family: $serif;
     padding: 0px;
-    margin: 15px 0px 0px 10px;
+    margin: 20px 0px 0px 10px;
     color: $question-color;
-    font-size: 18px;
+    font-size: 20px;
     display: block;
   }
-
-  /*label {
-    font-family: $serif;
-    margin: 15px 0px 0px 0px;
-    font-weight: 400;
-    font-size: 16px;
-    font-style: italic;
-    color: $question-color;
-    padding: 0px 0px 0px 10px;
-    display: block;
-  }*/
 
   footer {
     font-family: $serif;
     margin: 5px 0px 0px 0px;
     font-weight: 400;
     font-style: italic;
-    font-size: 14px;
+    font-size: 16px;
     color: lighten($question-color, 20);
     padding: 0px 0px 0px 10px;
     display: block;
@@ -54,7 +43,7 @@ div.bookletpage {
     width: 100%;
     resize: none;
     font-family: $serif;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 100;
     padding: $question-padding $question-padding;
     color: #2a98ff;
