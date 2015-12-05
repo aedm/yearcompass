@@ -1,3 +1,8 @@
+Meteor.startup(function () {
+  Answers._ensureIndex({ "userId": 1});
+  Feedback._ensureIndex({ "userId": 1});
+});
+
 Meteor.publish('answers', function () {
   if (!this.userId) return [];
   return Answers.find({userId: this.userId});
