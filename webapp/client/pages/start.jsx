@@ -23,9 +23,11 @@ StartPage = React.createClass({
 
             {/* What do I need? */}
             <header>{ this.text("T0010") }</header>
-            <label>{ this.text("T0020") }</label>
-            <label>{ this.text("T0021") }</label>
-            <label>{ this.text("T0023") }</label>
+            <ul>
+              <li><label>{ this.text("T0020") }</label></li>
+              <li><label>{ this.text("T0021") }</label></li>
+              <li><label>{ this.text("T0023") }</label></li>
+            </ul>
 
             {/* Get ready */}
             <header>{ this.text("T0025") }</header>
