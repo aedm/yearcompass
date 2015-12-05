@@ -30,12 +30,9 @@ FinishPage = React.createClass({
     return (
         <div>
           <div id="jumbotron">
-            <p className="logo">&nbsp;</p>
+            <p className="smalltext">{ this.text("T0164") }</p>
           </div>
           <div className="bookletpage">
-
-            {/* You are now done with planning your year. */}
-            <header>{ this.text("T0164") }</header>
 
             {/* Share your achievement */}
             <header>{ this.text("T0178") }</header>

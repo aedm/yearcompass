@@ -82,7 +82,7 @@ FeedbackPage = React.createClass({
     return (
         <div>
           <div id="jumbotron">
-            <p className="feedback">{ this.text("T0180") }</p>
+            <p className="smalltext">{ this.text("T0180") }</p>
           </div>
           <div className="bookletpage">
             { this.renderFeedbackQuestions() }

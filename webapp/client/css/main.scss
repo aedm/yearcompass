@@ -122,9 +122,10 @@ body {
     color: white;
     font-family: $sans;
     text-shadow: 0px 2px 6px #888;
-    margin: 0px 0px 0px;
+    margin: 0px auto 0px;
     text-transform: uppercase;
     padding: 60px 10px;
+    max-width: $width;
 
     @media #{$smallScreen} {
       font-size: $jumboFontSmall;
@@ -134,7 +135,7 @@ body {
     }
   }
 
-  p.feedback {
+  p.smalltext {
     @media #{$smallScreen} {
       font-size: $jumboFontSmall * 0.6;
     }
