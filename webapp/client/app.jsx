@@ -96,6 +96,7 @@ App = React.createClass({
             { this.renderMenu() }
           </div>
           { this.renderBooklet() }
+          <SyncStateDisplay />
         </div>
     );
   }

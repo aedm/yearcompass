@@ -205,3 +205,29 @@ div.navbutton {
   }
 }
 
+$sync-state-radius: 5px;
+$sync-state-padding: 5px;
+
+div.sync-state {
+  position: fixed;
+  bottom: -$sync-state-radius;
+  right: -$sync-state-radius;
+  background-color: #f4f4f4;
+  font-family: $sans;
+  font-size: 10pt;
+  padding: 5px 15px 10px 10px;
+  border-radius: 5px;
+  color: #aaa;
+
+  @media #{$smallScreen} {
+    display: none;
+  }
+
+  .fa-times {
+    color: #f99;
+  }
+
+  .fa-check {
+    color: #7d7;
+  }
+}

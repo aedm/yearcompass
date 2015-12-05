@@ -1,102 +1,309 @@
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="reset.css">
-  <link rel="stylesheet" type="text/css" href="main.css">
-  <link rel="stylesheet" type="text/css" href="booklet.css">
-  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="booklet.css">
 
-  <title>yearcompass</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Slabo+27px&amp;subset=latin,latin-ext"
-        rel="stylesheet" type="text/css">
-  <link
-      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700&amp;subset=latin,latin-ext"
-      rel="stylesheet" type="text/css">
+    <title>YearCompass online booklet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px&amp;subset=latin,latin-ext"
+          rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700&amp;subset=latin,latin-ext"
+          rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="ui/favico.png">
 </head>
-<body data-feedly-mini="yes">
+<body>
 
-<div id="app">
-  <div class="container">
-    <div id="header">
 
-      <div class="title">
-        <a href=""><img src="ui/logotext_small_black.png" alt="YearCompass"/></a>
-      </div>
-
-      <div class="menu">
-        <!--<span>Lang:</span>-->
-        <!--<a href="#">-->
-          <!--<span>en</span>-->
-          <!--<span></span>-->
-        <!--</a><a href="#">-->
-
-        <!--<span>hr</span>-->
-        <!--<span></span>-->
-
-        <!--</a><a href="#">-->
-          <!--<span>hu</span>-->
-          <!--<span></span>-->
-        <!--</a>-->
-
-        <div class="pure-menu pure-menu-horizontal">
-          <ul class="pure-menu-list">
-            <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
-              <a href="#" id="menuLink1" class="pure-menu-link">Menu</a>
-              <ul class="pure-menu-children">
-                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Email</a></li>
-                <li class="pure-menu-item">
-                  <div>Takonyságok kicsiny tárháza ez .pure-menu-children </div>
-                </li>
-                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Tumblr Nyafogás Blog</a></li>
-              </ul>
-            </li>
-          </ul>
+<div id="react-root">
+    <div data-reactid=".0">
+        <div id="header" data-reactid=".0.0">
+            <div class="title" data-reactid=".0.0.0"><a href="http://yearcompass.com/en"
+                                                        data-reactid=".0.0.0.0"><img
+                    src="ui/logotext_small_black.png" alt="YearCompass"
+                    data-reactid=".0.0.0.0.0"><span data-reactid=".0.0.0.0.1"> </span></a></div>
+            <div class="menu pure-menu pure-menu-horizontal" data-reactid=".0.0.1">
+                <ul class="pure-menu-list" data-reactid=".0.0.1.0">
+                    <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover"
+                        data-reactid=".0.0.1.0.0"><a href="#" id="menuLink1" class="pure-menu-link"
+                                                     data-reactid=".0.0.1.0.0.0"><img
+                            src="http://graph.facebook.com/10153743943375816/picture/?type=large"
+                            alt="profile photo" class="photo" data-reactid=".0.0.1.0.0.0.0"></a>
+                        <ul class="pure-menu-children" data-reactid=".0.0.1.0.0.1">
+                            <li class="pure-menu-item" data-reactid=".0.0.1.0.0.1.0"><a href="#"
+                                                                                        class="pure-menu-link"
+                                                                                        data-reactid=".0.0.1.0.0.1.0.0">Logout</a>
+                            </li>
+                            <li class="pure-menu-item" data-reactid=".0.0.1.0.0.1.1">
+                                <div id="menuLanguageSelector" data-reactid=".0.0.1.0.0.1.1.0">
+                                    <button class="lang" data-reactid=".0.0.1.0.0.1.1.0.$en">en
+                                    </button>
+                                    <button class="lang" data-reactid=".0.0.1.0.0.1.1.0.$hr">hr
+                                    </button>
+                                    <button class="lang" data-reactid=".0.0.1.0.0.1.1.0.$hu">hu
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
+        <div data-reactid=".0.1">
+            <div id="navigation" data-reactid=".0.1.0">
+                <button class="active" data-reactid=".0.1.0.$past">2015</button>
+                <button class="" data-reactid=".0.1.0.$next">2016</button>
+                <button class="" data-reactid=".0.1.0.$finish">Finish</button>
+            </div>
+            <div class="booklet" data-reactid=".0.1.1">
+                <div data-reactid=".0.1.1.0">
+                    <div id="jumbotron" data-reactid=".0.1.1.0.0"><p data-reactid=".0.1.1.0.0.0">The
+                        past year</p></div>
+                    <div class="bookletpage" data-reactid=".0.1.1.0.1">
+                        <header data-reactid=".0.1.1.0.1.0">Going through your calendar</header>
+                        <p data-reactid=".0.1.1.0.1.1">Go through the past year's calendar week by
+                            week. If you see an important event, friendly or family gathering, or a
+                            significant task, note it down here.</p>
 
-      </div>
+                        <div class="answer" data-reactid=".0.1.1.0.1.2"><textarea
+                                data-reactid=".0.1.1.0.1.2.0" style="height: 63px;"></textarea>
+                        </div>
+                        <header data-reactid=".0.1.1.0.1.3">This is what my past year was about
+                        </header>
+                        <p data-reactid=".0.1.1.0.1.4">What aspect was the most important to you in
+                            the following areas during last year? Which happenings or events were
+                            the most significant? Summarize briefly.</p><label
+                            data-reactid=".0.1.1.0.1.5">personal life and family</label>
 
-    </div>
-    <div id="navigation">
-      <button class="active">Start</button>
-      <button class="">2015</button>
-      <button class="">2016</button>
-      <button class="">Finish</button>
-    </div>
-    <div class="booklet">
-      <div>
-        <div id="jumbotron">
-          <p class="logo">&nbsp;</p>
+                        <div class="answer" data-reactid=".0.1.1.0.1.6"><textarea
+                                data-reactid=".0.1.1.0.1.6.0" style="height: 63px;"></textarea>
+                        </div>
+                        <label data-reactid=".0.1.1.0.1.7">work, studies, profession</label>
+
+                        <div class="answer" data-reactid=".0.1.1.0.1.8"><textarea
+                                data-reactid=".0.1.1.0.1.8.0" style="height: 63px;"></textarea>
+                        </div>
+                        <label data-reactid=".0.1.1.0.1.9">belongings (home, objects)</label>
+
+                        <div class="answer" data-reactid=".0.1.1.0.1.a"><textarea
+                                data-reactid=".0.1.1.0.1.a.0" style="height: 63px;"></textarea>
+                        </div>
+                        <label data-reactid=".0.1.1.0.1.b">relaxation, hobbies, creativity</label>
+
+                        <div class="answer" data-reactid=".0.1.1.0.1.c"><textarea
+                                data-reactid=".0.1.1.0.1.c.0" style="height: 63px;"></textarea>
+                        </div>
+                        <label data-reactid=".0.1.1.0.1.d">friends, community, helping
+                            others</label>
+
+                        <div class="answer" data-reactid=".0.1.1.0.1.e"><textarea
+                                data-reactid=".0.1.1.0.1.e.0" style="height: 63px;"></textarea>
+                        </div>
+                        <label data-reactid=".0.1.1.0.1.f">health, fitness</label>
+
+                        <div class="answer" data-reactid=".0.1.1.0.1.g"><textarea
+                                data-reactid=".0.1.1.0.1.g.0" style="height: 63px;"></textarea>
+                        </div>
+                        <label data-reactid=".0.1.1.0.1.h">intellectual</label>
+
+                        <div class="answer" data-reactid=".0.1.1.0.1.i"><textarea
+                                data-reactid=".0.1.1.0.1.i.0" style="height: 63px;"></textarea>
+                        </div>
+                        <label data-reactid=".0.1.1.0.1.j">emotional, spiritual</label>
+
+                        <div class="answer" data-reactid=".0.1.1.0.1.k"><textarea
+                                data-reactid=".0.1.1.0.1.k.0" style="height: 63px;"></textarea>
+                        </div>
+                        <label data-reactid=".0.1.1.0.1.l">finances</label>
+
+                        <div class="answer" data-reactid=".0.1.1.0.1.m"><textarea
+                                data-reactid=".0.1.1.0.1.m.0" style="height: 63px;"></textarea>
+                        </div>
+                        <label data-reactid=".0.1.1.0.1.n">bucket list</label>
+
+                        <div class="answer" data-reactid=".0.1.1.0.1.o"><textarea
+                                data-reactid=".0.1.1.0.1.o.0" style="height: 63px;"></textarea>
+                        </div>
+                        <header data-reactid=".0.1.1.0.1.p">Six sentences about my past year
+                        </header>
+                        <p data-reactid=".0.1.1.0.1.q">The wisest decision I made...</p>
+
+                        <div class="answer" data-reactid=".0.1.1.0.1.r"><textarea
+                                data-reactid=".0.1.1.0.1.r.0" style="height: 63px;"></textarea>
+                        </div>
+                        <p data-reactid=".0.1.1.0.1.s">The biggest lesson I learned...</p>
+
+                        <div class="answer" data-reactid=".0.1.1.0.1.t"><textarea
+                                data-reactid=".0.1.1.0.1.t.0" style="height: 63px;"></textarea>
+                        </div>
+                        <p data-reactid=".0.1.1.0.1.u">The biggest risk I took...</p>
+
+                        <div class="answer" data-reactid=".0.1.1.0.1.v"><textarea
+                                data-reactid=".0.1.1.0.1.v.0" style="height: 63px;"></textarea>
+                        </div>
+                        <p data-reactid=".0.1.1.0.1.w">The biggest surprise of the year...</p>
+
+                        <div class="answer" data-reactid=".0.1.1.0.1.x"><textarea
+                                data-reactid=".0.1.1.0.1.x.0" style="height: 63px;"></textarea>
+                        </div>
+                        <p data-reactid=".0.1.1.0.1.y">The most important thing I did for
+                            others...</p>
+
+                        <div class="answer" data-reactid=".0.1.1.0.1.z"><textarea
+                                data-reactid=".0.1.1.0.1.z.0" style="height: 63px;"></textarea>
+                        </div>
+                        <p data-reactid=".0.1.1.0.1.10">The biggest thing I completed...</p>
+
+                        <div class="answer" data-reactid=".0.1.1.0.1.11"><textarea
+                                data-reactid=".0.1.1.0.1.11.0" style="height: 63px;"></textarea>
+                        </div>
+                        <header data-reactid=".0.1.1.0.1.12">Six questions about my past year
+                        </header>
+                        <p data-reactid=".0.1.1.0.1.13">What are you the most proud of?</p>
+
+                        <div class="answer" data-reactid=".0.1.1.0.1.14"><textarea
+                                data-reactid=".0.1.1.0.1.14.0" style="height: 63px;"></textarea>
+                        </div>
+                        <p data-reactid=".0.1.1.0.1.15">Who are the 3 people who influenced you the
+                            most?</p>
+
+                        <div class="answer" data-reactid=".0.1.1.0.1.16"><textarea
+                                data-reactid=".0.1.1.0.1.16.0" style="height: 63px;"></textarea>
+                        </div>
+                        <p data-reactid=".0.1.1.0.1.17">Who are the 3 people you influenced the
+                            most?</p>
+
+                        <div class="answer" data-reactid=".0.1.1.0.1.18"><textarea
+                                data-reactid=".0.1.1.0.1.18.0" style="height: 63px;"></textarea>
+                        </div>
+                        <p data-reactid=".0.1.1.0.1.19">What were you not able to accomplish?</p>
+
+                        <div class="answer" data-reactid=".0.1.1.0.1.1a"><textarea
+                                data-reactid=".0.1.1.0.1.1a.0" style="height: 63px;"></textarea>
+                        </div>
+                        <p data-reactid=".0.1.1.0.1.1b">What is the best thing you have discovered
+                            about yourself?</p>
+
+                        <div class="answer" data-reactid=".0.1.1.0.1.1c"><textarea
+                                data-reactid=".0.1.1.0.1.1c.0" style="height: 63px;"></textarea>
+                        </div>
+                        <p data-reactid=".0.1.1.0.1.1d">What are you the most grateful for?</p>
+
+                        <div class="answer" data-reactid=".0.1.1.0.1.1e"><textarea
+                                data-reactid=".0.1.1.0.1.1e.0" style="height: 63px;"></textarea>
+                        </div>
+                        <header data-reactid=".0.1.1.0.1.1f">The best moments</header>
+                        <p data-reactid=".0.1.1.0.1.1g">Describe the greatest and most memorable,
+                            joyful moments from last year. How did you feel? Who was there with you?
+                            What were you doing? What kind of smells, sounds or tastes do you
+                            remember?</p>
+
+                        <div class="answer" data-reactid=".0.1.1.0.1.1h"><textarea
+                                data-reactid=".0.1.1.0.1.1h.0" style="height: 63px;"></textarea>
+                        </div>
+                        <header data-reactid=".0.1.1.0.1.1i">Three of my biggest accomplishments
+                        </header>
+                        <p data-reactid=".0.1.1.0.1.1j">List your three greatest accomplishments
+                            from last year here.</p>
+
+                        <div class="answer" data-reactid=".0.1.1.0.1.1k"><textarea
+                                data-reactid=".0.1.1.0.1.1k.0" style="height: 63px;"></textarea>
+                        </div>
+                        <p data-reactid=".0.1.1.0.1.1l">What have you done to achieve these?</p>
+
+                        <div class="answer" data-reactid=".0.1.1.0.1.1m"><textarea
+                                data-reactid=".0.1.1.0.1.1m.0" style="height: 63px;"></textarea>
+                        </div>
+                        <p data-reactid=".0.1.1.0.1.1n">Who helped you achieve these successes?
+                            How?</p>
+
+                        <div class="answer" data-reactid=".0.1.1.0.1.1o"><textarea
+                                data-reactid=".0.1.1.0.1.1o.0" style="height: 63px;"></textarea>
+                        </div>
+                        <header data-reactid=".0.1.1.0.1.1p">Three of my biggest challenges</header>
+                        <p data-reactid=".0.1.1.0.1.1q">List your three biggest challenges from last
+                            year here.</p>
+
+                        <div class="answer" data-reactid=".0.1.1.0.1.1r"><textarea
+                                data-reactid=".0.1.1.0.1.1r.0" style="height: 63px;"></textarea>
+                        </div>
+                        <p data-reactid=".0.1.1.0.1.1s">Who or what helped you overcome these
+                            challenges?</p>
+
+                        <div class="answer" data-reactid=".0.1.1.0.1.1t"><textarea
+                                data-reactid=".0.1.1.0.1.1t.0" style="height: 63px;"></textarea>
+                        </div>
+                        <p data-reactid=".0.1.1.0.1.1u">What have you learned about yourself while
+                            overcoming these challenges?</p>
+
+                        <div class="answer" data-reactid=".0.1.1.0.1.1v"><textarea
+                                data-reactid=".0.1.1.0.1.1v.0" style="height: 63px;"></textarea>
+                        </div>
+                        <header data-reactid=".0.1.1.0.1.1w">Forgiveness</header>
+                        <p data-reactid=".0.1.1.0.1.1x">Did anything happen during the past year
+                            that still needs to be forgiven? Deeds or words that made you feel bad?
+                            Or are you angry with yourself? Note it down here. Do good for yourself
+                            and forgive.</p>
+
+                        <div class="answer" data-reactid=".0.1.1.0.1.1y"><textarea
+                                data-reactid=".0.1.1.0.1.1y.0" style="height: 63px;"></textarea>
+                        </div>
+                        <footer data-reactid=".0.1.1.0.1.1z">If you don't feel ready to forgive yet,
+                            note it down anyway. It can work wonders.
+                        </footer>
+                        <header data-reactid=".0.1.1.0.1.20">Letting go</header>
+                        <p data-reactid=".0.1.1.0.1.21">Is there anything else you need to say? Is
+                            there anything you must let go of before you can start your next year?
+                            Think about it and let it all go.</p>
+
+                        <div class="answer" data-reactid=".0.1.1.0.1.22"><textarea
+                                data-reactid=".0.1.1.0.1.22.0" style="height: 63px;"></textarea>
+                        </div>
+                        <header data-reactid=".0.1.1.0.1.23">The past year in three words</header>
+                        <p data-reactid=".0.1.1.0.1.24">Choose three words to define your past
+                            year.</p>
+
+                        <div class="answer" data-reactid=".0.1.1.0.1.25"><textarea
+                                data-reactid=".0.1.1.0.1.25.0" style="height: 63px;"></textarea>
+                        </div>
+                        <header data-reactid=".0.1.1.0.1.26">The book of my past year</header>
+                        <p data-reactid=".0.1.1.0.1.27">A book was made about your past year. Write
+                            down its title.</p>
+
+                        <div class="answer" data-reactid=".0.1.1.0.1.28"><textarea
+                                data-reactid=".0.1.1.0.1.28.0" style="height: 63px;"></textarea>
+                        </div>
+                        <header data-reactid=".0.1.1.0.1.29">Farewell to your last year</header>
+                        <p data-reactid=".0.1.1.0.1.2a">If there is anything else left that you
+                            would like to take note of, or there is anybody you would like to say
+                            goodbye to, do it now.</p>
+
+                        <div class="answer" data-reactid=".0.1.1.0.1.2b"><textarea
+                                data-reactid=".0.1.1.0.1.2b.0" style="height: 63px;"></textarea>
+                        </div>
+                        <header data-reactid=".0.1.1.0.1.2c">You have just finished the first
+                            part.
+                        </header>
+                        <p data-reactid=".0.1.1.0.1.2d">Take a deep breath.</p>
+
+                        <p data-reactid=".0.1.1.0.1.2e">Get some rest.</p>
+
+                        <div class="navbutton" data-reactid=".0.1.1.0.1.2f">
+                            <button class="navbutton" data-reactid=".0.1.1.0.1.2f.0">Next year
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="bookletpage">
-          <header>What is this?</header>
-          <p>This booklet will help you look back over the past year and to plan the year ahead of
-            you.
-          </p>
-          <header>Why is this good for me?</header>
-          <p>Planning your year is a good habit. It helps you identify your successes and sorrows
-            and will help you realize how much can happen just in a year. By learning from the past
-            you can plan your future so that you don't repeat the same patterns and can feel in
-            control of your own life.
-          </p>
-          <header>What do I need?</header>
-          <p>1st version (lone wolf version)</p>
-          <label>- at least 1 hour of uninterrupted time - a calendar of the past year - a printed
-            version of this workbook - honesty and openness - a selection of your favorite
-            pens</label>
-
-          <p>2nd version (group version)</p>
-          <label>- an inspirative group of people (2-10 persons) - at least 2 hours of creative
-            time</label>
-          <header>Arrive. Put on some relaxing music. Pour yourself a hot beverage. Let go all of
-            your expectations. Start when ready.
-          </header>
-          <div class="navbutton">
-            <button>Start</button>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 </div>
+<div class="sync-state">
+    Saved at 8:14pm. <i class="fa fa-check"></i>
+</div>
+
 </body>
 </html>

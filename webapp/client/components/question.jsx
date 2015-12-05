@@ -28,7 +28,8 @@ TextQuestion = React.createClass({
 
   /** Passes the answer to the actual editor */
   render() {
-    return (<TextQuestionCore answer={this.data.answer} onChange={this.setAnswer}/>);
+    return (<TextQuestionCore answer={this.data.answer} question={this.props.question}
+                              onChange={this.setAnswer}/>);
   }
 });
 
@@ -41,6 +42,8 @@ TextQuestion = React.createClass({
  *   'onChange': a callback called when the user changes the answer
  */
 TextQuestionCore = React.createClass({
+  mixins: [SyncStateSource],
+
   getInitialState() {
     return {
       value: this.props.answer,
@@ -63,6 +66,7 @@ TextQuestionCore = React.createClass({
 
   notifyParent(answer) {
     this.props.onChange(answer);
+    this.setSyncState(true);
   },
 
   onChange() {
@@ -70,6 +74,7 @@ TextQuestionCore = React.createClass({
     this.setState({value: answer});
     this.notifyParentDebounce(answer);
     this.adjustTextareaHeight();
+    this.setSyncState(false);
   },
 
   /* JavaScript hack to adjust textarea height to fit content. */
