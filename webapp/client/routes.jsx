@@ -52,3 +52,10 @@ loggedInRoutes.route('/feedback', {
     ReactLayout.render(App, {content: <FeedbackPage />});
   }
 });
+
+FlowRouter.route('/stats', {
+  name: "stats",
+  action() {
+    ReactLayout.render(StatsPage);
+  }
+});

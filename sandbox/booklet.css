@@ -16,6 +16,11 @@ div.bookletpage {
     color: #555;
     font-size: 20px;
     display: block; }
+  div.bookletpage p.stats {
+    margin: 0px 0px 20px 10px;
+    font-family: 'Roboto Condensed', sans-serif; }
+  div.bookletpage .stats {
+    color: #2a98ff; }
   div.bookletpage footer {
     font-family: 'Slabo 27px', serif;
     margin: 5px 0px 0px 0px;

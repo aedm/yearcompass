@@ -1,6 +1,8 @@
 Meteor.startup(function () {
-  Answers._ensureIndex({ "userId": 1});
-  Feedback._ensureIndex({ "userId": 1});
+  Answers._ensureIndex("userId");
+  Answers._ensureIndex("question");
+  Feedback._ensureIndex("userId");
+  Feedback._ensureIndex("question");
 });
 
 Meteor.publish('answers', function () {

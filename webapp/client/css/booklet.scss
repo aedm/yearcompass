@@ -23,6 +23,15 @@ div.bookletpage {
     display: block;
   }
 
+  p.stats {
+    margin: 0px 0px 20px 10px;
+    font-family: $sans;
+  }
+
+  .stats {
+    color: #2a98ff;
+  }
+
   footer {
     font-family: $serif;
     margin: 5px 0px 0px 0px;
