@@ -62,6 +62,7 @@ TextQuestionCore = React.createClass({
   /** Called when the Mongo collection was updated by any of the clients */
   componentWillReceiveProps(nextProps) {
     this.setState({value: nextProps.answer});
+    setTimeout(this.adjustTextareaHeight, 0);
   },
 
   notifyParent(answer) {
