@@ -31,8 +31,8 @@ body {
 
   div.menu {
     font-family: $serif;
-    font-size: 16px;
-    top: 23px;
+    font-size: 21px;
+    top: 18px;
     right: 15px;
     position: relative;
     float: right;
@@ -53,6 +53,7 @@ body {
     border: 1px solid #888;
     right: 0px;
     left: auto;
+    font-size: 16px;
   }
 
   #menuLanguageSelector {

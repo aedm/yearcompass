@@ -22,8 +22,8 @@ body {
       width: 183px; }
   #header div.menu {
     font-family: 'Slabo 27px', serif;
-    font-size: 16px;
-    top: 23px;
+    font-size: 21px;
+    top: 18px;
     right: 15px;
     position: relative;
     float: right;
@@ -38,7 +38,8 @@ body {
   #header .pure-menu-children {
     border: 1px solid #888;
     right: 0px;
-    left: auto; }
+    left: auto;
+    font-size: 16px; }
   #header #menuLanguageSelector {
     width: 150px;
     white-space: normal;

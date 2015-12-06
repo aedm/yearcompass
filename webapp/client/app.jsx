@@ -66,7 +66,7 @@ App = React.createClass({
             <li className="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
               <a href="#" id="menuLink1" className="pure-menu-link">
                 { this.data.userPhoto == undefined
-                    ? this.text("T0182")
+                    ? <i className="fa fa-bars"></i>
                     : <img src={ this.data.userPhoto } alt="profile photo" className="photo"/> }
               </a>
               <ul className="pure-menu-children">
