@@ -112,7 +112,6 @@ body {
   font-weight: 700;
   margin: 0px 0px 0px;
   text-align: center;
-  background-image: url("ui/E60WQOGUFR.jpg");
   background-position: center center;
   background-size: cover;
   padding: 30px 0px 0px 0px;
@@ -124,7 +123,7 @@ body {
     text-shadow: 0px 2px 6px #888;
     margin: 0px auto 0px;
     text-transform: uppercase;
-    padding: 60px 10px;
+    padding: 100px 10px;
     max-width: $width;
 
     @media #{$smallScreen} {
@@ -143,14 +142,24 @@ body {
       font-size: $jumboFontNormal * 0.6;
     }
   }
-
-  p.logo {
-    background-image: url("ui/logo_transparent_white_340_shadow.png");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 100px;
-  }
 }
+
+div.login {
+  background-image: url("ui/start-background.jpg");
+}
+
+div.pastyear {
+  background-image: url("ui/past-background.jpg");
+}
+
+div.nextyear {
+  background-image: url("ui/next-background.jpg");
+}
+
+div.finish {
+  background-image: url("ui/finish-background.jpg");
+}
+
 
 div.navbutton {
   text-align: center;

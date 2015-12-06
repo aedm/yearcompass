@@ -8,8 +8,8 @@ StartPage = React.createClass({
   render() {
     return (
         <div>
-          <div id="jumbotron">
-            <p className="logo">&nbsp;</p>
+          <div id="jumbotron" className="login">
+            <p>&nbsp;</p>
           </div>
 
           <div className="bookletpage">
