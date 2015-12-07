@@ -54,8 +54,7 @@ FinishPage = React.createClass({
 
             {/* Share your achievement */}
             <header>{ this.text("T0178") }</header>
-            <p>{ this.text("T0103") }</p>
-            <p>{ this.text("T0168") }</p>
+            <p>{ this.text("T0103") } { this.text("T0168") }</p>
 
             { this.renderShare() }
 
