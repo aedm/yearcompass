@@ -40,12 +40,21 @@ StartPage = React.createClass({
             {/* We'll remember it for you */}
             <header>{ this.text("T0176") }</header>
             <p>{ this.text("T0177") }</p>
-            <div className="navbutton">
-              <i onClick={() => {Meteor.loginWithFacebook(this.scrollTop)}}
-                 className="fa fa-facebook-square"></i>
-              <i onClick={() => {Meteor.loginWithGoogle(this.scrollTop)}}
-                 className="fa fa-google-plus-square"></i>
-            </div>
+
+            <table className="loginbuttons">
+              <tr><td>
+                <button className="facebook social"
+                        onClick={() => {Meteor.loginWithFacebook(this.scrollTop)}}>
+                  Sign in with Facebook
+                </button>
+              </td></tr>
+              <tr><td>
+                <button className="google social"
+                        onClick={() => {Meteor.loginWithGoogle(this.scrollTop)}}>
+                  Sign in with Google
+                </button>
+              </td></tr>
+            </table>
           </div>
         </div>);
   }
