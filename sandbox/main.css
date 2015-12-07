@@ -4,7 +4,6 @@ body {
   padding: 0px 0px 50px; }
 
 #header {
-  box-shadow: 0px 0px 12px white;
   color: #ddd;
   padding: 0px 0px 0px 0px;
   font-size: 20px;
@@ -163,13 +162,33 @@ div.sync-state {
   div.sync-state .fa-check {
     color: #7d7; }
 
-.loginbuttons {
-  width: auto;
-  margin: 30px auto 0px; }
-  .loginbuttons tr td {
-    padding: 5px; }
-  .loginbuttons tr td button {
-    width: 100%; }
+div.loginbuttons {
+  text-align: center;
+  padding: 30px 0px 0px; }
+  div.loginbuttons div {
+    background-color: #eee;
+    padding: 8px 25px 20px;
+    width: auto;
+    display: inline-block;
+    margin: auto; }
+    div.loginbuttons div table {
+      width: auto;
+      margin: 5px auto 0px; }
+      div.loginbuttons div table tr td {
+        padding: 8px; }
+        div.loginbuttons div table tr td p {
+          text-align: center;
+          margin: 0px 0px 1px;
+          padding: 0px;
+          font-size: 14px;
+          font-family: 'Roboto Condensed', sans-serif;
+          font-weight: 700;
+          text-transform: uppercase;
+          color: #aaa2a7;
+          text-shadow: 0px 0px 2px white; }
+      div.loginbuttons div table tr td button {
+        width: 100%;
+        box-shadow: 0px 5px 10px -5px #666; }
 
 button.social {
   border-width: 0px;

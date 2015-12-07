@@ -5,6 +5,38 @@ StartPage = React.createClass({
     window.scrollTo(0, 0);
   },
 
+  renderLoginButtons() {
+    return (
+        <div className="loginbuttons">
+          <div>
+            <table>
+              <tr>
+                <td>
+                  <p>{ this.text("T0195") }</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button className="facebook social"
+                          onClick={() => {Meteor.loginWithFacebook(this.scrollTop)}}>
+                    Sign in with Facebook
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <button className="google social"
+                          onClick={() => {Meteor.loginWithGoogle(this.scrollTop)}}>
+                    Sign in with Google
+                  </button>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+    );
+  },
+
   render() {
     return (
         <div>
@@ -16,6 +48,8 @@ StartPage = React.createClass({
             {/* What is this? */}
             <header>{ this.text("T0005") }</header>
             <p>{ this.text("T0007") }</p>
+
+            { this.renderLoginButtons() }
 
             {/* Why is this good for me? */}
             <header>{ this.text("T0008") }</header>
@@ -41,20 +75,7 @@ StartPage = React.createClass({
             <header>{ this.text("T0176") }</header>
             <p>{ this.text("T0177") }</p>
 
-            <table className="loginbuttons">
-              <tr><td>
-                <button className="facebook social"
-                        onClick={() => {Meteor.loginWithFacebook(this.scrollTop)}}>
-                  Sign in with Facebook
-                </button>
-              </td></tr>
-              <tr><td>
-                <button className="google social"
-                        onClick={() => {Meteor.loginWithGoogle(this.scrollTop)}}>
-                  Sign in with Google
-                </button>
-              </td></tr>
-            </table>
+            { this.renderLoginButtons() }
           </div>
         </div>);
   }
