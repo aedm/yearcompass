@@ -8,22 +8,40 @@ FinishPage = React.createClass({
 
     return (
         <p className="share">
-          <a href={`http://www.facebook.com/sharer/sharer.php?u=${url}&t=${title}`}
-             className="share-button facebook" target="_blank">Facebook</a>
-          <a href={`http://www.twitter.com/intent/tweet?url=${url}&text=${title}`}
-             className="share-button twitter" target="_blank">Twitter</a>
-          <a href={`http://pinterest.com/pin/create/button/?url=${url}&media=${img}&description=${title}`}
-             className="share-button pinterest" target="_blank">Pinterest</a>
-          <a href={`http://www.reddit.com/submit?url=${url}`}
-             className="share-button reddit" target="_blank">Reddit</a>
-          <a href={`http://plus.google.com/share?url=${url}`}
-             className="share-button google" target="_blank">Google+</a>
-          <a href={`http://www.linkedin.com/shareArticle?mini=true&url=${url}`}
-             className="share-button linkedin" target="_blank">LinkedIn</a>
-          <a href={`whatsapp://send?text=${url}`}
-             className="share-button linkedin" target="_blank">WhatsApp</a>
+          <button className="social facebook"
+                  onClick={ ()=> {this.go(`http://www.facebook.com/sharer/sharer.php?u=${url}&t=${title}`)}}>
+            Facebook
+          </button>
+          <button className="social twitter"
+                  onClick={ ()=> {this.go(`http://www.twitter.com/intent/tweet?url=${url}&text=${title}`)}}>
+            Twitter
+          </button>
+          <button className="social pinterest"
+                  onClick={ ()=> {this.go(`http://pinterest.com/pin/create/button/?url=${url}&media=${img}&description=${title}`)}}>
+            Pinterest
+          </button>
+          <button className="social google"
+                  onClick={ ()=> {this.go(`http://plus.google.com/share?url=${url}`)}}>
+            Google+
+          </button>
+          <button className="social reddit"
+                  onClick={ ()=> {this.go(`http://www.reddit.com/submit?url=${url}`)}}>
+            Reddit
+          </button>
+          <button className="social linkedin"
+                  onClick={ ()=> {this.go(`http://www.linkedin.com/shareArticle?mini=true&url=${url}`)}}>
+            LinkedIn
+          </button>
+          <button className="social whatsapp"
+                  onClick={ ()=> {this.go(`whatsapp://send?text=${url}`)}}>
+            WhatsApp
+          </button>
         </p>
     );
+  },
+
+  go(url) {
+    window.location.href = url;
   },
 
   render() {
@@ -42,7 +60,7 @@ FinishPage = React.createClass({
             { this.renderShare() }
 
             <hr />
-          
+
             {/* The small print */}
             <footer>{ this.text("T0170") }</footer>
             <footer>{ this.text("T0175") }</footer>
