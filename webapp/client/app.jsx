@@ -9,7 +9,7 @@ App = React.createClass({
 
   getInitialState() {
     return {
-      language: Object.keys(translations)[0],
+      language: "en_us"
     }
   },
 
@@ -75,7 +75,7 @@ App = React.createClass({
                   <div id="menuLanguageSelector">
                     { Object.keys(translations).map((t) =>
                       <button key={t} onClick={this.selectLanguage.bind(this, t)}
-                              className="lang">{t}</button> )}
+                              className="lang">{t.substring(0,2)}</button> )}
                   </div>
                 </li>
               </ul>
