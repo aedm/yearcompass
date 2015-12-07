@@ -161,7 +161,6 @@ div.finish {
   background-image: url("ui/finish-background.jpg");
 }
 
-
 div.navbutton {
   text-align: center;
   padding: 40px 0px;
@@ -241,4 +240,46 @@ div.sync-state {
   .fa-check {
     color: #7d7;
   }
+}
+
+button.social {
+  border-width: 0px;
+  color: #ffffff;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-family: $sans;
+  font-weight: 400;
+  font-size: 16px;
+  //text-transform: uppercase;
+  text-shadow: 0px 1px 1px black;
+}
+
+button.social::before {
+  font-family: "FontAwesome";
+  padding-right: 12px;
+  width: 20px;
+  margin-right: 12px;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+button.facebook {
+  background: linear-gradient(#3B5998, #324378);
+}
+button.facebook::before {
+  content: "\f09a";
+}
+
+button.google {
+  background: linear-gradient(#dd4b39, #b33d2e);
+}
+button.google::before {
+  content: "\f0d5";
+}
+
+button.google {
+  background-color: #dd4b39;
+}
+
+button.twitter {
+  background-color: #4099FF;
 }
