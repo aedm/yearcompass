@@ -85,18 +85,22 @@ App = React.createClass({
     );
   },
 
+  renderSyncState () {
+    return ["past", "next"].indexOf(FlowRouter.getRouteName()) < 0 ? null : <SyncStateDisplay />;
+  },
+
   render() {
     return (
         <div>
           <div id="header">
             <div className="title">
               <a href={ this.text("T0171") }>
-                <img src="ui/logotext_small_black.png" alt={ this.text("T0191") }/> </a>
+                <img src="ui/logo.png" alt={ this.text("T0191") }/> </a>
             </div>
             { this.renderMenu() }
           </div>
           { this.renderBooklet() }
-          <SyncStateDisplay />
+          { this.renderSyncState() }
         </div>
     );
   }
