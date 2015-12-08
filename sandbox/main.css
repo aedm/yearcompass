@@ -167,16 +167,21 @@ div.loginbuttons {
   padding: 30px 0px 0px; }
   div.loginbuttons div {
     background-color: #eee;
-    padding: 8px 25px 20px;
+    padding: 8px 15px 20px;
     width: auto;
     display: inline-block;
     margin: auto; }
     div.loginbuttons div table {
       width: auto;
       margin: 5px auto 0px; }
-      div.loginbuttons div table tr td {
-        padding: 8px; }
-        div.loginbuttons div table tr td p {
+      div.loginbuttons div table tbody tr td {
+        padding: 8px;
+        text-align: center; }
+        div.loginbuttons div table tbody tr td button {
+          width: 100%;
+          box-shadow: 0px 5px 10px -5px #666;
+          margin: 0px; }
+        div.loginbuttons div table tbody tr td p {
           text-align: center;
           margin: 0px 0px 1px;
           padding: 0px;
@@ -186,9 +191,6 @@ div.loginbuttons {
           text-transform: uppercase;
           color: #aaa2a7;
           text-shadow: 0px 0px 2px white; }
-      div.loginbuttons div table tr td button {
-        width: 100%;
-        box-shadow: 0px 5px 10px -5px #666; }
 
 button.social {
   border-width: 0px;
