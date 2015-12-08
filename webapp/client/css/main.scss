@@ -62,12 +62,18 @@ body {
     padding: 10px 0px;
     text-align: center;
 
-    button.lang {
+    img.lang {
       margin: 5px;
-      border-width: 1px;
       display: inline-block;
       border-radius: 3px;
       width: 32px;
+      cursor: pointer;
+      transition: all 0.05s linear;
+    }
+
+    img.lang:hover {
+      width: 38px;
+      margin: 2px;
     }
   }
 }

@@ -74,8 +74,8 @@ App = React.createClass({
                 <li className="pure-menu-item">
                   <div id="menuLanguageSelector">
                     { Object.keys(translations).map((t) =>
-                      <button key={t} onClick={this.selectLanguage.bind(this, t)}
-                              className="lang">{t.substring(0,2)}</button> )}
+                      <img key={t} onClick={this.selectLanguage.bind(this, t)}
+                           className="lang" alt={t} src={`ui/flags/${t}.png`} /> )}
                   </div>
                 </li>
               </ul>

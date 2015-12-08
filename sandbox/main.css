@@ -44,12 +44,16 @@ body {
     white-space: normal;
     padding: 10px 0px;
     text-align: center; }
-    #header #menuLanguageSelector button.lang {
+    #header #menuLanguageSelector img.lang {
       margin: 5px;
-      border-width: 1px;
       display: inline-block;
       border-radius: 3px;
-      width: 32px; }
+      width: 32px;
+      cursor: pointer;
+      transition: all 0.05s linear; }
+    #header #menuLanguageSelector img.lang:hover {
+      width: 38px;
+      margin: 2px; }
 
 #navigation {
   width: 100%;
