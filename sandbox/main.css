@@ -30,10 +30,28 @@ body {
     text-align: right;
     margin: 0px 0px 0px auto;
     width: auto;
-    height: 30px; }
+    height: 30px;
+    padding: 0px; }
+    #header div.menu ul {
+      background-color: #eee;
+      padding: 8px 10px 3px 20px;
+      margin: 0px; }
+      #header div.menu ul .pure-menu-link {
+        padding: 0px;
+        margin: 0px; }
+      #header div.menu ul .pure-menu-children {
+        background-color: white;
+        padding: 0px; }
+        #header div.menu ul .pure-menu-children .pure-menu-link {
+          padding: 10px;
+          font-family: 'Roboto Condensed', sans-serif;
+          background-color: #eee;
+          transition: background-color 0.15s linear; }
+        #header div.menu ul .pure-menu-children .pure-menu-link:hover {
+          background-color: #ddd; }
     #header div.menu img.photo {
       height: 25px;
-      border-radius: 3px; }
+      border-radius: 2px; }
   #header .pure-menu-children {
     border: 1px solid #888;
     right: 0px;
