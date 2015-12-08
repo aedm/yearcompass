@@ -1,4 +1,3 @@
-
 /** Displays a plain text answer. Takes the value from the
  * 'Answers' Mongo collection. The actual rendering is performed by
  * a 'PlainTextQuestionCore' instance which is also responsible for
@@ -14,7 +13,7 @@ TextQuestion = React.createClass({
 
   /** Forwards changes from 'Answers' to 'this.data' */
   getMeteorData() {
-    let document = Answers.findOne({ question: this.props.question });
+    let document = Answers.findOne({question: this.props.question});
     if (!document) return {};
     return {
       answer: document.answer
@@ -81,15 +80,17 @@ TextQuestionCore = React.createClass({
   /* JavaScript hack to adjust textarea height to fit content. */
   adjustTextareaHeight() {
     let element = ReactDOM.findDOMNode(this.refs.answer);
-    element.style.height = "5px";
-    element.style.height = (element.scrollHeight)+"px";
+    if (element != null) {
+      element.style.height = "5px";
+      element.style.height = (element.scrollHeight) + "px";
+    }
   },
 
   render() {
     return (
-      <div className="answer">
-        <textarea ref="answer" onChange={this.onChange} value={this.state.value} />
-      </div>
+        <div className="answer">
+          <textarea ref="answer" onChange={this.onChange} value={this.state.value}/>
+        </div>
     );
   }
 });
