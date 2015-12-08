@@ -10,10 +10,9 @@ StartPage = React.createClass({
         <div className="loginbuttons">
           <div>
             <table>
+              <tbody>
               <tr>
-                <td>
-                  <p>{ this.text("T0195") }</p>
-                </td>
+                <td><p>{ this.text("T0195") }</p></td>
               </tr>
               <tr>
                 <td>
@@ -31,6 +30,7 @@ StartPage = React.createClass({
                   </button>
                 </td>
               </tr>
+              </tbody>
             </table>
           </div>
         </div>
