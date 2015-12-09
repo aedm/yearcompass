@@ -1,4 +1,4 @@
-translations["en_us"] = {
+translations["no_no"] = {
   "T0001": "the year ahead",
   "T0002": "2015",
   "T0003": "2016",

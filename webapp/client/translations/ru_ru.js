@@ -1,4 +1,4 @@
-translations["en_us"] = {
+translations["ru_ru"] = {
   "T0001": "the year ahead",
   "T0002": "2015",
   "T0003": "2016",
@@ -160,7 +160,7 @@ translations["en_us"] = {
   "T0159": "Unleash your mind. What is your secret wish for the next year?",
   "T0160": "The year ahead",
   "T0161": "I believe anything is possible this year.",
-  "T0162": "Date:",
+  "T0162": "Дата:",
   "T0163": "signature",
   "T0164": "You are now done with planning your year.",
   "T0165": "Two small notes at the end:",
