@@ -41,7 +41,7 @@ FinishPage = React.createClass({
   },
 
   go(url) {
-    window.location.href = url;
+    window.open(url);
   },
 
   render() {
