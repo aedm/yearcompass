@@ -6,8 +6,9 @@
 
   <title>YearCompass online booklet</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Slabo+27px&amp;subset=latin,latin-ext"
-        rel="stylesheet" type="text/css">
+  <link
+      href="https://fonts.googleapis.com/css?family=Slabo+27px&amp;subset=latin,latin-ext"
+      rel="stylesheet" type="text/css">
   <link
       href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700&amp;subset=latin,latin-ext"
       rel="stylesheet" type="text/css">
@@ -22,35 +23,44 @@
 <div id="react-root">
   <div>
     <div id="header">
-      <div class="title"><a href="http://yearcompass.com/en"><img src="ui/logotext_small_black.png"
+      <div class="title"><a href="http://yearcompass.com/en"><img src="ui/logo.png"
                                                                   alt="YearCompass"><span> </span></a>
       </div>
       <div class="menu pure-menu pure-menu-horizontal">
         <ul class="pure-menu-list">
-          <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover"><a href="#"
-                                                                                     id="menuLink1"
-                                                                                     class="pure-menu-link"><i
-              class="fa fa-bars"></i></a>
+          <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover"><a
+              href="#" id="menuLink1" class="pure-menu-link"><span><img
+              src="http://graph.facebook.com/10153743943375816/picture/?type=large"
+              alt="profile photo" class="photo"><span>&nbsp;&nbsp;&nbsp;</span></span><img
+              class="photo" src="ui/flags/en_us.png"></a>
             <ul class="pure-menu-children">
+              <li class="pure-menu-item"><a href="#" class="pure-menu-link">Logout</a>
+              </li>
               <li class="pure-menu-item">
-                <div id="menuLanguageSelector">
-                  <button class="lang">cs</button>
-                  <button class="lang">de</button>
-                  <button class="lang">en</button>
-                  <button class="lang">eo</button>
-                  <button class="lang">es</button>
-                  <button class="lang">fr</button>
-                  <button class="lang">hr</button>
-                  <button class="lang">hu</button>
-                  <button class="lang">it</button>
-                  <button class="lang">nl</button>
-                  <button class="lang">pl</button>
-                  <button class="lang">pt</button>
-                  <button class="lang">ro</button>
-                  <button class="lang">sk</button>
-                  <button class="lang">sv</button>
-                  <button class="lang">zh</button>
-                </div>
+                <div id="menuLanguageSelector"><img class="lang" alt="cs_cz"
+                                                    src="ui/flags/cs_cz.png"><img
+                    class="lang" alt="de_de" src="ui/flags/de_de.png"><img class="lang"
+                                                                           alt="en_us"
+                                                                           src="ui/flags/en_us.png"><img
+                    class="lang" alt="eo_eo" src="ui/flags/eo_eo.png"><img class="lang"
+                                                                           alt="es_es"
+                                                                           src="ui/flags/es_es.png"><img
+                    class="lang" alt="fr_fr" src="ui/flags/fr_fr.png"><img class="lang"
+                                                                           alt="hr_hr"
+                                                                           src="ui/flags/hr_hr.png"><img
+                    class="lang" alt="hu_hu" src="ui/flags/hu_hu.png"><img class="lang"
+                                                                           alt="it_it"
+                                                                           src="ui/flags/it_it.png"><img
+                    class="lang" alt="nl_nl" src="ui/flags/nl_nl.png"><img class="lang"
+                                                                           alt="pl_pl"
+                                                                           src="ui/flags/pl_pl.png"><img
+                    class="lang" alt="pt_br" src="ui/flags/pt_br.png"><img class="lang"
+                                                                           alt="ro_ro"
+                                                                           src="ui/flags/ro_ro.png"><img
+                    class="lang" alt="sk_sk" src="ui/flags/sk_sk.png"><img class="lang"
+                                                                           alt="sv_sv"
+                                                                           src="ui/flags/sv_sv.png"><img
+                    class="lang" alt="zh_cn" src="ui/flags/zh_cn.png"></div>
               </li>
             </ul>
           </li>
@@ -58,55 +68,169 @@
       </div>
     </div>
     <div>
+      <div id="navigation">
+        <button class="active">2015</button>
+        <button class="">2016</button>
+        <button class="">Finish</button>
+      </div>
       <div class="booklet">
         <div>
-          <div id="jumbotron" class="login"><p>&nbsp;</p></div>
+          <div id="jumbotron" class="pastyear"><p>The past year</p></div>
           <div class="bookletpage">
-            <header>這是什麼?</header>
-            <p>YearCompass will help you look back over the past year and plan the year ahead of
-              you.</p>
-            <header>這對我有什麼好處?</header>
-            <p>
-              計畫你未來的一年是個好習慣，它會幫助你看到裡的成功與失敗，並會幫助你了解許多事可以在一年內發生。向過去學習可幫助你在計畫未來時，不再做同樣的事並讓你感到對自我生命的掌握。</p>
-            <header>我需要什麼?</header>
-            <ul>
-              <li><label>at least four hours of creative time</label></li>
-              <li><label>去年的行事曆</label></li>
-              <li><label>誠實與開放的心</label></li>
-            </ul>
-            <header>做好準備</header>
-            <p>到達</p>
+            <header>Going through your calendar</header>
+            <p>Go through the past year's calendar week by week. If you see an important
+              event, friendly or family gathering, or a significant task, note it down
+              here.</p>
 
-            <p>放些放鬆的音樂</p>
+            <div class="answer"><textarea style="height: 63px;"></textarea></div>
+            <header>This is what my past year was about</header>
+            <p>What aspect was the most important to you in the following areas during
+              last year? Which happenings or events were the most significant? Summarize
+              briefly.</p><label>personal life and family</label>
 
-            <p>倒點熱飲給自己</p>
+            <div class="answer"><textarea style="height: 63px;"></textarea></div>
+            <label>work, studies, profession</label>
 
-            <p>放下你所有的期待</p>
+            <div class="answer"><textarea style="height: 63px;"></textarea></div>
+            <label>belongings (home, objects)</label>
 
-            <p>準備好了就開始</p>
-            <header>We'll remember it for you</header>
-            <p>Your answers aren't just a shouting into the void. We keep them for you. But in order
-              to do so, we must remember you as well. Please log in.</p>
-            <table class="loginbuttons">
-              <tbody>
-              <tr>
-                <td>
-                  <button class="facebook social">Sign in with Facebook</button>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <button class="google social">Sign in with Google</button>
-                </td>
-              </tr>
-              </tbody>
-            </table>
+            <div class="answer"><textarea style="height: 63px;"></textarea></div>
+            <label>relaxation, hobbies, creativity</label>
+
+            <div class="answer"><textarea style="height: 63px;"></textarea></div>
+            <label>friends, community, helping others</label>
+
+            <div class="answer"><textarea style="height: 63px;"></textarea></div>
+            <label>health, fitness</label>
+
+            <div class="answer"><textarea style="height: 63px;"></textarea></div>
+            <label>intellectual</label>
+
+            <div class="answer"><textarea style="height: 63px;"></textarea></div>
+            <label>emotional, spiritual</label>
+
+            <div class="answer"><textarea style="height: 63px;"></textarea></div>
+            <label>finances</label>
+
+            <div class="answer"><textarea style="height: 63px;"></textarea></div>
+            <label><span>bucket list</span><span>*</span></label>
+
+            <div class="answer"><textarea style="height: 63px;"></textarea></div>
+            <footer><span>* </span><span>In case you achieved something this year, you always wanted.</span>
+            </footer>
+            <header>Six sentences about my past year</header>
+            <p>The wisest decision I made...</p>
+
+            <div class="answer"><textarea style="height: 63px;"></textarea></div>
+            <p>The biggest lesson I learned...</p>
+
+            <div class="answer"><textarea style="height: 63px;"></textarea></div>
+            <p>The biggest risk I took...</p>
+
+            <div class="answer"><textarea style="height: 63px;"></textarea></div>
+            <p>The biggest surprise of the year...</p>
+
+            <div class="answer"><textarea style="height: 63px;"></textarea></div>
+            <p>The most important thing I did for others...</p>
+
+            <div class="answer"><textarea style="height: 63px;"></textarea></div>
+            <p>The biggest thing I completed...</p>
+
+            <div class="answer"><textarea style="height: 63px;"></textarea></div>
+            <header>Six questions about my past year</header>
+            <p>What are you the most proud of?</p>
+
+            <div class="answer"><textarea style="height: 63px;"></textarea></div>
+            <p>Who are the three people who influenced you the most?</p>
+
+            <div class="answer"><textarea style="height: 63px;"></textarea></div>
+            <p>Who are the three people you influenced the most?</p>
+
+            <div class="answer"><textarea style="height: 63px;"></textarea></div>
+            <p>What were you not able to accomplish?</p>
+
+            <div class="answer"><textarea style="height: 63px;"></textarea></div>
+            <p>What is the best thing you have discovered about yourself?</p>
+
+            <div class="answer"><textarea style="height: 63px;"></textarea></div>
+            <p>What are you the most grateful for?</p>
+
+            <div class="answer"><textarea style="height: 63px;"></textarea></div>
+            <header>The best moments</header>
+            <p>Describe the greatest and most memorable, joyful moments from last year.
+              How did you feel? Who was there with you? What were you doing? What kind of
+              smells, sounds or tastes do you remember?</p>
+
+            <div class="answer"><textarea style="height: 63px;"></textarea></div>
+            <header>Three of my biggest accomplishments</header>
+            <p>List your three greatest accomplishments from last year here.</p>
+
+            <div class="answer"><textarea style="height: 63px;"></textarea></div>
+            <p>What have you done to achieve these?</p>
+
+            <div class="answer"><textarea style="height: 63px;"></textarea></div>
+            <p>Who helped you achieve these successes? How?</p>
+
+            <div class="answer"><textarea style="height: 63px;"></textarea></div>
+            <header>Three of my biggest challenges</header>
+            <p>List your three biggest challenges from last year here.</p>
+
+            <div class="answer"><textarea style="height: 63px;"></textarea></div>
+            <p>Who or what helped you overcome these challenges?</p>
+
+            <div class="answer"><textarea style="height: 63px;"></textarea></div>
+            <p>What have you learned about yourself while overcoming these challenges?</p>
+
+            <div class="answer"><textarea style="height: 63px;"></textarea></div>
+            <header>Forgiveness</header>
+            <p>Did anything happen during the past year that still needs to be forgiven?
+              Deeds or words that made you feel bad? Or are you angry with yourself? Note
+              it down here. Do good for yourself and forgive.</p>
+
+            <div class="answer"><textarea style="height: 63px;"></textarea></div>
+            <footer>If you don't feel ready to forgive yet, note it down anyway. It can
+              work wonders.
+            </footer>
+            <header>Letting go</header>
+            <p>Is there anything else you need to say? Is there anything you must let go
+              of before you can start your next year? Think about it and let it all
+              go.</p>
+
+            <div class="answer"><textarea style="height: 63px;"></textarea></div>
+            <header>The past year in three words</header>
+            <p>Choose three words to define your past year.</p>
+
+            <div class="answer"><textarea style="height: 63px;"></textarea></div>
+            <header>The book of my past year</header>
+            <p>A book was made about your past year. Write down its title.</p>
+
+            <div class="answer"><textarea style="height: 63px;"></textarea></div>
+            <header>Farewell to your last year</header>
+            <p>If there is anything else left that you would like to take note of, or
+              there is anybody you would like to say goodbye to, do it now.</p>
+
+            <div class="answer"><textarea style="height: 63px;"></textarea></div>
+            <header>You have just finished the first part.</header>
+            <p>Take a deep breath.</p>
+
+            <p>Get some rest.</p>
+
+            <div class="navbutton">
+              <button class="navbutton">Next year</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="sync-state"><span>Saved at 6:53:24 PM.</span><span>&nbsp;</span><i
-        class="fa fa-fw fa-check"></i></div>
+    <div class="foot">
+      Help us make YearCompass better!
+      <a href="http://translate.yearcompass.com/">Translate it to your language</a>
+      or
+      <a href="/feedback">leave feedback</a>.
+    </div>
+
+    <!--<div class="sync-state"><span>Saved at 4:27:06 PM.</span><span>&nbsp;</span><i-->
+        <!--class="fa fa-fw fa-check"></i></div>-->
   </div>
 </div>
 </body>

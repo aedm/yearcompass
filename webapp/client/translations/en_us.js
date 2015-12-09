@@ -199,4 +199,8 @@ translations["en_us"] = {
   "T0198": "OK",
   "T0199": "#close2015",
   "T0200": "#plan2016",
+  "T0210": "Help us make YearCompass better!",
+  "T0211": "Translate it to your language",
+  "T0212": "or",
+  "T0213": "leave feedback",
 }

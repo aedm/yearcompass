@@ -3,7 +3,8 @@
 body {
   background-color: white;
   margin: 0px;
-  padding: 0px 0px 50px;
+  padding: 0px 0px 0px;
+  min-height: 100%;
 }
 
 // header at the top of page
@@ -377,4 +378,27 @@ button.whatsapp {
 
 button.whatsapp::before {
   content: "\f232";
+}
+
+
+
+div.foot {
+  background-color: black;
+  color: #cdcdcd;
+  margin: 40px 0px 0px;
+  //max-width: $width;
+  text-align: center;
+  padding: 20px 0px;
+  font-family: $sans;
+  bottom: 0px;
+  width: 100%;
+
+  a {
+    color: #51b1ff;
+  }
+
+  .footersection {
+    display: inline-block;
+    padding: 0px 10px;
+  }
 }
