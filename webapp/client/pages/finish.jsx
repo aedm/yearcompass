@@ -4,20 +4,22 @@ FinishPage = React.createClass({
   renderShare() {
     let url = this.text("T0171");
     let img = "http://www.yearcompass.com/wp-content/uploads/2014/12/zen_share1.png";
-    let title = this.text("T0191");
+    let twitterText = this.text("T0205");
+    let pinterestText = this.text("T0206");
+    let whatsappText = this.text("T0209");
 
     return (
         <p className="share">
           <button className="social facebook"
-                  onClick={ ()=> {this.go(`http://www.facebook.com/sharer/sharer.php?u=${url}&t=${title}`)}}>
+                  onClick={ ()=> {this.go(`http://www.facebook.com/sharer/sharer.php?u=${url}`)}}>
             Facebook
           </button>
           <button className="social twitter"
-                  onClick={ ()=> {this.go(`http://www.twitter.com/intent/tweet?url=${url}&text=${title}`)}}>
+                  onClick={ ()=> {this.go(`http://www.twitter.com/intent/tweet?url=${url}&text=${twitterText}`)}}>
             Twitter
           </button>
           <button className="social pinterest"
-                  onClick={ ()=> {this.go(`http://pinterest.com/pin/create/button/?url=${url}&media=${img}&description=${title}`)}}>
+                  onClick={ ()=> {this.go(`http://pinterest.com/pin/create/button/?url=${url}&media=${img}&description=${pinterestText}`)}}>
             Pinterest
           </button>
           <button className="social google"
@@ -33,7 +35,7 @@ FinishPage = React.createClass({
             LinkedIn
           </button>
           <button className="social whatsapp"
-                  onClick={ ()=> {this.go(`whatsapp://send?text=${url}`)}}>
+                  onClick={ ()=> {this.go(`whatsapp://send?text=${whatsappText}`)}}>
             WhatsApp
           </button>
         </p>
