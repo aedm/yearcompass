@@ -36,8 +36,9 @@ NextYearPage = React.createClass({
             <TextQuestion question="ahead-about-emotional"/>
             <label>{ this.text("T0042") }</label>
             <TextQuestion question="ahead-about-finances"/>
-            <label>{ this.text("T0187") }</label>
+            <label>{ this.text("T0187") }*</label>
             <TextQuestion question="ahead-about-bucketlist"/>
+            <footer>* { this.text("T0126") }</footer>
 
             {/* Magical triplets for the year ahead */}
             <header>{ this.text("T0132") }</header>

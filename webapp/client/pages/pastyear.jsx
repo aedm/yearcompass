@@ -38,8 +38,9 @@ PastYearPage = React.createClass({
             <TextQuestion question="past-about-emotional"/>
             <label>{ this.text("T0042") }</label>
             <TextQuestion question="past-about-finances"/>
-            <label>{ this.text("T0187") }</label>
+            <label>{ this.text("T0187") }*</label>
             <TextQuestion question="past-about-bucketlist"/>
+            <footer>* { this.text("T0049") }</footer>
 
             {/* 6 sentences about my past year */}
             <header>{ this.text("T0051") }</header>
