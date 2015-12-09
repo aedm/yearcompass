@@ -58,6 +58,8 @@ FinishPage = React.createClass({
 
             { this.renderShare() }
 
+            <p className="pnav"><a href="">{ this.text("T0214") }</a></p>
+
             <hr />
 
             {/* The small print */}
