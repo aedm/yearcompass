@@ -17,7 +17,7 @@ StatsPage = React.createClass({
   },
 
   text(token) {
-    return translations["en"][token];
+    return translations["en_us"][token];
   },
 
   getCount(label) {
