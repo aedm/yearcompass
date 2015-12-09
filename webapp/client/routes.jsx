@@ -92,3 +92,10 @@ FlowRouter.route('/stats', {
     ReactLayout.render(StatsPage);
   }
 });
+
+FlowRouter.route('/feedbacktext', {
+  name: "feedbacktext",
+  action() {
+    ReactLayout.render(FeedbackTextsPage);
+  }
+});

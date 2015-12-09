@@ -13,7 +13,7 @@ TextQuestion = React.createClass({
 
   /** Forwards changes from 'Answers' to 'this.data' */
   getMeteorData() {
-    let document = Answers.findOne({question: this.props.question});
+    let document = Answers.findOne({question: this.props.question, userId: Meteor.userId()});
     if (!document) return {};
     return {
       answer: document.answer

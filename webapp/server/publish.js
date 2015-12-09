@@ -15,6 +15,11 @@ Meteor.publish('feedback', function () {
   return Feedback.find({userId: this.userId});
 });
 
+Meteor.publish('freetext-feedbacks', function () {
+  if (!this.userId) return [];
+  return Answers.find({question: "feedback"});
+});
+
 Accounts.onCreateUser(function (options, user) {
   if (options.profile) {
     let picture = "";
