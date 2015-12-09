@@ -65,9 +65,12 @@ App = React.createClass({
           <ul className="pure-menu-list">
             <li className="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
               <a href="#" id="menuLink1" className="pure-menu-link">
-                { this.data.userPhoto == undefined
-                    ? <img className="photo" src={`ui/flags/${this.state.language}.png`} />
-                    : <img src={ this.data.userPhoto } alt="profile photo" className="photo"/> }
+                { this.data.userPhoto == undefined ? null
+                    : <span>
+                        <img src={ this.data.userPhoto } alt="profile photo" className="photo"/>
+                        &nbsp;&nbsp;&nbsp;
+                      </span> }
+                <img className="photo" src={`ui/flags/${this.state.language}.png`} />
               </a>
               <ul className="pure-menu-children">
                 { logoutButton }
