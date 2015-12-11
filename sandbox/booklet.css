@@ -94,14 +94,14 @@ div.bookletpage {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 400;
     font-size: 17px; }
-  div.bookletpage a.final-link {
+  div.bookletpage p.final-links a {
     font-family: 'Slabo 27px', serif;
     font-size: 20px;
     color: #2c7cc6;
     text-decoration: none;
     display: block;
     padding: 2px 0px; }
-  div.bookletpage a.final-link::before {
+  div.bookletpage p.final-links a::before {
     content: "\f08e ";
     font-family: "FontAwesome";
     color: #888;

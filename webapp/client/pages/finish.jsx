@@ -55,15 +55,10 @@ FinishPage = React.createClass({
           <div className="bookletpage">
 
             <header>{ this.text("T0164") }</header>
-            <p>
-              <a className="final-link" href="/print" target="_blank">
-                { this.text("T0215") }
-              </a>
-
-              {/* Take me to YearCompass.com */}
-              <a className="final-link" href="http://yearcompass.com">
-                { this.text("T0214") }
-              </a>
+            <p className="final-links">
+              <a href="/print" target="_blank">{ this.text("T0215") }</a>
+              <a href="http://yearcompass.com">{ this.text("T0214") }</a>
+              <a href="/feedback">{ this.text("T0180") }</a>
             </p>
 
             {/* Share your achievement */}
@@ -78,16 +73,6 @@ FinishPage = React.createClass({
             <footer>{ this.text("T0170") }</footer>
             <footer>{ this.text("T0175") }</footer>
             <footer>{ this.text("T0174") }</footer>
-
-            {/* Help us make YearCompass better. */}
-            <header>{ this.text("T0179") }</header>
-            <p>{ this.text("T0180") }</p>
-
-            <div className="navbutton">
-              <button onClick={ () => FlowRouter.go("feedback") }>
-                { this.text("T0197") }
-              </button>
-            </div>
           </div>
         </div>);
   }
