@@ -17,11 +17,15 @@ TextQuestion = React.createClass({
 
   /** Forwards changes from 'Answers' to 'this.data' */
   getMeteorData() {
-    let document = Answers.findOne({question: this.props.question, userId: Meteor.userId()});
+    let queryObject = {
+      question: this.props.question,
+      userId: this.props.userId ? this.props.userId : Meteor.userId()
+    };
+    let document = Answers.findOne(queryObject);
     if (!document) return {};
     return {
       answer: document.answer
-    }
+    };
   },
 
   /** Updates the 'Answers' collection by invoking a method on the backend. */

@@ -13,8 +13,8 @@ PrintPage = React.createClass({
     return (<div>
         <div className="bookletpage">
           <p className="printTitle">2015 - 2016</p>
-          <PastYearQuestions language={ this.state.language } print={ true } />
-          <NextYearQuestions language={ this.state.language } print={ true } />
+          <PastYearQuestions language={ this.state.language } print={ true } userId={this.props.userId} />
+          <NextYearQuestions language={ this.state.language } print={ true } userId={this.props.userId} />
         </div>
     </div>
     );
