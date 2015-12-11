@@ -1,6 +1,6 @@
 @media print {
   @page {
-    margin: 0.5cm; }
+    margin: 1.5cm; }
 
   div.bookletpage {
     width: 70%; }
@@ -16,4 +16,5 @@
     div.bookletpage p.printAnswer {
       font-size: 4mm;
       margin: 3mm 0mm 5mm;
-      border-width: 2pt; } }
+      border-width: 2pt;
+      page-break-inside: avoid; } }

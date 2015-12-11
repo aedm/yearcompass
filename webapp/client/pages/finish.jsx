@@ -57,8 +57,8 @@ FinishPage = React.createClass({
             <header>{ this.text("T0164") }</header>
             <p className="final-links">
               <a href="/print" target="_blank">{ this.text("T0215") }</a>
-              <a href="http://yearcompass.com">{ this.text("T0214") }</a>
               <a href="/feedback">{ this.text("T0180") }</a>
+              <a href="http://yearcompass.com">{ this.text("T0214") }</a>
             </p>
 
             {/* Share your achievement */}
