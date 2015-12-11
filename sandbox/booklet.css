@@ -64,7 +64,8 @@ div.bookletpage {
     border-width: 2px;
     padding: 9px; }
   div.bookletpage p.share {
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 30px; }
     div.bookletpage p.share .share-button {
       display: inline-block;
       padding: 0px 10px;
@@ -93,5 +94,16 @@ div.bookletpage {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 400;
     font-size: 17px; }
-    div.bookletpage p.pnav a {
-      color: #2a98ff; }
+  div.bookletpage a.final-link {
+    font-family: 'Slabo 27px', serif;
+    font-size: 20px;
+    color: #2c7cc6;
+    text-decoration: none;
+    display: block;
+    padding: 2px 0px; }
+  div.bookletpage a.final-link::before {
+    content: "\f08e ";
+    font-family: "FontAwesome";
+    color: #888;
+    padding-right: 8px;
+    font-size: 16px; }

@@ -50,17 +50,27 @@ FinishPage = React.createClass({
     return (
         <div>
           <div id="jumbotron" className="finish">
-            <p className="smalltext">{ this.text("T0164") }</p>
+            <p className="smalltext">&nbsp;</p>
           </div>
           <div className="bookletpage">
+
+            <header>{ this.text("T0164") }</header>
+            <p>
+              <a className="final-link" href="/print" target="_blank">
+                View all my answers on a printable page
+              </a>
+
+              {/* Take me to YearCompass.com */}
+              <a className="final-link" href="http://yearcompass.com">
+                { this.text("T0214") }
+              </a>
+            </p>
 
             {/* Share your achievement */}
             <header>{ this.text("T0178") }</header>
             <p>{ this.text("T0103") } { this.text("T0168") } { this.text("T0199") } { this.text("T0200") }</p>
 
             { this.renderShare() }
-
-            <p className="pnav"><a href="">{ this.text("T0214") }</a></p>
 
             <hr />
 
