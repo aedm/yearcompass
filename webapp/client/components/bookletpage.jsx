@@ -7,7 +7,8 @@ BookletPage = {
   },
 
   text(token) {
-    return translations[this.props.language][token];
+    let t = translations[this.props.language][token];
+    return t ? t : translations["en_us"][token];
   },
 
   ask(question) {

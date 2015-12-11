@@ -212,4 +212,5 @@ translations["en_us"] = {
   "T0212": "or",
   "T0213": "leave feedback",
   "T0214": "Take me to YearCompass.com",
+  "T0215": "View all my answers on a printable page",
 }

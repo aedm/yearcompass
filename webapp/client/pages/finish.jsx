@@ -57,7 +57,7 @@ FinishPage = React.createClass({
             <header>{ this.text("T0164") }</header>
             <p>
               <a className="final-link" href="/print" target="_blank">
-                View all my answers on a printable page
+                { this.text("T0215") }
               </a>
 
               {/* Take me to YearCompass.com */}
