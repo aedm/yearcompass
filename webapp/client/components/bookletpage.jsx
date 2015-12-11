@@ -1,4 +1,6 @@
-/* React mixin for common booklet page functionalities */
+/**
+ * React mixin for common booklet page functionalities
+ */
 BookletPage = {
   propTypes: {
     language: React.PropTypes.string
@@ -6,5 +8,10 @@ BookletPage = {
 
   text(token) {
     return translations[this.props.language][token];
-  }
+  },
+
+  ask(question) {
+    let print = this.props.print === true;
+    return <TextQuestion question={question} print={print}/>;
+  },
 };

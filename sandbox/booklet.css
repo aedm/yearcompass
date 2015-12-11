@@ -21,6 +21,21 @@ div.bookletpage {
     font-family: 'Roboto Condensed', sans-serif; }
   div.bookletpage .stats {
     color: #2a98ff; }
+  div.bookletpage p.printAnswer {
+    border: 2px solid #e4e4e4;
+    resize: none;
+    font-family: 'Slabo 27px', serif;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 10px;
+    color: black;
+    overflow: hidden;
+    min-height: 65px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    text-wrap: normal;
+    white-space: pre-wrap;
+    margin: 12px 0px 35px 10px; }
   div.bookletpage footer {
     font-family: 'Slabo 27px', serif;
     margin: 5px 0px 0px 0px;

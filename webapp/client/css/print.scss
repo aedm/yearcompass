@@ -1,0 +1,33 @@
+@import 'base.scss';
+
+@media print {
+
+  @page {
+    margin: 0.5cm;
+  }
+
+  div.bookletpage {
+    width: 70%;
+
+    header {
+      font-family: $sans, sans-serif;
+      //font-weight: 400;
+      font-size: 6mm;
+      color: #bbb;
+    }
+
+    p, label {
+      font-family: $serif, serif;
+      color: black;
+      font-size: 4mm;
+      margin: 4mm 0mm 0mm 1mm;
+    }
+
+    p.printAnswer {
+      font-size: 4mm;
+      margin: 3mm 0mm 5mm;
+      border-width: 2pt;
+    }
+
+  }
+}

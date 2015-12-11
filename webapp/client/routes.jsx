@@ -99,3 +99,10 @@ FlowRouter.route('/feedbacktext', {
     ReactLayout.render(FeedbackTextsPage);
   }
 });
+
+FlowRouter.route('/print', {
+  name: "print",
+  action() {
+    ReactLayout.render(PrintPage);
+  }
+});

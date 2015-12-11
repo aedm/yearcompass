@@ -11,6 +11,10 @@
 TextQuestion = React.createClass({
   mixins: [ReactMeteorData],
 
+  propTypes: {
+    print: React.PropTypes.bool.isRequired
+  },
+
   /** Forwards changes from 'Answers' to 'this.data' */
   getMeteorData() {
     let document = Answers.findOne({question: this.props.question, userId: Meteor.userId()});
@@ -27,6 +31,9 @@ TextQuestion = React.createClass({
 
   /** Passes the answer to the actual editor */
   render() {
+    if (this.props.print) {
+      return <p className="printAnswer">{this.data.answer}</p>;
+    }
     return (<TextQuestionCore answer={this.data.answer} question={this.props.question}
                               onChange={this.setAnswer}/>);
   }
