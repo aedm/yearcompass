@@ -386,7 +386,6 @@ div.foot {
   background-color: black;
   color: #cdcdcd;
   margin: 40px 0px 0px;
-  //max-width: $width;
   text-align: center;
   padding: 20px 0px;
   font-family: $sans;
@@ -395,10 +394,5 @@ div.foot {
 
   a {
     color: #51b1ff;
-  }
-
-  .footersection {
-    display: inline-block;
-    padding: 0px 10px;
   }
 }

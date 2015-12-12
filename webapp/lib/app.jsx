@@ -109,10 +109,10 @@ App = React.createClass({
           { this.renderSyncState() }
 
           <div className="foot">
-            { this.text("T0179") }
-            <a href="http://translate.yearcompass.com/"> { this.text("T0211") }
-            </a>
-            { this.text("T0212") } <a href="/feedback">{ this.text("T0213") }</a>.
+            { this.text("T0179") + " " }
+            <a href="http://translate.yearcompass.com/">{ this.text("T0211") }</a>
+            { " " + this.text("T0212") + " "}
+            <a href="/feedback">{ this.text("T0213") }</a>.
           </div>
         </div>
     );
