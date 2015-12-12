@@ -87,19 +87,20 @@ div.bookletpage {
       transition: color 0.1s linear; }
   div.bookletpage div.stars:hover i.hovered {
     color: #c5a; }
-  div.bookletpage p.final-links a {
-    font-family: 'Slabo 27px', serif;
-    font-size: 20px;
-    color: #2c7cc6;
-    text-decoration: none;
-    display: block;
-    padding: 2px 0px; }
-  div.bookletpage p.final-links a::before {
-    content: "\f08e ";
-    font-family: "FontAwesome";
-    color: #888;
-    padding-right: 8px;
-    font-size: 16px; }
+  div.bookletpage p.final-links span {
+    display: block; }
+    div.bookletpage p.final-links span a {
+      font-family: 'Slabo 27px', serif;
+      font-size: 20px;
+      color: #2c7cc6;
+      text-decoration: none;
+      padding: 2px 0px; }
+    div.bookletpage p.final-links span a::before {
+      content: "\f08e ";
+      font-family: "FontAwesome";
+      color: #888;
+      padding-right: 8px;
+      font-size: 16px; }
   div.bookletpage p.printTitle {
     margin: 50px 0px;
     text-align: center;

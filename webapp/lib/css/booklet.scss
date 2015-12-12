@@ -125,21 +125,24 @@ div.bookletpage {
   }
 
   p.final-links {
-    a {
-      font-family: $serif;
-      font-size: 20px;
-      color: #2c7cc6;
-      text-decoration: none;
+    span {
       display: block;
-      padding: 2px 0px;
-    }
 
-    a::before {
-      content: "\f08e ";
-      font-family: "FontAwesome";
-      color: #888;
-      padding-right: 8px;
-      font-size: 16px;
+      a {
+        font-family: $serif;
+        font-size: 20px;
+        color: #2c7cc6;
+        text-decoration: none;
+        padding: 2px 0px;
+      }
+
+      a::before {
+        content: "\f08e ";
+        font-family: "FontAwesome";
+        color: #888;
+        padding-right: 8px;
+        font-size: 16px;
+      }
     }
   }
 
