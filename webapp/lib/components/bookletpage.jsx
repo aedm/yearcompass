@@ -17,7 +17,6 @@ BookletPage = {
       print: this.props.print === true,
       userId: this.props.userId
     };
-    console.log(JSON.stringify(params));
     return <TextQuestion question={question} {...params} />;
   },
 };

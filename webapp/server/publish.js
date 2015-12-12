@@ -19,5 +19,5 @@ Meteor.publish("freetext-feedbacks", function () {
  * URL to PDF service.
  */
 Meteor.publish("userAnswers", function (userId) {
-  return Answers.find({userId: userId});
+  return Answers.find({userId: userId}, {reactive: false});
 });
