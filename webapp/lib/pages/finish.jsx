@@ -57,6 +57,12 @@ FinishPage = React.createClass({
             <header>{ this.text("T0164") }</header>
             <p className="final-links">
               <span>
+                <a href={"http://5.101.96.40/yearcompass?id=" + Meteor.userId() }
+                   target="_blank">
+                  { this.text("T0215") }
+                </a>
+              </span>
+              <span>
                 <a href="/print" target="_blank">{ this.text("T0210") }</a>
               </span>
               <span>
