@@ -56,21 +56,27 @@ FinishPage = React.createClass({
 
             <header>{ this.text("T0164") }</header>
             <p className="final-links">
-              <span>
+              <em>
                 <a href={"http://5.101.96.40/yearcompass?id=" + Meteor.userId() }
                    target="_blank">
-                  { this.text("T0215") }
+                  <i className="fa fa-download" />{ this.text("T0215") }
                 </a>
-              </span>
-              <span>
-                <a href="/print" target="_blank">{ this.text("T0210") }</a>
-              </span>
-              <span>
-                <a href="/feedback">{ this.text("T0180") }</a>
-              </span>
-              <span>
-                <a href="http://yearcompass.com">{ this.text("T0214") }</a>
-              </span>
+              </em>
+              <em>
+                <a href="/print" target="_blank">
+                  <i className="fa fa-print" />{ this.text("T0210") }
+                </a>
+              </em>
+              <em>
+                <a href="/feedback">
+                  <i className="fa fa-external-link" />{ this.text("T0180") }
+                </a>
+              </em>
+              <em>
+                <a href="http://yearcompass.com">
+                  <i className="fa fa-external-link" />{ this.text("T0214") }
+                </a>
+              </em>
             </p>
 
             {/* Share your achievement */}
