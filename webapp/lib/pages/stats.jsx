@@ -6,13 +6,16 @@ StatsPage = React.createClass({
   },
 
   getMeteorData() {
+    // SSR doesn't seem to support the "Counts" package.
+    if (Meteor.isServer) return {};
+
     Meteor.subscribe("counters", this.questions);
     let data = {
       userCount: Counts.get("userCount")
     };
     this.questions.forEach((question) => {
       data[question] = Counts.get(question);
-    })
+    });
     return data;
   },
 
@@ -25,6 +28,9 @@ StatsPage = React.createClass({
   },
 
   render() {
+    // No SSR for this page.
+    if (Meteor.isServer) return null;
+
     return (
         <div className="bookletpage">
           <header className="stats">Registered users: { this.data.userCount }</header>

@@ -34,3 +34,10 @@ Meteor.startup(() => {
     loginStartup = false;
   });
 });
+
+FlowRouter.route('/stats', {
+  name: "stats",
+  action() {
+    ReactLayout.render(StatsPage);
+  }
+});

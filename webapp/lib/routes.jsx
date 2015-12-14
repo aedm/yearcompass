@@ -59,13 +59,6 @@ loggedInRoutes.route('/print', {
   }
 });
 
-FlowRouter.route('/stats', {
-  name: "stats",
-  action() {
-    ReactLayout.render(StatsPage);
-  }
-});
-
 FlowRouter.route('/feedbacktext', {
   name: "feedbacktext",
   action() {
