@@ -69,12 +69,12 @@ FinishPage = React.createClass({
               </em>
               <em>
                 <a href="/feedback">
-                  <i className="fa fa-external-link" />{ this.text("T0180") }
+                  <i className="fa fa-star-o" />{ this.text("T0180") }
                 </a>
               </em>
               <em>
                 <a href="http://yearcompass.com">
-                  <i className="fa fa-external-link" />{ this.text("T0214") }
+                  <i className="fa fa-link" />{ this.text("T0214") }
                 </a>
               </em>
             </p>
@@ -89,7 +89,11 @@ FinishPage = React.createClass({
 
             {/* The small print */}
             <footer>{ this.text("T0170") }</footer>
-            <footer>{ this.text("T0175") }</footer>
+            <footer>{ this.text("T0175") + " " }
+              <a href="http://creativecommons.org/choose/results-one?license_code=by-nc-sa&amp;jurisdiction=&amp;version=4.0&amp">
+                <i className="fa fa-external-link" />
+              </a>
+            </footer>
             <footer>{ this.text("T0174") }</footer>
           </div>
         </div>);

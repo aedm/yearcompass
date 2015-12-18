@@ -213,4 +213,5 @@ translations["hu_hu"] = {
   "T0212": "vagy",
   "T0213": "küldj visszajelzést",
   "T0214": "Vigyél a YearCompass.com oldalra",
+  "T0215": "Letöltöm a válaszaim nyomtatható formában (PDF)",
 }

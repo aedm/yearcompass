@@ -213,4 +213,5 @@ translations["es_es"] = {
   "T0212": "o",
   "T0213": "deja comentarios",
   "T0214": "Llévame a YearCompass.com",
+  "T0215": "Download my answers as a PDF file",
 }

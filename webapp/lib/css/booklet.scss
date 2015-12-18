@@ -58,6 +58,14 @@ div.bookletpage {
     color: lighten($question-color, 20);
     padding: 0px 0px 0px 10px;
     display: block;
+
+    a {
+      color: #88f;
+      .fa {
+        padding-left: 2px;
+        font-size: 14px;
+      }
+    }
   }
 
   div.answer {

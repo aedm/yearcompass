@@ -45,6 +45,11 @@ div.bookletpage {
     color: #888888;
     padding: 0px 0px 0px 10px;
     display: block; }
+    div.bookletpage footer a {
+      color: #88f; }
+      div.bookletpage footer a .fa {
+        padding-left: 2px;
+        font-size: 14px; }
   div.bookletpage div.answer {
     margin: 10px 10px 20px; }
   div.bookletpage textarea {

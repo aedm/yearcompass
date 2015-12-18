@@ -213,4 +213,5 @@ translations["ru_ru"] = {
   "T0212": "или",
   "T0213": "leave feedback",
   "T0214": "Take me to YearCompass.com",
+  "T0215": "Download my answers as a PDF file",
 }

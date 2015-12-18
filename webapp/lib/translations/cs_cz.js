@@ -213,4 +213,5 @@ translations["cs_cz"] = {
   "T0212": "nebo",
   "T0213": "leave feedback",
   "T0214": "Take me to YearCompass.com",
+  "T0215": "Download my answers as a PDF file",
 }

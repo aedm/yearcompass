@@ -160,7 +160,7 @@ translations["fr_fr"] = {
   "T0159": "Laisse  libre court à ton esprit. Quel est ton désir secret pour l'année à venir ?",
   "T0160": "L'année devant toi",
   "T0161": "Je crois que cette année tout sera possible.",
-  "T0162": "Date:",
+  "T0162": "Date :",
   "T0163": "signature",
   "T0164": "Tu as fini de planifier ton année prochaine.",
   "T0165": "Deux petites choses pour la fin: ",
@@ -213,4 +213,5 @@ translations["fr_fr"] = {
   "T0212": "ou",
   "T0213": "leave feedback",
   "T0214": "Take me to YearCompass.com",
+  "T0215": "Download my answers as a PDF file",
 }
