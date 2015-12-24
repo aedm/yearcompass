@@ -57,13 +57,13 @@ FinishPage = React.createClass({
             <header>{ this.text("T0164") }</header>
             <p className="final-links">
               <em>
-                <a href={"http://5.101.96.40/yearcompass?id=" + Meteor.userId() }
+                <a href={`http://5.101.96.40/yearcompass?id=${Meteor.userId()}-${this.props.language}` }
                    target="_blank">
                   <i className="fa fa-download" />{ this.text("T0215") }
                 </a>
               </em>
               <em>
-                <a href="/print" target="_blank">
+                <a href={`/print?lang=${this.props.language}`} target="_blank">
                   <i className="fa fa-print" />{ this.text("T0210") }
                 </a>
               </em>

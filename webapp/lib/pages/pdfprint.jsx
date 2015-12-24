@@ -7,15 +7,28 @@ PDFPrintPage = React.createClass({
 
   getMeteorData() {
     Meteor.subscribe("userAnswers", this.props.userId);
-    return {
-      x: Answers.find().fetch()
-    };
+    return {};
   },
 
   render() {
+    let userId = this.props.userId;
+    let lang = "en_us";
+
+    // This is an ugly hack. The Ruby-based PDF printer we use is buggy and crashes
+    // when the query has GET parameters. So the language is encoded in the
+    // userId prop. Meh.
+    let paramsHack = userId.split('-');
+    if (paramsHack.length == 2) {
+      userId = paramsHack[0];
+      lang = paramsHack[1];
+    }
+
     return (<div>
-      <PrintPage userId={ this.props.userId } />
+      <div className="bookletpage">
+        <p className="printTitle">2015 - 2016</p>
+        <PastYearQuestions language={ lang } print={ true } userId={ userId }/>
+        <NextYearQuestions language={ lang } print={ true } userId={ userId }/>
+      </div>
     </div>);
-    ;
   }
 });
