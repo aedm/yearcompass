@@ -6,7 +6,8 @@ PDFPrintPage = React.createClass({
   },
 
   getMeteorData() {
-    Meteor.subscribe("userAnswers", this.props.userId);
+    let userId = this.props.userId.split('-')[0];
+    Meteor.subscribe("userAnswers", userId);
     return {};
   },
 
