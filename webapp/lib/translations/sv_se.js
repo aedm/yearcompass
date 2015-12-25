@@ -1,4 +1,4 @@
-translations["sv_sv"] = {
+translations["sv_se"] = {
   "T0001": "året framför dig",
   "T0002": "2015",
   "T0003": "2016",

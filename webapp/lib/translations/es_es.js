@@ -208,10 +208,10 @@ translations["es_es"] = {
   "T0207": "Acabo de terminar de cerrar mi año pasado y de planificar el siguiente en #yearcompass. Si quieres revisar el pasado y planificar el futuro de forma fácil, y en un formato bonito, visita el enlace abajo.",
   "T0208": "Una gran herramienta para cerrar el año y planificar el siguiente. Si te interesa hacer un repaso de fin de año y prepararte para el siguiente, mira esto. #yearcompass",
   "T0209": "Hola! Mira esta web: online.yearcompass.com. Te ayuda a cerrar 2015 y planificar 2016. Acabo de terminar de hacerlo y es chulísimo!",
-  "T0210": "View all my answers on a printable page",
+  "T0210": "Ver todas mis respuestas en una página imprimible",
   "T0211": "Tradúcelo en tu propio lenguage",
   "T0212": "o",
   "T0213": "deja comentarios",
   "T0214": "Llévame a YearCompass.com",
-  "T0215": "Download my answers as a PDF file",
+  "T0215": "Descargar mis respuestas en un archivo PDF ",
 }

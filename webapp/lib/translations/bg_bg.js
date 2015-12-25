@@ -17,7 +17,7 @@ translations["bg_bg"] = {
   "T0016": "honesty and openness",
   "T0017": "a selection of your favorite pens",
   "T0018": "2nd version (group version)",
-  "T0019": "an inspirative group of people (2-10 persons)",
+  "T0019": "a group of inspirational people (2-10 persons)",
   "T0020": "at least four hours of creative time",
   "T0021": "a calendar of the past year",
   "T0022": "a printed version of this workbook",
