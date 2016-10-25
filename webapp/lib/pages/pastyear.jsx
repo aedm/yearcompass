@@ -1,3 +1,5 @@
+import React from 'react';
+
 PastYearPage = React.createClass({
   mixins: [BookletPage],
 

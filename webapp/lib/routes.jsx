@@ -1,3 +1,6 @@
+import React from 'react';
+import {FlowRouter} from 'meteor/kadira:flow-router-ssr';
+import {mount} from 'react-mounter';
 
 FlowRouter.route('/', {
   name: "login",
@@ -7,7 +10,7 @@ FlowRouter.route('/', {
       FlowRouter.go("past");
       return;
     }
-    ReactLayout.render(App, {content: <StartPage />});
+    mount(App, {content: () => <StartPage />});
   }
 });
 
@@ -27,49 +30,49 @@ let loggedInRoutes = FlowRouter.group({
 loggedInRoutes.route('/pastyear', {
   name: "past",
   action() {
-    ReactLayout.render(App, {content: <PastYearPage />});
+    mount(App, {content: () => <PastYearPage />});
   }
 });
 
 loggedInRoutes.route('/nextyear', {
   name: "next",
   action() {
-    ReactLayout.render(App, {content: <NextYearPage />});
+    mount(App, {content: () => <NextYearPage />});
   }
 });
 
 loggedInRoutes.route('/finish', {
   name: "finish",
   action() {
-    ReactLayout.render(App, {content: <FinishPage />});
+    mount(App, {content: () => <FinishPage />});
   }
 });
 
 loggedInRoutes.route('/feedback', {
   name: "feedback",
   action() {
-    ReactLayout.render(App, {content: <FeedbackPage />});
+    mount(App, {content: () => <FeedbackPage />});
   }
 });
 
 loggedInRoutes.route('/print', {
   name: "print",
   action() {
-    ReactLayout.render(PrintPage);
+    mount(PrintPage);
   }
 });
 
 FlowRouter.route('/feedbacktext', {
   name: "feedbacktext",
   action() {
-    ReactLayout.render(FeedbackTextsPage);
+    mount(FeedbackTextsPage);
   }
 });
 
 FlowRouter.route('/pdfprint/:userId', {
   name: "pdfprint",
   action(params) {
-    ReactLayout.render(PDFPrintPage, {userId: params.userId});
+    mount(PDFPrintPage, {userId: params.userId});
   }
 });
 

@@ -4,28 +4,29 @@
 # 'meteor add' and 'meteor remove' will edit this file for you,
 # but you can also edit it by hand.
 
-meteor-base             # Packages every Meteor app needs to have
-mobile-experience       # Packages for a great mobile UX
-mongo                   # The database Meteor supports right now
-session                 # Client-side reactive dictionary for your app
-jquery                  # Helpful client-side library
-tracker                 # Meteor's client-side reactive programming library
+meteor-base@1.0.4             # Packages every Meteor app needs to have
+mobile-experience@1.0.4       # Packages for a great mobile UX
+mongo@1.1.13                   # The database Meteor supports right now
+session@1.1.6                 # Client-side reactive dictionary for your app
+jquery@1.11.9                  # Helpful client-side library
+tracker@1.1.0                 # Meteor's client-side reactive programming library
 
-standard-minifiers      # JS/CSS minifiers run for production mode
-es5-shim                # ECMAScript 5 compatibility for older browsers.
-ecmascript              # Enable ECMAScript2015+ syntax in app code
+es5-shim@4.6.14_1                # ECMAScript 5 compatibility for older browsers.
+ecmascript@0.5.8_1              # Enable ECMAScript2015+ syntax in app code
 
-react
-check
-templating
-accounts-ui
-blaze-html-templates
-accounts-facebook
-underscore
+check@1.2.3
+templating@1.2.14_1
+accounts-ui@1.1.9
+blaze-html-templates@1.0.4
+accounts-facebook@1.0.10
+underscore@1.0.9
 fourseven:scss
-accounts-google
+accounts-google@1.0.10
 okgrow:analytics
-kadira:react-layout
 tmeasday:publish-counts
 meteorhacks:kadira
 kadira:flow-router-ssr
+standard-minifier-css@1.2.0_1
+standard-minifier-js@1.2.0_1
+shell-server
+react-meteor-data

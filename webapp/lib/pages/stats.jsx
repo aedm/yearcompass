@@ -1,3 +1,5 @@
+import React from 'react';
+
 StatsPage = React.createClass({
   mixins: [ReactMeteorData],
 

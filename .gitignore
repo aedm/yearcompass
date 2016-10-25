@@ -3,3 +3,4 @@ webapp/settings.json
 yearcompass_mongo_auth_keys.js
 webapp/.demeteorized
 runmeteor.bat
+node_modules/

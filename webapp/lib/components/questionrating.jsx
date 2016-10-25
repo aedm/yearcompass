@@ -1,3 +1,5 @@
+import React from 'react';
+
 RateQuestion = React.createClass({
   mixins: [ReactMeteorData],
 

@@ -1,3 +1,5 @@
+import React from 'react';
+
 FinishPage = React.createClass({
   mixins: [BookletPage],
 

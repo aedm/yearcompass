@@ -1,3 +1,5 @@
+import React from 'react';
+
 StartPage = React.createClass({
   mixins: [BookletPage],
 

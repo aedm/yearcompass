@@ -1,3 +1,5 @@
+import React from 'react';
+
 // This track sync states for every
 let SyncStateManager = {
   nonSyncedIds: {},

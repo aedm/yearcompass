@@ -1,3 +1,5 @@
+import React from 'react';
+
 FeedbackPage = React.createClass({
   mixins: [BookletPage],
 

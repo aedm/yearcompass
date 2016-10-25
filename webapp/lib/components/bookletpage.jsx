@@ -1,5 +1,7 @@
+import React from 'react';
+
 /**
- * React mixin for common booklet page functionalities
+ * React mixin for common booklet page functions
  */
 BookletPage = {
   propTypes: {

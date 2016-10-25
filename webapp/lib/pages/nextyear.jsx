@@ -1,3 +1,5 @@
+import React from 'react';
+
 NextYearPage = React.createClass({
   mixins: [BookletPage],
 

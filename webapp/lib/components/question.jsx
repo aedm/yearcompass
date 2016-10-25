@@ -1,3 +1,6 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 /** Displays a plain text answer. Takes the value from the
  * 'Answers' Mongo collection. The actual rendering is performed by
  * a 'PlainTextQuestionCore' instance which is also responsible for

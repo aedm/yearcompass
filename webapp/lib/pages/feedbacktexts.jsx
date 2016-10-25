@@ -1,3 +1,5 @@
+import React from 'react';
+
 FeedbackTextsPage = React.createClass({
   mixins: [ReactMeteorData],
 

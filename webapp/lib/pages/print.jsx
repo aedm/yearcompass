@@ -1,3 +1,5 @@
+import React from 'react';
+
 PrintPage = React.createClass({
   mixins: [ReactMeteorData],
 

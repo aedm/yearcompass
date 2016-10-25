@@ -1,3 +1,5 @@
+import React from 'react';
+
 App = React.createClass({
   mixins: [ReactMeteorData],
 
@@ -48,7 +50,7 @@ App = React.createClass({
               </div>
           }
           <div className="booklet">
-            { React.cloneElement(this.props.content, {language: this.state.language}) }
+            { React.cloneElement(this.props.content(), {language: this.state.language}) }
           </div>
         </div>
     );
