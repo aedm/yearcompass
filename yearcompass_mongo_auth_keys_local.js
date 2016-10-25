@@ -6,13 +6,11 @@ var services = [
     "service": "facebook",
     "appId": "184558961892090",
     "secret": "3f6bef4ae1484b97f7626557b5067058",
-//    "loginStyle": "popup"
   },
   {
     "service": "google",
     "clientId": "1050780266896-cd28hmk5ucmc2p0i1g0bv3svkb04uuos.apps.googleusercontent.com",
     "secret": "FWGp2ZPeIulmcGlMl1X7KdLF",
-//    "loginStyle": "popup"
   },
   {
     "service": "twitter",
